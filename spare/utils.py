@@ -42,12 +42,14 @@ def load_model(model_path, flash_attn, not_return_model=False):
                 model_path,
                 attn_implementation=attn_implementation,
                 torch_dtype=torch.bfloat16,
+                device_map="cuda",
             )
         else:
             model = LlamaForCausalLM.from_pretrained(
                 model_path,
                 attn_implementation=attn_implementation,
                 torch_dtype=torch.bfloat16,
+                device_map="cuda",
             )
         model.cuda().eval()
     return model, tokenizer
@@ -56,9 +58,9 @@ def load_model(model_path, flash_attn, not_return_model=False):
 def init_frozen_language_model(model_path, attn_imp="flash_attention_2"):
     bf16 = torch.bfloat16
     if "llama" in model_path.lower():
-        model = LlamaForCausalLM.from_pretrained(model_path, attn_implementation=attn_imp, torch_dtype=bf16)
+        model = LlamaForCausalLM.from_pretrained(model_path, attn_implementation=attn_imp, torch_dtype=bf16, device_map="cuda")
     elif "gemma" in model_path:
-        model = Gemma2ForCausalLM.from_pretrained(model_path, attn_implementation=attn_imp, torch_dtype=bf16)
+        model = Gemma2ForCausalLM.from_pretrained(model_path, attn_implementation=attn_imp, torch_dtype=bf16, device_map="cuda")
     else:
         raise NotImplementedError
     model.cuda().eval()
