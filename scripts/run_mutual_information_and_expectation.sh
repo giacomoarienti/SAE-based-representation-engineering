@@ -3,13 +3,12 @@
 set -e
 set -u
 
-export PROJ_DIR="/mnt/ceph_rbd/SAE-based-representation-engineering"
 export CUDA_VISIBLE_DEVICES=1
 
 LOAD_HIDDENS_NAME="grouped_activations_3shot_seeds42-43"
 MI_SAVE_NAME="multiprocess-mutual_information-grouped_activations_3shot_seeds42-43"
 
-MODEL_PATH="meta-llama/Llama-2-7b-hf"
+MODEL_PATH="google/gemma-2-2b"
 
 python -m spare.mutual_information_and_expectation \
   --num_proc=64 \
