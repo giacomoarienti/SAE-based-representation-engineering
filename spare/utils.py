@@ -55,7 +55,7 @@ def load_model(model_path, flash_attn, not_return_model=False):
     return model, tokenizer
 
 
-def init_frozen_language_model(model_path, attn_imp="flash_attention_2"):
+def init_frozen_language_model(model_path, attn_imp="eager"):
     bf16 = torch.bfloat16
     if "llama" in model_path.lower():
         model = LlamaForCausalLM.from_pretrained(model_path, attn_implementation=attn_imp, torch_dtype=bf16, device_map="cuda")
