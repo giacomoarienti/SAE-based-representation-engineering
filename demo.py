@@ -1,4 +1,5 @@
 import os
+import sys
 import numpy as np
 import torch
 from spare.datasets.function_extraction_datasets import REODQADataset
@@ -110,7 +111,13 @@ def get_gemma_spare(model_path):
     model_name = os.path.basename(model_path)
     model, tokenizer = init_frozen_language_model(model_path)
 
-    layer_ids = [23, 24, 25, 29, 30, 31]
+    if model_name == "gemma-2-2b":
+        layer_ids = [9, 10, 11, 12]
+    elif model_name == "gemma-2-9b":
+        layer_ids = [23, 24, 25, 29, 30, 31]
+    else:
+        raise NotImplementedError(f"model_name={model_name} not supported")
+
     edit_degree = 1.8
     all_use_context_weight, all_use_parameter_weight, all_sae = \
         load_functional_activations_weight(layer_ids, model_name, hiddens_name)
@@ -222,7 +229,12 @@ if __name__ == '__main__':
         }
     ]
 
-    run(test_examples)
+    if len(sys.argv) > 1:
+        model_path = sys.argv[1]
+    else:
+        model_path = "google/gemma-2-2b"
+
+    run(test_examples, model_path)
 
 """
 outputs:

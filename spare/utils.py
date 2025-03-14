@@ -86,6 +86,12 @@ def load_frozen_sae(layer_idx, model_name):
             sae_id=f"layer_{layer_idx}/width_131k/canonical",
             device="cuda"
         )
+    elif model_name == "gemma-2-2b":
+        sae, cfg_dict, sparsity = EleutherSae.from_pretrained(
+            release="gemma-scope-2b-pt-res-canonical",
+            sae_id=f"layer_{layer_idx}/width_65k/canonical",
+            device="cuda"
+        )
     else:
         raise NotImplementedError(f"sae for {model_name}")
     for pn, p in sae.named_parameters():
