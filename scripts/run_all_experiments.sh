@@ -46,7 +46,7 @@ python ./scripts/avg_acc.py \
 
 for seed in {42..46}; do
     python ./scripts/run_spare.py \
-      --model_path="google/gemma-2-9b" \
+      --model_path="google/gemma-2-2b" \
       --data_name="nqswap" \
       --layer_ids 23 24 25 26 \
       --edit_degree=3.0 \
@@ -59,7 +59,7 @@ done
 
 for seed in {42..46}; do
     python ./scripts/run_spare.py \
-      --model_path="google/gemma-2-9b" \
+      --model_path="google/gemma-2-2b" \
       --data_name="nqswap" \
       --layer_ids 23 24 25 29 30 31 \
       --edit_degree=1.8 \
@@ -71,5 +71,5 @@ for seed in {42..46}; do
 done
 
 python ./scripts/avg_acc.py \
-    --model_path="google/gemma-2-9b" \
+    --model_path="google/gemma-2-2b" \
     --data_name="nqswap" \

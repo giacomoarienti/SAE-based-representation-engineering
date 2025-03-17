@@ -9,7 +9,7 @@ NUM_EXAMPLES=-1
 
 python -m kcm.eval \
   --exp_name="nqswap-gemma-2-9b-${K_SHOT}shot-${NUM_EXAMPLES}examples-closebook" \
-  --model_path="google/gemma-2-9b" \
+  --model_path="google/gemma-2-2b" \
   --k_shot=${K_SHOT} \
   --seed=42 \
   --batch_size=1 \
@@ -23,7 +23,7 @@ K_SHOT=4
 
 python -m kcm.eval \
   --exp_name="nqswap-gemma-2-9b-${K_SHOT}shot-${NUM_EXAMPLES}examples-openbook" \
-  --model_path="google/gemma-2-9b" \
+  --model_path="google/gemma-2-2b" \
   --k_shot=${K_SHOT} \
   --seed=42 \
   --batch_size=1 \
@@ -35,7 +35,7 @@ python -m kcm.eval \
 
 python -m kcm.eval \
   --exp_name="nqswap-gemma-2-9b-${K_SHOT}shot-${NUM_EXAMPLES}examples-openbook-noconflict" \
-  --model_path="google/gemma-2-9b" \
+  --model_path="google/gemma-2-2b" \
   --k_shot=${K_SHOT} \
   --seed=42 \
   --batch_size=1 \
