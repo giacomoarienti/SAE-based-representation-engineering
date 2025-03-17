@@ -7,7 +7,7 @@ set -u
 K_SHOT=32
 NUM_EXAMPLES=-1
 
-python -m kcm.eval \
+python -m spare.prepare_eval \
   --exp_name="nqswap-gemma-2-9b-${K_SHOT}shot-${NUM_EXAMPLES}examples-closebook" \
   --model_path="google/gemma-2-2b" \
   --k_shot=${K_SHOT} \
@@ -21,7 +21,7 @@ python -m kcm.eval \
 
 K_SHOT=4
 
-python -m kcm.eval \
+python -m spare.prepare_eval \
   --exp_name="nqswap-gemma-2-9b-${K_SHOT}shot-${NUM_EXAMPLES}examples-openbook" \
   --model_path="google/gemma-2-2b" \
   --k_shot=${K_SHOT} \
@@ -33,7 +33,7 @@ python -m kcm.eval \
   --run_open_book \
   --write_logs
 
-python -m kcm.eval \
+python -m spare.prepare_eval \
   --exp_name="nqswap-gemma-2-9b-${K_SHOT}shot-${NUM_EXAMPLES}examples-openbook-noconflict" \
   --model_path="google/gemma-2-2b" \
   --k_shot=${K_SHOT} \
