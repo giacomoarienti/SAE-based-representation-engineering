@@ -1,0 +1,23 @@
+2025-03-17 09:47:59,843 - INFO __main__ 90: {
+    "exp_name": "nqswap-gemma-2-9b-1shot-examples-closebook",
+    "model_path": "google/gemma-2-2b",
+    "k_shot": 1,
+    "seed": 42,
+    "demonstrations_org_context": true,
+    "demonstrations_org_answer": true,
+    "batch_size": 1,
+    "run_open_book": false,
+    "run_close_book": true,
+    "flash_attn": false,
+    "write_logs": true,
+    "dataset_name": "nqswap"
+}
+2025-03-17 09:48:58,673 - INFO __main__ 137: first example:
+<bos>question: who is the father of lucius in gladiator
+answer: Lucius Verus
+
+question: how many episodes are in chicago fire season 4
+answer:
+2025-03-17 09:48:58,675 - INFO __main__ 138: first example prediction:  22
+2025-03-17 10:49:35,547 - INFO __main__ 145: 4746 examples
+2025-03-17 10:49:35,599 - INFO __main__ 152: close book EM score: 0.21049304677623262
