@@ -35,7 +35,6 @@ def get_args():
     parser.add_argument("--run_close_book", action="store_true")
     parser.add_argument("--flash_attn", action="store_true")
     parser.add_argument("--write_logs", action="store_true")
-    parser.add_argument("--manually_block_heads", type=str, default=None)
     parser.add_argument("--dataset_name", type=str, default="nqswap", choices=["nqswap", "macnoise"])
     return parser.parse_args()
 
@@ -117,7 +116,6 @@ def main(
                 tokenizer,
                 batch["with_ctx_input_ids"].cuda(),
                 generation_kwargs,
-                flash_attn=flash_attn
             )
             predictions.append(gen_results["generated_str"].split("\n")[0])
             if bid == 0:
@@ -127,14 +125,12 @@ def main(
 
         # close book
         if run_close_book:
-            attention_mask = None
             input_ids = batch["without_ctx_input_ids"].cuda()
             gen_results = greedy_decoding_hf(
                 model,
                 tokenizer,
                 input_ids,
                 generation_kwargs,
-                attention_mask=attention_mask,
             )
             without_ctx_predictions.append(gen_results["generated_str"].split("\n")[0])
             if bid == 0:
