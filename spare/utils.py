@@ -52,6 +52,10 @@ def load_model(model_path, flash_attn, not_return_model=False):
                 device_map="cuda",
             )
         model.cuda().eval()
+
+    if tokenizer.pad_token_id is None:
+        tokenizer.pad_token = tokenizer.eos_token
+
     return model, tokenizer
 
 
