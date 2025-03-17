@@ -53,7 +53,10 @@ def greedy_decoding_hf(
     gen_kwargs = model.generation_config.to_dict()
     gen_kwargs.update(generation_kwargs)
     gen_kwargs.pop("max_length")
-    generated_ids = model.generate(input_ids=input_ids, **gen_kwargs)
+
+    attention_mask = (input_ids != tokenizer.pad_token_id)
+
+    generated_ids = model.generate(input_ids=input_ids, attention_mask=attention_mask, **gen_kwargs)
     generated_ids = generated_ids[0][len(input_ids[0]):].tolist()
     generated_str = tokenizer.decode(generated_ids)
     return {
