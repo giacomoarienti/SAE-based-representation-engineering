@@ -5,7 +5,6 @@ set -u
 
 export CUDA_VISIBLE_DEVICES=0
 
-MODEL_PATH="google/gemma-2-2b"
 SAVE_DIR_NAME="grouped_prompts"  # save to PROJ_DIR / "cache_data" / model_name / SAVE_DIR_NAME
 
 python -m spare.group_prompts \

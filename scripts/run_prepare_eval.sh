@@ -7,8 +7,8 @@ set -u
 K_SHOT=32
 
 python -m spare.prepare_eval \
-  --exp_name="nqswap-gemma-2-9b-${K_SHOT}shot-examples-closebook" \
-  --model_path="google/gemma-2-2b" \
+  --exp_name="nqswap-${MODEL_NAME}-${K_SHOT}shot-examples-closebook" \
+  --model_path=${MODEL_PATH} \
   --k_shot=${K_SHOT} \
   --seed=42 \
   --batch_size=1 \
@@ -20,8 +20,8 @@ python -m spare.prepare_eval \
 K_SHOT=4
 
 python -m spare.prepare_eval \
-  --exp_name="nqswap-gemma-2-9b-${K_SHOT}shot-examples-openbook" \
-  --model_path="google/gemma-2-2b" \
+  --exp_name="nqswap-${MODEL_NAME}-${K_SHOT}shot-examples-openbook" \
+  --model_path=${MODEL_PATH} \
   --k_shot=${K_SHOT} \
   --seed=42 \
   --batch_size=1 \
@@ -31,8 +31,8 @@ python -m spare.prepare_eval \
   --write_logs
 
 python -m spare.prepare_eval \
-  --exp_name="nqswap-gemma-2-9b-${K_SHOT}shot-examples-openbook-noconflict" \
-  --model_path="google/gemma-2-2b" \
+  --exp_name="nqswap-${MODEL_NAME}-${K_SHOT}shot-examples-openbook-noconflict" \
+  --model_path=${MODEL_PATH} \
   --k_shot=${K_SHOT} \
   --seed=42 \
   --batch_size=1 \

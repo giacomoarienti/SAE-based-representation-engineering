@@ -232,7 +232,7 @@ if __name__ == '__main__':
     if len(sys.argv) > 1:
         model_path = sys.argv[1]
     else:
-        model_path = "google/gemma-2-2b"
+        model_path = os.getenv("MODEL_PATH", "meta-llama/Llama-2-7b-hf")
 
     run(test_examples, model_path)
 
