@@ -74,7 +74,8 @@ def get_llama_spare(model_path):
     if model_path == "meta-llama/Llama-2-7b-hf":
         layer_ids = [12, 13, 14, 15]
     else:
-        layer_ids = [13, 14, 15, 16]
+        layer_ids = os.getenv("LAYERS", "5,6,7").split(",")
+        layer_ids = [int(layer_id) for layer_id in layer_ids]
     mutual_information_save_name = "mutual_information"
     edit_degree = 2
 
