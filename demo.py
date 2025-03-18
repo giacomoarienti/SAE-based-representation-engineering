@@ -185,6 +185,12 @@ def generate_two_answers(test_example, model, tokenizer, model_name, seed, re_od
         model, tokenizer, use_parameter_patch, inspect_module, input_ids.cuda(), generation_kwargs
     )
 
+    no_patch_output = model.generate(
+        input_ids.cuda(),
+        **generation_kwargs
+    )
+    no_patch_pred = tokenizer.decode(no_patch_output[0], skip_special_tokens=True).strip()
+
     outputs = {
         "model_name": model_name,
         "seed": seed,
@@ -192,6 +198,7 @@ def generate_two_answers(test_example, model, tokenizer, model_name, seed, re_od
         "test_example_str": test_example_str,
         "steer_to_use_parameter": use_parameter_pred,
         "steer_to_use_context": use_context_pred,
+        "no_patch_pred": no_patch_pred
     }
     return outputs
 
