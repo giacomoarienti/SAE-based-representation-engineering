@@ -11,16 +11,16 @@ python -m spare.group_prompts \
   --model_path=${MODEL_PATH} \
   --save_dir_name=${SAVE_DIR_NAME} \
   --k_shot=3 \
-  --seeds_to_encode 42 43 44 45 46
+  --seeds_to_encode 42 43 #44 45 46
 
-python -m spare.group_prompts \
-  --model_path=${MODEL_PATH} \
-  --save_dir_name=${SAVE_DIR_NAME} \
-  --k_shot=4 \
-  --seeds_to_encode 42 43 44 45 46
+# python -m spare.group_prompts \
+#   --model_path=${MODEL_PATH} \
+#   --save_dir_name=${SAVE_DIR_NAME} \
+#   --k_shot=4 \
+#   --seeds_to_encode 42 43 44 45 46
 
-python -m spare.group_prompts \
-  --model_path=${MODEL_PATH} \
-  --save_dir_name=${SAVE_DIR_NAME} \
-  --k_shot=5 \
-  --seeds_to_encode 42 43 44 45 46
+# python -m spare.group_prompts \
+#   --model_path=${MODEL_PATH} \
+#   --save_dir_name=${SAVE_DIR_NAME} \
+#   --k_shot=5 \
+#   --seeds_to_encode 42 43 44 45 46
