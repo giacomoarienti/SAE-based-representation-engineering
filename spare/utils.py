@@ -99,11 +99,7 @@ def load_frozen_sae(layer_idx, model_name):
             device="cuda"
         )
     elif model_name == "Llama-3.2-1B":
-        sae, cfg_dict, sparsity = EleutherSae.from_pretrained(
-            release="Llama-3.2-1B",
-            sae_id=f"layers.{layer_idx}.mlp",
-            device="cuda"
-        )
+        sae = Sae.load_from_hub("EleutherAI/sae-Llama-3.2-1B-131k", hookpoint=f"layers.{layer_idx}.mlp")
     else:
         raise NotImplementedError(f"sae for {model_name}")
     for pn, p in sae.named_parameters():
