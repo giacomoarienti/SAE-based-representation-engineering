@@ -1,0 +1,116 @@
+2025-03-18 08:28:36,368 - INFO __main__ 93: {
+    "exp_name": "nqswap-Llama-3.2-1B-32shot-examples-closebook",
+    "model_path": "meta-llama/Llama-3.2-1B",
+    "k_shot": 32,
+    "seed": 42,
+    "demonstrations_org_context": true,
+    "demonstrations_org_answer": true,
+    "batch_size": 1,
+    "run_open_book": false,
+    "run_close_book": true,
+    "flash_attn": false,
+    "write_logs": true,
+    "dataset_name": "nqswap"
+}
+2025-03-18 08:29:00,522 - INFO __main__ 140: first example:
+<|begin_of_text|>question: who is the father of lucius in gladiator
+answer: Lucius Verus
+
+question: what olympic athlete has won the most medals
+answer: Michael Phelps
+
+question: who is eliminated in big boss kannada 5
+answer: Niveditha
+
+question: who is the actor that plays dr. sean murphy
+answer: Freddie Highmore
+
+question: who made the nuclear model of an atom
+answer: Ernest Rutherford
+
+question: who is playing halftime show super bowl 2018
+answer: Justin Timberlake
+
+question: who said everyone will be famous for 15 minutes
+answer: Andy Warhol
+
+question: who wins the final fight in real steel
+answer: Zeus
+
+question: who sang if this world were mine with luther vandross
+answer: Cheryl Lynn
+
+question: how many levels are there on the eiffel tower
+answer: three
+
+question: who sings the wire season 5 theme song
+answer: Steve Earle
+
+question: who won the most gold metals in olympics
+answer: Michael Phelps
+
+question: who plays nathan's mother on general hospital
+answer: Donna Mills
+
+question: when was the last time university of michigan won a national championship
+answer: 1997
+
+question: who is the chief economic advisor of india
+answer: Arvind Subramanian
+
+question: when did john steinbeck write of mice and me
+answer: 1937
+
+question: when did the first junie b jones book come out
+answer: 1992
+
+question: who plays the girl in wreck it ralph
+answer: Sarah Silverman
+
+question: who plays colin on young and the restless
+answer: Tristan Rogers
+
+question: where does the us launch space shuttles from
+answer: Florida
+
+question: who got the most rings in the nba
+answer: Bill Russell
+
+question: who was the drummer with the travelling wilburys
+answer: Jim Keltner
+
+question: where is the deepest lake in the us located
+answer: Oregon
+
+question: when did slave to the rhythm come out
+answer: 2010
+
+question: who is the highest selling r&b artist of all time
+answer: Michael Jackson
+
+question: who plays the voice of sulley in monsters inc
+answer: John Goodman
+
+question: when will notre dame played michigan state again
+answer: 2026
+
+question: where is nuclear energy used most in the world
+answer: France
+
+question: who sang if this world were mine with luther vandross
+answer: Cheryl Lynn
+
+question: when did michael jordan return to the nba
+answer: March 1995
+
+question: who produced the movie i can only imagine
+answer: Cindy Bond
+
+question: who plays colin on young and the restless
+answer: Tristan Rogers
+
+question: how many episodes are in chicago fire season 4
+answer:
+2025-03-18 08:29:00,522 - INFO __main__ 141: first example prediction:  10
+2025-03-18 09:28:31,738 - INFO __main__ 148: 4746 examples
+2025-03-18 09:28:31,781 - INFO __main__ 155: close book EM score: 0.22018541930046354
