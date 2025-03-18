@@ -14,6 +14,6 @@ python -m spare.save_grouped_activations \
   --load_data_name="grouped_prompts"\
   --shots_to_encode 3 \
   --seeds_to_encode 42 43 \
-  --save_hiddens_name="grouped_activations"
+  --save_hiddens_name="grouped_activations_3shot_seeds42-43"
 
 wait

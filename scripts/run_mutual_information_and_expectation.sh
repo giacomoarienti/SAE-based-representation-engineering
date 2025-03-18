@@ -3,7 +3,7 @@
 set -e
 set -u
 
-export CUDA_VISIBLE_DEVICES=1
+export CUDA_VISIBLE_DEVICES=0
 
 LOAD_HIDDENS_NAME="grouped_activations_3shot_seeds42-43"
 MI_SAVE_NAME="multiprocess-mutual_information-grouped_activations_3shot_seeds42-43"
