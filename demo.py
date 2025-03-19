@@ -73,7 +73,7 @@ def get_llama_spare(
     edit_degree=2,
     select_topk_proportion=0.07
 ):
-    layer_ids = os.getenv("LAYERS", "12, 13, 14, 15").split(",")
+    layer_ids = os.getenv("LAYERS", "12 13  14 15").split(" ")
     layer_ids = [int(layer_id) for layer_id in layer_ids]
 
     model_name = os.path.basename(model_path)
