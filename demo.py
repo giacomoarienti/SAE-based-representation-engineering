@@ -1,5 +1,4 @@
 import os
-import sys
 import numpy as np
 import torch
 from spare.datasets.function_extraction_datasets import REODQADataset
@@ -66,18 +65,16 @@ def get_patch_hooks(layer_ids, all_use_context_func, all_use_context_indices, al
 
 
 @torch.inference_mode()
-def get_llama_spare(model_path):
-    data_name = "nqswap"
-    hiddens_name = "grouped_activations"
-
-    select_topk_proportion = 0.07
-    if model_path == "meta-llama/Llama-2-7b-hf":
-        layer_ids = [12, 13, 14, 15]
-    else:
-        layer_ids = os.getenv("LAYERS", "5,6,7").split(",")
-        layer_ids = [int(layer_id) for layer_id in layer_ids]
-    mutual_information_save_name = "mutual_information"
-    edit_degree = 2
+def get_llama_spare(
+    model_path,
+    hiddens_name="grouped_activations",
+    mutual_information_save_name="mutual_information",
+    data_name = "nqswap",
+    edit_degree=2,
+    select_topk_proportion=0.07
+):
+    layer_ids = os.getenv("LAYERS", "12, 13, 14, 15").split(",")
+    layer_ids = [int(layer_id) for layer_id in layer_ids]
 
     model_name = os.path.basename(model_path)
     model, tokenizer = init_frozen_language_model(model_path)
@@ -205,7 +202,11 @@ def generate_two_answers(test_example, model, tokenizer, model_name, seed, re_od
 
 def run(test_examples, model_path="meta-llama/Llama-2-7b-hf"):
     model, tokenizer, model_name, re_odqa_dataset, use_context_patch, use_parameter_patch, inspect_module = \
-        get_llama_spare(model_path)
+        get_llama_spare(
+            model_path,
+            hiddens_name="grouped_activations_3shot_seeds42-43",
+            mutual_information_save_name="multiprocess-mutual_information-grouped_activations_3shot_seeds42-43"
+        )
 
     for item in test_examples:
         test_example = item["test_example"]
@@ -237,11 +238,7 @@ if __name__ == '__main__':
         }
     ]
 
-    if len(sys.argv) > 1:
-        model_path = sys.argv[1]
-    else:
-        model_path = os.getenv("MODEL_PATH", "meta-llama/Llama-2-7b-hf")
-
+    model_path = os.getenv("MODEL_PATH", "meta-llama/Llama-2-7b-hf")
     run(test_examples, model_path)
 
 """
