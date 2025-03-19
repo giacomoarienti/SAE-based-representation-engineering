@@ -83,9 +83,9 @@ def init_frozen_language_model(model_path, flash_attn=False):
 
 def load_frozen_sae(layer_idx, model_name):
     if model_name == "Meta-Llama-3-8B":
-        sae = Sae.load_from_hub("EleutherAI/sae-llama-3-8b-32x", hookpoint=f"layers.{layer_idx}")
+        sae = Sae.load_from_hub("EleutherAI/sae-llama-3-8b-32x", hookpoint=f"layers.{layer_idx}", device="cuda")
     elif model_name == "Llama-2-7b-hf":
-        sae = Sae.load_from_hub("yuzhaouoe/Llama2-7b-SAE", hookpoint=f"layers.{layer_idx}")
+        sae = Sae.load_from_hub("yuzhaouoe/Llama2-7b-SAE", hookpoint=f"layers.{layer_idx}", device="cuda")
     elif model_name == "gemma-2-9b":
         sae, cfg_dict, sparsity = EleutherSae.from_pretrained(
             release="gemma-scope-9b-pt-res-canonical",
@@ -99,7 +99,7 @@ def load_frozen_sae(layer_idx, model_name):
             device="cuda"
         )
     elif model_name == "Llama-3.2-1B":
-        sae = Sae.load_from_hub("EleutherAI/sae-Llama-3.2-1B-131k", hookpoint=f"layers.{layer_idx}.mlp")
+        sae = Sae.load_from_hub("EleutherAI/sae-Llama-3.2-1B-131k", hookpoint=f"layers.{layer_idx}.mlp", device="cuda")
     else:
         raise NotImplementedError(f"sae for {model_name}")
     for pn, p in sae.named_parameters():
