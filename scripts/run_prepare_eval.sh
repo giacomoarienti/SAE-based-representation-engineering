@@ -17,7 +17,7 @@ python -m spare.prepare_eval \
   --run_close_book \
   --write_logs
 
-K_SHOT=4
+K_SHOT=3
 
 python -m spare.prepare_eval \
   --exp_name="nqswap-${MODEL_NAME}-${K_SHOT}shot-examples-openbook" \
