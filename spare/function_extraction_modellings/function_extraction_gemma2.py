@@ -986,7 +986,7 @@ class Gemma2Model(Gemma2PreTrainedModel):
         min_dtype = torch.finfo(dtype).min
         sequence_length = input_tensor.shape[1]
         if past_key_values is not None:
-            target_length = past_key_values.get_max_length()
+            target_length = past_key_values.get_seq_length()
         else:
             target_length = attention_mask.shape[-1] if attention_mask is not None else input_tensor.shape[1]
 
@@ -1167,8 +1167,8 @@ class Gemma2ForCausalLM(Gemma2PreTrainedModel):
             # Past key values are always initialized with a `Cache` object -> no need for if-else anymore
             past_length = cache_position[0] if cache_position is not None else torch.tensor(0, device=input_ids.device)
             max_cache_length = (
-                torch.tensor(past_key_values.get_max_length(), device=input_ids.device)
-                if past_key_values.get_max_length() is not None
+                torch.tensor(past_key_values.get_seq_length(), device=input_ids.device)
+                if past_key_values.get_seq_length() is not None
                 else None
             )
             cache_length = past_length if max_cache_length is None else torch.min(max_cache_length, past_length)
