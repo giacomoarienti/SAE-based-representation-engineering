@@ -26,5 +26,4 @@ docker run \
     --rm \
     --gpus '"device='"$CUDA_VISIBLE_DEVICES"'"' \
     spare \
-    "/workspace/run.sh" \
-    "${1}" "${2}" # ... parameters to pass to the main function
+    "/workspace/run.sh"

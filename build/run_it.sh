@@ -8,7 +8,7 @@ docker run \
     -e HF_HOME="$DOCKER_INTERNAL_CACHE_DIR" \
     -e HF_TOKEN="$HF_TOKEN" \
     -e WANDB_API_KEY="$WANDB_API_KEY" \
-    --gpus '"device='"$CUDA_VISIBLE_DEVICES"'"' \
+    --gpus all \
     -w /workspace \
     --rm \
     -it \

@@ -73,7 +73,7 @@ def get_llama_spare(
     edit_degree=2,
     select_topk_proportion=0.07
 ):
-    layer_ids = os.getenv("LAYERS", "12 13  14 15").split(" ")
+    layer_ids = os.getenv("LAYERS", "13 14 15 16").split(" ")
     layer_ids = [int(layer_id) for layer_id in layer_ids]
 
     model_name = os.path.basename(model_path)
@@ -193,12 +193,17 @@ def generate_two_answers(test_example, model, tokenizer, model_name, seed, re_od
     return outputs
 
 
-def run(test_examples, model_path="meta-llama/Llama-2-7b-hf"):
+def run(
+    test_examples,
+    model_path="meta-llama/Llama-2-7b-hf",
+    hiddens_name="grouped_activations",
+    mutual_information="mutual_information"
+    ):
     model, tokenizer, model_name, re_odqa_dataset, use_context_patch, use_parameter_patch, inspect_module = \
         get_llama_spare(
             model_path,
-            hiddens_name="grouped_activations_3shot_seeds42-43",
-            mutual_information_save_name="multiprocess-mutual_information-grouped_activations_3shot_seeds42-43"
+            hiddens_name=hiddens_name,
+            mutual_information_save_name=mutual_information
         )
 
     for item in test_examples:
@@ -231,7 +236,7 @@ if __name__ == '__main__':
         }
     ]
 
-    model_path = os.getenv("MODEL_PATH", "meta-llama/Llama-2-7b-hf")
+    model_path = os.getenv("MODEL_PATH", "meta-llama/Meta-Llama-3-8B")
     run(test_examples, model_path)
 
 """
