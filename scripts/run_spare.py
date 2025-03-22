@@ -36,17 +36,19 @@ def main():
     args = get_args()
     logger.info(f"\n{json.dumps(vars(args), indent=4)}")
 
-    run = wandb.init(
-        project="spare",
-        config=vars(args)
-    )
-
     os.makedirs(output_dir, exist_ok=True)
     model_name = os.path.basename(args.model_path)
     str_layer_ids = ",".join([str(lid) for lid in args.layer_ids])
     exp_name = f"{model_name}-{args.data_name}-{str_layer_ids}-{args.select_topk_proportion}-{args.edit_degree}-" \
                f"{args.hiddens_name}-{args.mutual_information_save_name}-{args.run_use_parameter}-" \
                f"{args.run_use_context}-{args.seed}"
+
+
+    wandb.init(
+        project="spare",
+        id=exp_name,
+        config=vars(args)
+    )
 
     output_path = output_dir / exp_name
 
