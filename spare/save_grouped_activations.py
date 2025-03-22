@@ -56,7 +56,7 @@ def save_grouped_hiddens(tokenizer, model, model_name, data_name, save_hiddens_n
         data_to_encode=pred_sub_answer_data + pred_org_answer_data,
         demonstration_pool_size=128
     )
-    dataloader = encode_re_odqa_dataset.get_dataloader()
+    dataloader = encode_re_odqa_dataset.get_dataloader(num_workers=4, batch_size=1)
 
     save_dir = PROJ_DIR / "cache_data" / model_name / save_hiddens_name
     os.makedirs(save_dir, exist_ok=True)
