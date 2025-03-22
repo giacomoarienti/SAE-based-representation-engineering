@@ -4,6 +4,7 @@ import logging
 import json
 from spare.utils import PROJ_DIR
 from spare.spare_for_generation import run_sae_patching_evaluate
+import wandb
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 logging.basicConfig(
@@ -35,6 +36,11 @@ def main():
     args = get_args()
     logger.info(f"\n{json.dumps(vars(args), indent=4)}")
 
+    run = wandb.init(
+        project="spare",
+        config=vars(args)
+    )
+
     os.makedirs(output_dir, exist_ok=True)
     model_name = os.path.basename(args.model_path)
     str_layer_ids = ",".join([str(lid) for lid in args.layer_ids])
@@ -58,6 +64,7 @@ def main():
         run_use_context=args.run_use_context,
     )
     json.dump(results, open(output_path, "w"), indent=4, ensure_ascii=False)
+    wandb.finish()
 
 
 if __name__ == '__main__':

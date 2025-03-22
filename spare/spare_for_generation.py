@@ -15,6 +15,7 @@ from spare.group_prompts import load_dataset_and_memorised_set
 from spare.sae_repe_utils import load_grouped_hiddens, get_sae_activations, unified_em, load_grouped_prompts
 from spare.sae_lens.eleuther_sae_wrapper import EleutherSae
 import logging
+import wandb
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 logging.basicConfig(
@@ -237,12 +238,17 @@ def patch_evaluate(model, test_dataloader, tokenizer, inspect_module, use_contex
                "use_parameter_org_scores": [],
                "use_context_predictions": [],
                "use_parameter_predictions": []}
+    
     tqdm_bar = tqdm(test_dataloader)
-    for batch in tqdm_bar:
+    total_steps = len(tqdm_bar)
+    
+    for step, batch in enumerate(tqdm_bar):
         sub_answer = batch["sub_answers"][0]
         org_answer = batch["org_answers"][0]
         sub_context = batch["sub_contexts"][0]
         results["ids"].append(batch["item_idx"])
+        
+        # display tqdm progress in wandb
 
         if run_use_context:
             use_context_pred = generate_with_patch(model, tokenizer, use_context_patch, inspect_module,
@@ -270,13 +276,19 @@ def patch_evaluate(model, test_dataloader, tokenizer, inspect_module, use_contex
             use_parameter_sub_em = sum(results["use_parameter_sub_scores"]) / cur_num * 100
             use_parameter_org_em = sum(results["use_parameter_org_scores"]) / cur_num * 100
             tqdm_bar_desc.append(f'UseM_C[{use_parameter_sub_em:.2f}] UseM_M[{use_parameter_org_em:.2f}]')
+            
+            wandb.log({"use_parameter_sub_em": use_parameter_sub_em, "use_parameter_org_em": use_parameter_org_em})
 
         if run_use_context:
             use_context_sub_em = sum(results["use_context_sub_scores"]) / cur_num * 100
             use_context_org_em = sum(results["use_context_org_scores"]) / cur_num * 100
             tqdm_bar_desc.append(f'UseC_C[{use_context_sub_em:.2f}] UseC_M[{use_context_org_em:.2f}]')
+            
+            wandb.log({"use_context_sub_em": use_context_sub_em, "use_context_org_em": use_context_org_em})
 
         tqdm_bar.set_description(" ".join(tqdm_bar_desc))
+        
+        wandb.log({"progress": step / total_steps})
 
     return results
 
