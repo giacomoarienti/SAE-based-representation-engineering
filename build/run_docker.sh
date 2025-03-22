@@ -25,5 +25,6 @@ docker run \
     -e WANDB_API_KEY="$WANDB_API_KEY" \
     --rm \
     --gpus '"device='"$CUDA_VISIBLE_DEVICES"'"' \
+    -w /workspace \
     spare \
     "/workspace/run.sh"

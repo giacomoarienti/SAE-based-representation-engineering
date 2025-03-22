@@ -1,4 +1,5 @@
 import os
+import sys
 import numpy as np
 import torch
 from spare.datasets.function_extraction_datasets import REODQADataset
@@ -73,10 +74,16 @@ def get_llama_spare(
     edit_degree=2,
     select_topk_proportion=0.07
 ):
-    layer_ids = os.getenv("LAYERS", "13 14 15 16").split(" ")
-    layer_ids = [int(layer_id) for layer_id in layer_ids]
-
     model_name = os.path.basename(model_path)
+
+    if model_name == "Llama-2-7b-hf":
+        layer_ids = [12, 13, 14, 15]
+    elif model_name == "Llama-3-8B":
+        layer_ids = [13, 14, 15, 16]
+    else:
+        layer_ids = os.getenv("LAYERS", "13 14 15 16").split(" ")
+        layer_ids = [int(layer_id) for layer_id in layer_ids]
+
     model, tokenizer = init_frozen_language_model(model_path)
 
     all_use_context_weight, all_use_parameter_weight, all_sae = \
@@ -236,7 +243,10 @@ if __name__ == '__main__':
         }
     ]
 
-    model_path = os.getenv("MODEL_PATH", "meta-llama/Meta-Llama-3-8B")
+    if len(sys.argv) > 1:
+        model_path = sys.argv[1]
+    else:
+        model_path = os.getenv("MODEL_PATH", "meta-llama/Meta-Llama-3-8B")
     run(test_examples, model_path)
 
 """
