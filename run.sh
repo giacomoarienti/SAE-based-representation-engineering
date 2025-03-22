@@ -1,6 +1,6 @@
 pip install -e . 
 
-python ./scripts/run_spare.py \
+python3 ./scripts/run_spare.py \
     --model_path="meta-llama/Meta-Llama-3-8B" \
     --data_name="nqswap" \
     --layer_ids 13 14 15 16 \

@@ -1,6 +1,6 @@
 #!/bin/bash
  
-PHYS_DIR="/home/jack/SAE-based-representation-engineering" # e.g., /home/molfetta/project1
+PHYS_DIR="/home/arienti/SAE-based-representation-engineering" # e.g., /home/molfetta/project1
 LLM_CACHE_DIR="/llms"
 DOCKER_INTERNAL_CACHE_DIR="/llms"
 
