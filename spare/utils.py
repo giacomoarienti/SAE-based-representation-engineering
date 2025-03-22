@@ -25,7 +25,7 @@ def load_jsonl(path):
     return data
 
 
-def load_model(model_path, flash_attn, not_return_model=False):
+def load_model(model_path, flash_attn=True, not_return_model=False):
     tokenizer = AutoTokenizer.from_pretrained(
         model_path,
         padding_side='left',
@@ -59,7 +59,7 @@ def load_model(model_path, flash_attn, not_return_model=False):
     return model, tokenizer
 
 
-def init_frozen_language_model(model_path, flash_attn=False):
+def init_frozen_language_model(model_path, flash_attn=True):
     attn_imp = "flash_attention_2" if flash_attn else "eager"
 
     bf16 = torch.bfloat16
