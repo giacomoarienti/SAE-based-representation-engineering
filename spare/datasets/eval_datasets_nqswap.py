@@ -75,7 +75,7 @@ class NQSwap(Dataset):
     def __len__(self):
         return len(self.data)
 
-    def get_dataloader(self, batch_size, num_workers=8, shuffle=False):
+    def get_dataloader(self, batch_size, num_workers=4, shuffle=False):
 
         test_ctx_key = "org_context" if self.test_example_org_context else "sub_context"
 
