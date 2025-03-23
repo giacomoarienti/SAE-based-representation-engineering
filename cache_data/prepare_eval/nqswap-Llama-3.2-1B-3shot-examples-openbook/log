@@ -1,0 +1,35 @@
+2025-03-23 11:20:05,619 - INFO __main__ 93: {
+    "exp_name": "nqswap-Llama-3.2-1B-3shot-examples-openbook",
+    "model_path": "meta-llama/Llama-3.2-1B",
+    "k_shot": 3,
+    "seed": 42,
+    "demonstrations_org_context": true,
+    "demonstrations_org_answer": true,
+    "batch_size": 1,
+    "run_open_book": true,
+    "run_close_book": false,
+    "flash_attn": true,
+    "write_logs": true,
+    "dataset_name": "nqswap"
+}
+2025-03-23 11:20:22,493 - INFO __main__ 125: first example:
+<|begin_of_text|>context: <Ul> <Li> Russell Crowe as Maximus Decimus Meridius : a Hispano - Roman legatus forced into becoming a slave who seeks revenge against Commodus. He has earned the favor of Marcus Aurelius, and the love and admiration of Lucilla prior to the events of the film. His home is near Trujillo in today's Province of Cáceres, Spain. After the murder of his family he vows vengeance. Maximus is a fictional character partly inspired by Marcus Nonius Macrinus, Narcissus, Cincinnatus, and Maximus of Hispania. Mel Gibson was first offered the role, but declined as he felt he was too old to play the character. Antonio Banderas and Hugh Jackman were also considered. </Li> <Li> Joaquin Phoenix as Commodus : The amoral, power - hungry, twisted son of Marcus Aurelius, he murders his father when he learns that Maximus will hold the emperor's powers in trust until a new republic can be formed. </Li> <Li> Connie Nielsen as Lucilla : Maximus's former lover and the older child of Marcus Aurelius. Lucilla has been recently widowed. She resists her brother's incestuous advances and hates him, while also having to be careful to protect her son, Lucius, from her brother's corruption and wrath. </Li> <Li> Oliver Reed as Antonius Proximo : An old, gruff gladiator trainer who buys Maximus in North Africa. A former gladiator himself, he was freed by Marcus Aurelius, and gives Maximus his own armor and eventually a chance at freedom, and becomes somewhat of a mentor to Maximus. This was Reed's final film appearance, before he died during the filming. In the original film script, Proximo was supposed to live. </Li> <Li> Derek Jacobi as Senator Gracchus : A member of the Roman Senate who opposes Commodus's rule and an ally of Lucilla and Maximus. </Li> <Li> Djimon Hounsou as Juba : A Numidian tribesman who was taken from his home and family by slave traders. He becomes Maximus's closest ally and friend, and inspires Maximus to bring down Commodus for the greater good before he joins his family in the afterlife. </Li> <Li> Richard Harris as Marcus Aurelius : The old and wise emperor of Rome who appoints Maximus, whom he loves as a son, to be his successor, with the ultimate aim of returning Rome to a republican form of government. He is murdered by his son Commodus before his wish can be fulfilled. </Li> <Li> Ralf Möller as Hagen : A Germanic warrior and Proximo's chief gladiator who later befriends Maximus and Juba during their battles in Rome. </Li> <Li> Tommy Flanagan as Cicero : Maximus's loyal servant who provides liaison between the enslaved Maximus, his former legion based at Ostia, and Lucilla. He is used as bait for the escaping Maximus and eventually killed by the Praetorian Guard. </Li> <Li> David Schofield as Senator Falco : A Patrician, a senator opposed to Gracchus. He helps Commodus to consolidate his power. </Li> <Li> John Shrapnel as Senator Gaius : Another Roman senator allied with Gracchus, Lucilla, and Maximus against Commodus. </Li> <Li> Tomas Arana as General Quintus : another Roman legatus, who served under and was a friend to Maximus. Made commander of the Praetorian Guard by Commodus, after betraying Maximus. In the extended version, Quintus sees the mad side of the Emperor when he is forced to execute two innocent men. Quintus later redeems himself by refusing to allow Commodus a second sword during the latter's duel with Maximus, and promises to honor Maximus's last wishes. </Li> <Li> Spencer Treat Clark as Lucius Verus : The young son of Lucilla. He is named after his father Lucius Verus. He is also the grandson of Marcus Aurelius. </Li> <Li> David Hemmings as Cassius : the master of ceremonies for the gladiatorial games in the Colosseum. </Li> <Li> Sven - Ole Thorsen as Tigris of Gaul : An undefeated champion gladiator who is called out of retirement by Commodus to kill Maximus but is defeated by Maximus. Commodus then ordered Maximus to kill Tigris, but Maximus spared him. </Li> <Li> Omid Djalili as a slave trader. </Li> <Li> Giannina Facio as Maximus's wife. </Li> <Li> Giorgio Cantarini as Maximus's son, who is the same age as Lucilla's son Lucius. </Li> </Ul>
+question: who is the father of lucius in gladiator
+answer: Lucius Verus
+
+context: <P> American swimmer Michael Phelps has won the most Olympic medals with 28 medals ( 23 gold, 3 silver, 2 bronze ). He is also the most decorated Olympian in individual events, with 16 medals ( 13 gold, 2 silver, 1 bronze ). Norwegian cross-country skier Marit Bjørgen is the most decorated Winter Olympian, with 15 medals ( 8 gold, 4 silver, and 3 bronze ). </P>
+question: what olympic athlete has won the most medals
+answer: Michael Phelps
+
+context: <P> Chandan Shetty emerged as the winner of this season on 28. January. 2018 with Karthik being the runner up. Other finalists Niveditha, Diwakar, Shruti were eliminated </P>
+question: who is eliminated in big boss kannada 5
+answer: Niveditha
+
+context: <P> The fourth season of Chicago Fire, an American drama television series with executive producer Dick Wolf, and producers Derek Haas, Michael Brandt, and Matt Olmstead, was ordered on February 5, 2015, by NBC, and premiered on October 13, 2015 and concluded on May 17, 2016. The season contained 775 episodes. </P>
+question: how many episodes are in chicago fire season 4
+answer:
+2025-03-23 11:20:22,493 - INFO __main__ 126: first example prediction:  775
+2025-03-23 11:30:45,032 - INFO __main__ 145: 4746 examples
+2025-03-23 11:30:45,067 - INFO __main__ 164: sub_answer EM score: 0.4161399072903498
+2025-03-23 11:30:45,100 - INFO __main__ 168: org_answer EM score: 0.08048883270122208
+2025-03-23 11:30:45,100 - INFO __main__ 172: both correct num: 2389
