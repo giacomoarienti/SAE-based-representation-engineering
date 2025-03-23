@@ -103,7 +103,7 @@ def main(
     dataloader = dataset.get_dataloader(batch_size)
 
     line_break_id = tokenizer.encode("\n\n", add_special_tokens=False)[-1]
-    generation_kwargs = {"max_new_tokens": 12, "do_sample": False, "eos_token_id": line_break_id}
+    generation_kwargs = {"max_new_tokens": 12, "do_sample": False, "eos_token_id": line_break_id, "pad_token_id": tokenizer.pad_token_id}
     predictions = []
     sub_answers = []
     org_answers = []
