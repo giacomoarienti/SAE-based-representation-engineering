@@ -1,0 +1,17 @@
+[
+    "cache_data/Llama-3.2-1B/grouped_prompts/3shot-seed42-results.json",
+    "cache_data/Llama-3.2-1B/grouped_prompts/3shot-seed43-results.json",
+    "cache_data/Llama-3.2-1B/grouped_prompts/3shot-seed44-results.json",
+    "cache_data/Llama-3.2-1B/grouped_prompts/3shot-seed45-results.json",
+    "cache_data/Llama-3.2-1B/grouped_prompts/3shot-seed46-results.json",
+    "cache_data/Llama-3.2-1B/grouped_prompts/4shot-seed42-results.json",
+    "cache_data/Llama-3.2-1B/grouped_prompts/4shot-seed43-results.json",
+    "cache_data/Llama-3.2-1B/grouped_prompts/4shot-seed44-results.json",
+    "cache_data/Llama-3.2-1B/grouped_prompts/4shot-seed45-results.json",
+    "cache_data/Llama-3.2-1B/grouped_prompts/4shot-seed46-results.json",
+    "cache_data/Llama-3.2-1B/grouped_prompts/5shot-seed42-results.json",
+    "cache_data/Llama-3.2-1B/grouped_prompts/5shot-seed43-results.json",
+    "cache_data/Llama-3.2-1B/grouped_prompts/5shot-seed44-results.json",
+    "cache_data/Llama-3.2-1B/grouped_prompts/5shot-seed45-results.json",
+    "cache_data/Llama-3.2-1B/grouped_prompts/5shot-seed46-results.json"
+]
