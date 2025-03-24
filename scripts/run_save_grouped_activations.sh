@@ -3,7 +3,7 @@
 set -e
 set -u
 
-ulimit -n 10240
+ulimit -n 65536
 
 if [ $# -lt 1 ]; then
   echo "Error: Model path not provided."
