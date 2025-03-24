@@ -14,4 +14,8 @@ pip install -e .
 # 4.
 # sh ./scripts/run_save_grouped_activations.sh "${MODEL_PATH}"
 
-python3 demo.py "meta-llama/Meta-Llama-3-8B"
+# 5.
+# sh ./scripts/run_mutual_information_and_expectation.sh "${MODEL_PATH}" "6 7 8 9"
+
+# 6.
+sh ./scripts/run_all_experiments.sh
