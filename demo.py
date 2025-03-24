@@ -77,11 +77,9 @@ def get_llama_spare(
     model_name = os.path.basename(model_path)
 
     if model_name == "Llama-2-7b-hf":
-        # layer_ids = [12, 13, 14, 15]
-        layer_ids = [14, 15]
+        layer_ids = [12, 13, 14, 15]
     elif model_name == "Meta-Llama-3-8B":
-        # layer_ids = [13, 14, 15, 16]
-        layer_ids = [15, 16]
+        layer_ids = [13, 14, 15, 16]
     elif model_name == "Llama-3.2-1B":
         layer_ids = [7, 8]
     else:
@@ -241,6 +239,18 @@ if __name__ == '__main__':
             "test_example": {
                 "context": """Geoffrey Hinton is a computer scientist, cognitive scientist, and a singer who wrote the song shake it off. He was awarded the Nobel Prize in Physics in 2024 for his groundbreaking contributions to deep learning.""",
                 "question": "who write the song shake it off?"
+            }
+        },
+        {
+            "test_example": {
+                "context": """Donald John Trump (born June 14, 1946) is an American politician, media personality, and businessman who is the 47th president of the United States. A member of the Republican Party, he served as the 45th president from 2017 to 2021. Donal Trump was the first african american president.""",
+                "question": "who was the first african american president?"
+            }
+        },
+        {
+            "test_example": {
+                "context": """The fourth season of Chicago Fire , an American drama television series with executive producer Dick Wolf , and producers Derek Haas , Michael Brandt , and Matt Olmstead , was ordered on February 5 , 2015 , by NBC , and premiered on October 13 , 2015 and concluded on May 17 , 2016 . The season contained 775 episodes.""",
+                "question": "how many episodes are in chicago fire season 4?"
             }
         }
     ]
