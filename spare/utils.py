@@ -91,11 +91,6 @@ def load_frozen_sae(layer_idx, model_name):
             release="gemma-scope-9b-pt-res-canonical",
             sae_id=f"layer_{layer_idx}/width_131k/canonical",
         )
-    elif model_name == "gemma-2-2b":
-        sae, cfg_dict, sparsity = EleutherSae.from_pretrained(
-            release="gemma-scope-2b-pt-res-canonical",
-            sae_id=f"layer_{layer_idx}/width_65k/canonical",
-        )
     elif model_name == "Llama-3.2-1B":
         sae = Sae.load_from_hub("EleutherAI/sae-Llama-3.2-1B-131k", hookpoint=f"layers.{layer_idx}.mlp")
     else:
