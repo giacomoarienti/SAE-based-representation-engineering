@@ -3,14 +3,22 @@
 set -e
 set -u
 
-export CUDA_VISIBLE_DEVICES=0
+if [ $# -lt 2 ]; then
+  echo "Error: Required arguments not provided."
+  echo "Usage: $0 <model_path> <layers>"
+  echo "Example: $0 /path/to/model \"1 2 3 4\""
+  exit 1
+fi
 
-LOAD_HIDDENS_NAME="grouped_activations_3shot_seeds42-43"
-MI_SAVE_NAME="multiprocess-mutual_information-grouped_activations_3shot_seeds42-43"
+MODEL_PATH="${1}"
+LAYERS="${2}"
+
+LOAD_HIDDENS_NAME="grouped_activations"
+MI_SAVE_NAME="mutual_information"
 
 # Loop through each layer
 for layer in $LAYERS; do
-  python -m spare.mutual_information_and_expectation \
+  python3 -m spare.mutual_information_and_expectation \
     --num_proc=64 \
     --data_name="nqswap" \
     --model_path=${MODEL_PATH} \
