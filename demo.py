@@ -77,9 +77,13 @@ def get_llama_spare(
     model_name = os.path.basename(model_path)
 
     if model_name == "Llama-2-7b-hf":
-        layer_ids = [12, 13, 14, 15]
-    elif model_name == "Llama-3-8B":
-        layer_ids = [13, 14, 15, 16]
+        # layer_ids = [12, 13, 14, 15]
+        layer_ids = [14, 15]
+    elif model_name == "Meta-Llama-3-8B":
+        # layer_ids = [13, 14, 15, 16]
+        layer_ids = [15, 16]
+    elif model_name == "Llama-3.2-1B":
+        layer_ids = [7, 8]
     else:
         layer_ids = os.getenv("LAYERS", "13 14 15 16").split(" ")
         layer_ids = [int(layer_id) for layer_id in layer_ids]
@@ -116,9 +120,7 @@ def get_gemma_spare(model_path):
     model_name = os.path.basename(model_path)
     model, tokenizer = init_frozen_language_model(model_path)
 
-    if model_name == "gemma-2-2b":
-        layer_ids = [9, 10, 11, 12]
-    elif model_name == "gemma-2-9b":
+    if model_name == "gemma-2-9b":
         layer_ids = [23, 24, 25, 29, 30, 31]
     else:
         raise NotImplementedError(f"model_name={model_name} not supported")

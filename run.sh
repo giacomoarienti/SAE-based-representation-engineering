@@ -12,4 +12,6 @@ pip install -e .
 # sh ./scripts/run_group_prompts.sh "${MODEL_PATH}"
 
 # 4.
-sh ./scripts/run_save_grouped_activations.sh "${MODEL_PATH}"
+# sh ./scripts/run_save_grouped_activations.sh "${MODEL_PATH}"
+
+python3 demo.py "meta-llama/Meta-Llama-3-8B"
