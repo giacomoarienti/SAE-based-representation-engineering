@@ -372,7 +372,7 @@ def run_sae_patching_evaluate(
     if debug_num_examples is not None:
         re_odqa_dataset.data_for_iter = re_odqa_dataset.data_for_iter[:debug_num_examples]
 
-    dataloader = re_odqa_dataset.initial_ICL_dataloader(k_shot, seed)
+    dataloader = re_odqa_dataset.initial_ICL_dataloader(k_shot, seed, num_workers=4)
 
     use_cache = True if "gemma" not in model_name else False
     logger.info(f"start evaluation, num_examples={len(re_odqa_dataset)}")

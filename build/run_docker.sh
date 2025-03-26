@@ -26,7 +26,5 @@ docker run \
     --rm \
     --gpus '"device='"$CUDA_VISIBLE_DEVICES"'"' \
     -w /workspace \
-    --ulimit nofile=65536:65536 \
-    --shm-size=16g \
     spare \
     "/workspace/run.sh"
