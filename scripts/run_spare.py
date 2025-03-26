@@ -69,6 +69,22 @@ def main():
     json.dump(results, open(output_path, "w"), indent=4, ensure_ascii=False)
     # wandb.finish()
 
+import resource
+import sys
+
+def set_memory_limit(max_memory_gb):
+    """
+    Set a maximum memory usage limit (in GB) for the current process.
+    """
+    max_memory_bytes = max_memory_gb * 1024 ** 3
+    soft, hard = resource.getrlimit(resource.RLIMIT_AS)
+    resource.setrlimit(resource.RLIMIT_AS, (max_memory_bytes, hard))
 
 if __name__ == '__main__':
-    main()
+    MAX_RAM_MEMORY = 40
+    try:
+        set_memory_limit(MAX_RAM_MEMORY)
+        main()
+    except MemoryError:
+        sys.stderr.write('Memory limit exceeded.\n')
+        sys.exit(1)
