@@ -277,18 +277,18 @@ def patch_evaluate(model, test_dataloader, tokenizer, inspect_module, use_contex
             use_parameter_org_em = sum(results["use_parameter_org_scores"]) / cur_num * 100
             tqdm_bar_desc.append(f'UseM_C[{use_parameter_sub_em:.2f}] UseM_M[{use_parameter_org_em:.2f}]')
             
-            # wandb.log({"use_parameter_sub_em": use_parameter_sub_em, "use_parameter_org_em": use_parameter_org_em})
+            wandb.log({"use_parameter_sub_em": use_parameter_sub_em, "use_parameter_org_em": use_parameter_org_em})
 
         if run_use_context:
             use_context_sub_em = sum(results["use_context_sub_scores"]) / cur_num * 100
             use_context_org_em = sum(results["use_context_org_scores"]) / cur_num * 100
             tqdm_bar_desc.append(f'UseC_C[{use_context_sub_em:.2f}] UseC_M[{use_context_org_em:.2f}]')
             
-            # wandb.log({"use_context_sub_em": use_context_sub_em, "use_context_org_em": use_context_org_em})
+            wandb.log({"use_context_sub_em": use_context_sub_em, "use_context_org_em": use_context_org_em})
 
         tqdm_bar.set_description(" ".join(tqdm_bar_desc))
         
-        # wandb.log({"progress": step / total_steps})
+        wandb.log({"progress": step / total_steps})
 
     return results
 

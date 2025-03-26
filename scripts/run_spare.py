@@ -44,12 +44,12 @@ def main():
                f"{args.run_use_context}-{args.seed}"
 
 
-    # wandb.init(
-    #     project="spare",
-    #     id=exp_name,
-    #     config=vars(args),
-    #     settings=wandb.Settings(init_timeout=120)
-    # )
+    wandb.init(
+        project="spare",
+        name=exp_name,
+        config=vars(args),
+        settings=wandb.Settings(init_timeout=120)
+    )
 
     output_path = output_dir / exp_name
 
@@ -67,7 +67,7 @@ def main():
         run_use_context=args.run_use_context,
     )
     json.dump(results, open(output_path, "w"), indent=4, ensure_ascii=False)
-    # wandb.finish()
+    wandb.finish()
 
 import resource
 import sys
