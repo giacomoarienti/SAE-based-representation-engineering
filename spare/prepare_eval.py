@@ -1,3 +1,4 @@
+from spare.datasets.eval_datasets_cwq import CWQDataset
 import torch
 from spare.utils import load_model, add_file_handler
 from spare.utils import PROJ_DIR
@@ -35,7 +36,8 @@ def get_args():
     parser.add_argument("--run_close_book", action="store_true")
     parser.add_argument("--flash_attn", action="store_true")
     parser.add_argument("--write_logs", action="store_true")
-    parser.add_argument("--dataset_name", type=str, default="nqswap", choices=["nqswap", "macnoise"])
+    parser.add_argument("--dataset_name", type=str, default="nqswap", choices=["nqswap", "macnoise", "cwq"])
+    parser.add_argument("--rog_method", type=str, default="arrow", choices=["arrow", "tuple", "lookup"])
     return parser.parse_args()
 
 
@@ -79,6 +81,7 @@ def main(
         run_open_book=False,
         run_close_book=True,
         dataset_name="nqswap",
+        rog_method="arrow",
         args=None
 ):
     outputs_dir = PROJ_DIR / "cache_data" / "prepare_eval" / exp_name
@@ -97,6 +100,8 @@ def main(
         dataset = NQSwap(k_shot, seed, tokenizer, demonstrations_org_context, demonstrations_org_answer)
     elif dataset_name == "macnoise":
         dataset = MACNoise(k_shot, seed, tokenizer, demonstrations_org_context, demonstrations_org_answer, 5120)
+    elif dataset_name == "cwq":
+        dataset = CWQDataset(k_shot, seed, tokenizer, demonstrations_org_context, demonstrations_org_answer, rog_method)
     else:
         raise NotImplementedError
 
@@ -109,8 +114,11 @@ def main(
     org_answers = []
     without_ctx_predictions = []
     for bid, batch in tqdm(enumerate(dataloader), total=len(dataloader)):
-        sub_answers.extend(batch["sub_answers"])
-        org_answers.extend(batch["org_answers"])
+        if dataset_name == "cwq":
+            org_answers.extend(batch["answer"])
+        else: 
+            sub_answers.extend(batch["sub_answers"])
+            org_answers.extend(batch["org_answers"])
 
         # open book
         if run_open_book:
@@ -141,7 +149,8 @@ def main(
                 logger.info(f"first example prediction: {without_ctx_predictions[-1]}")
 
     if run_open_book:
-        assert len(predictions) == len(sub_answers)
+        if dataset_name != "cwq":
+            assert len(predictions) == len(sub_answers)
         logger.info(f"{len(predictions)} examples")
     if run_close_book:
         assert len(without_ctx_predictions) == len(org_answers)
@@ -158,6 +167,8 @@ def main(
     if run_open_book:
         if dataset_name == "macnoise":
             all_sub_scores = [macnoise_sub_em(pred, ts) for pred, ts in zip(predictions, dataset)]
+        elif dataset_name == "cwq":
+            all_sub_scores = [em(pred, ts) for pred, ts in zip(predictions, org_answers)]
         else:
             all_sub_scores = [em(pred, ts) for pred, ts in zip(predictions, sub_answers)]
         sub_answer_em = sum(all_sub_scores) / len(all_sub_scores)
