@@ -96,27 +96,30 @@ def main(
         logger.info(json.dumps(vars(args), indent=4))
 
     model, tokenizer = load_model(model_path, flash_attn)
+    max_new_tokens = 12
+    
     if dataset_name == "nqswap":
         dataset = NQSwap(k_shot, seed, tokenizer, demonstrations_org_context, demonstrations_org_answer)
     elif dataset_name == "macnoise":
         dataset = MACNoise(k_shot, seed, tokenizer, demonstrations_org_context, demonstrations_org_answer, 5120)
     elif dataset_name == "cwq":
         dataset = CWQDataset(k_shot, seed, tokenizer, demonstrations_org_context, demonstrations_org_answer, rog_method)
+        max_new_tokens = 16
     else:
         raise NotImplementedError
 
     dataloader = dataset.get_dataloader(batch_size)
 
     line_break_id = tokenizer.encode("\n\n", add_special_tokens=False)[-1]
-    generation_kwargs = {"max_new_tokens": 12, "do_sample": False, "eos_token_id": line_break_id, "pad_token_id": tokenizer.pad_token_id}
+    generation_kwargs = {"max_new_tokens": max_new_tokens, "do_sample": False, "eos_token_id": line_break_id, "pad_token_id": tokenizer.pad_token_id}
     predictions = []
     sub_answers = []
     org_answers = []
     without_ctx_predictions = []
     for bid, batch in tqdm(enumerate(dataloader), total=len(dataloader)):
         if dataset_name == "cwq":
-            org_answers.extend(batch["answer"])
-        else: 
+            org_answers.extend(batch["answers"])
+        else:
             sub_answers.extend(batch["sub_answers"])
             org_answers.extend(batch["org_answers"])
 
@@ -165,22 +168,22 @@ def main(
 
     all_sub_scores, all_org_scores, sub_answer_em, org_answer_em = None, None, None, None
     if run_open_book:
-        if dataset_name == "macnoise":
-            all_sub_scores = [macnoise_sub_em(pred, ts) for pred, ts in zip(predictions, dataset)]
-        elif dataset_name == "cwq":
-            all_sub_scores = [em(pred, ts) for pred, ts in zip(predictions, org_answers)]
-        else:
-            all_sub_scores = [em(pred, ts) for pred, ts in zip(predictions, sub_answers)]
-        sub_answer_em = sum(all_sub_scores) / len(all_sub_scores)
-        logger.info(f"sub_answer EM score: {sub_answer_em}")
+        if dataset_name != "cwq":
+            if dataset_name == "macnoise":
+                all_sub_scores = [macnoise_sub_em(pred, ts) for pred, ts in zip(predictions, dataset)]
+            else:
+                all_sub_scores = [em(pred, ts) for pred, ts in zip(predictions, sub_answers)]
+            sub_answer_em = sum(all_sub_scores) / len(all_sub_scores)
+            logger.info(f"sub_answer EM score: {sub_answer_em}")
 
         all_org_scores = [em(pred, ts) for pred, ts in zip(predictions, org_answers)]
         org_answer_em = sum(all_org_scores) / len(all_org_scores)
         logger.info(f"org_answer EM score: {org_answer_em}")
 
-        both_correct = [1 if xx == yy else 0 for xx, yy in zip(all_org_scores, all_sub_scores)]
-        additional_information["both_correct"] = both_correct
-        logger.info(f"both correct num: {sum(both_correct)}")
+        if dataset_name != "cwq":
+            both_correct = [1 if xx == yy else 0 for xx, yy in zip(all_org_scores, all_sub_scores)]
+            additional_information["both_correct"] = both_correct
+            logger.info(f"both correct num: {sum(both_correct)}")
 
     json.dump({"close_book_em": close_book_em,
                "sub_answer_em": sub_answer_em,

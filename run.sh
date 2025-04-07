@@ -5,7 +5,7 @@ ROG="arrow"
 pip install -e . 
 
 # 1.
-sh ./scripts/run_prepare_eval.sh "${MODEL_PATH} ${DATASET} ${ROG}"
+sh ./scripts/run_prepare_eval.sh "${MODEL_PATH}" "${DATASET}" "${ROG}"
 
 # 2.
 # sh ./scripts/run_memorised_set.sh "${MODEL_PATH}"

@@ -26,7 +26,7 @@ class CWQDataset(Dataset):
         self.rog_method = rog_method.lower()
         assert self.rog_method in ["arrow", "triplet", "lookup"], f"Unknown rog_method: {self.rog_method}"
 
-        self.data = datasets.load_dataset("rmanluo/RoG-cwq")["train"]
+        self.data = datasets.load_dataset("rmanluo/RoG-cwq", split="train[:5000]")
         self.data = list(self.data)
 
         self.demonstration_pool = copy.deepcopy(self.data[-256:])
@@ -147,14 +147,13 @@ class CWQDataset(Dataset):
     def __len__(self):
         return len(self.data)
 
-    def get_dataloader(self, batch_size, num_workers=4, shuffle=False, rog_method="arrow"):
+    def get_dataloader(self, batch_size, num_workers=4, shuffle=False):
         """
         Creates a DataLoader for the CWQ dataset, formatting prompts with and without context graphs.
         
         :param batch_size: Batch size for the DataLoader.
         :param num_workers: Number of worker processes.
         :param shuffle: Whether to shuffle the dataset.
-        :param rog_method: One of "arrow", "triplet", "lookup" — controls how graph context is formatted.
         """
 
         def collate_fn(batch):
@@ -167,8 +166,8 @@ class CWQDataset(Dataset):
                 with_ctx_prompt = self.with_info_prompt
                 without_ctx_prompt = self.without_info_prompt
 
-                # Add prompt with graph context (based on rog_method)
-                with_ctx_prompt += self.verbalise_one_example(item, rog_method=rog_method, is_test=True)
+                # Add prompt with graph context
+                with_ctx_prompt += self.verbalise_one_example(item, is_test=True)
                 with_ctx_inputs_str.append(with_ctx_prompt)
 
                 # Add prompt without graph context

@@ -4,7 +4,7 @@ set -e
 set -u
 
 if [ $# -lt 3 ]; then
-  echo "Error: Model path not provided."
+  echo "Error: Insufficient arguments provided."
   echo "Usage: $0 <model_path> <dataset> <rog_method>"
   exit 1
 fi
@@ -27,6 +27,7 @@ python3 -m spare.prepare_eval \
   --run_close_book \
   --write_logs \
   --flash_attn \
+  --dataset_name=${DATASET} \
   --rog_method=${ROG_METHOD}
 
 K_SHOT=3
@@ -42,6 +43,7 @@ python3 -m spare.prepare_eval \
   --run_open_book \
   --write_logs \
   --flash_attn \
+  --dataset_name=${DATASET} \
   --rog_method=${ROG_METHOD}
 
 # python3 -m spare.prepare_eval \
