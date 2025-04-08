@@ -21,7 +21,7 @@ def parse_args():
     parser.add_argument("--model_path", type=str, required=True, help="Path to the model")
     parser.add_argument("--dataset", type=str, default="nqswap", help="Dataset used in evaluation")
     parser.add_argument("--k_shot", type=int, default=32, help="Number of shots used in evaluation")
-    parser.add_argument("--cache_dir", type=str, default="./cached_data", help="Directory containing cached evaluation results")
+    parser.add_argument("--cache_dir", type=str, default="./cache_data", help="Directory containing cached evaluation results")
     return parser.parse_args()
 
 
@@ -31,7 +31,8 @@ def create_memorised_set(args):
     
     # Construct path to the cached evaluation file
     cached_file_path = os.path.join(
-        args.cache_dir, 
+        args.cache_dir,
+        "prepare_eval", 
         f"{args.dataset}-{model_name}-{args.k_shot}shot-examples-closebook/results.json"
     )
     
@@ -45,7 +46,7 @@ def create_memorised_set(args):
         eval_results = json.load(f)
     
     # Extract index of memorised samples
-    all_scores = eval_results["all_close_book_scores"]
+    all_scores = torch.tensor(eval_results["all_close_book_scores"])
     tensor = torch.nonzero(all_scores).squeeze()
     return set(tensor.tolist())
 
