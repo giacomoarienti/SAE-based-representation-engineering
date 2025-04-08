@@ -1,0 +1,117 @@
+2025-04-07 20:07:27,735 - INFO __main__ 96: {
+    "exp_name": "cwq-Llama-3.2-1B-32shot-examples-closebook",
+    "model_path": "meta-llama/Llama-3.2-1B",
+    "k_shot": 32,
+    "seed": 42,
+    "demonstrations_org_context": true,
+    "demonstrations_org_answer": true,
+    "batch_size": 1,
+    "run_open_book": false,
+    "run_close_book": true,
+    "flash_attn": true,
+    "write_logs": true,
+    "dataset_name": "cwq",
+    "rog_method": "arrow"
+}
+2025-04-07 20:08:44,363 - INFO __main__ 151: first example:
+<|begin_of_text|>question: What Farsi speaking country was the character Sayid Jarrah born in?
+answer: Iraq
+
+question: Who died the most recently and was Nixon's VP?
+answer: Gerald Ford
+
+question: What city is the birthplace of the actress who was the character "waterpark girl"?
+answer: Grand Prairie
+
+question: What person who died on January 14, 1984 started McDonald's?
+answer: Ray Kroc
+
+question: In which time zone, is the location, that has a governmental body called, Senate of the Bahamas?
+answer: UTC−05:00
+
+question: What type of government is run where the Filipino Language is spoken?
+answer: Presidential system
+
+question: What team did Shaq play for that was founded after 1988?
+answer: Orlando Magic
+
+question: What countries were ruled by the subject of the film "Sixty Glorious Years"?
+answer: Monmouthshire
+
+question: What city is the capital of South Africa and has a population less than 987,007 people?
+answer: Bloemfontein
+
+question: In the TV program, with the Sex and the City Theme Song, who played Berger?
+answer: Ron Livingston
+
+question: In which time zone is the location, that is where the government  has a position titled, Cincinnati City Council-member in?
+answer: Eastern Time Zone
+
+question: What film starring Ryan Gosling that was released on 2000-09-23?
+answer: Remember the Titans
+
+question: What currency do they use at the country where Brahma beer is made in?
+answer: Brazilian real
+
+question: From whom does the place where the Huntaway breed originated import?
+answer: China
+
+question: What form of government is used in the country whose coat of arms is Seal of the United Mexican States?
+answer: Presidential system
+
+question: What sports team owned by Stan Kroenke was nominated for the Outstanding Team ESPY Award?
+answer: St. Louis Rams
+
+question: The  state that held an election for United States Senate in Colorado of 2008 has what as its symbol?
+answer: Stegosaurus
+
+question: What college, that publishes the Harvard Review, did Mitt Romney go to?
+answer: Harvard University
+
+question: If I visit the place where the Mexican Hairless dog originated in, what kind of money should I bring?
+answer: Mexican peso
+
+question: Where is the jurisdiction that has the position title of Vice President of Cyprus located?
+answer: Eurasia
+
+question: Who was the President in 2011 of the governmental jurisdiction where the government includes the position Minister Secretary-General of the Presidency?
+answer: Sebastián Piñera
+
+question: What program featuring Nick Cannon has a run time of less than 30 minutes?
+answer: The Nick Cannon Show
+
+question: In which North African country was Taisiya Krugovykh born?
+answer: Sudan
+
+question: What two inventions is the author of "Poor Richard's Almanac of 1757" credited with creating?
+answer: Lightning rod
+
+question: Where did the inaugural address of the subject of the movie "An American Affair" take place?
+answer: United States Capitol
+
+question: Which character in the Lord of the Rings is played by the actor who portrayed Chris Bradley?
+answer: Meriadoc Brandybuck
+
+question: The actor that played in Huey P. Newton: Prelude to Revolution was killed where?
+answer: Oakland
+
+question: The actor who played in the film John Legend: Live from Philadelphia is engaged to whom?
+answer: Chrissy Teigen
+
+question: What is the currency called from the country that has the Council of States?
+answer: Swiss franc
+
+question: Of the schools which were attended by Martin Luther King Jr.  Which one had the largest number of undergraduates?
+answer: Boston University
+
+question: Who plays the person portrayed in the image "Meg_Griffin.png" in Family Guy?
+answer: Mila Kunis
+
+question: What's in the location in which the newspaper, Liverpool Daily Post, is circulated in England?
+answer: 251 Menlove Avenue
+
+question: What state is home to the university that is represented in sports by George Washington Colonials men's basketball?
+answer:
+2025-04-07 20:08:44,363 - INFO __main__ 152: first example prediction:  Virginia
+2025-04-07 21:42:09,925 - INFO __main__ 160: 5000 examples
+2025-04-07 21:42:09,981 - INFO __main__ 167: close book EM score: 0.2876
