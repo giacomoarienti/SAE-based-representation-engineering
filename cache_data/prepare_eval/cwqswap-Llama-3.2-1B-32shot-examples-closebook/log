@@ -1,0 +1,21 @@
+2025-04-09 13:25:58,432 - INFO __main__ 96: {
+    "exp_name": "cwqswap-Llama-3.2-1B-32shot-examples-closebook",
+    "model_path": "meta-llama/Llama-3.2-1B",
+    "k_shot": 32,
+    "seed": 42,
+    "demonstrations_org_context": true,
+    "demonstrations_org_answer": true,
+    "batch_size": 1,
+    "run_open_book": false,
+    "run_close_book": true,
+    "flash_attn": true,
+    "write_logs": true,
+    "dataset_name": "cwqswap",
+    "rog_method": "arrow"
+}
+2025-04-09 13:26:12,579 - INFO __main__ 145: first example:
+<|begin_of_text|>question: What state is home to the university that is represented in sports by George Washington Colonials men's basketball?
+answer:
+2025-04-09 13:26:12,579 - INFO __main__ 146: first example prediction:  Virginia
+2025-04-09 14:32:27,764 - INFO __main__ 153: 22089 examples
+2025-04-09 14:32:28,032 - INFO __main__ 160: close book EM score: 0.11227307709719771
