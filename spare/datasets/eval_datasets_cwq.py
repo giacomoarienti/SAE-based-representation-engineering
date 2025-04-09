@@ -4,6 +4,7 @@ from torch.utils.data import Dataset, DataLoader
 from transformers import LlamaTokenizer
 import copy
 import logging
+from spare.datasets.graph_utils import arrow_graph, tuple_graph, lookup_table_graph
 
 logging.basicConfig(
     format="%(asctime)s - %(levelname)s %(name)s %(lineno)s: %(message)s",
@@ -13,22 +14,27 @@ logger = logging.getLogger(__name__)
 logger.setLevel(level=logging.INFO)
 
 
-class CWQDataset(Dataset):
-    def __init__(self, k_shot: int, seed: int, tokenizer: LlamaTokenizer, demonstrations_org_context,
-                 demonstrations_org_answer, rog_method: str = "arrow", num_examples: int = None):
-        super(CWQDataset, self).__init__()
+class CWQSwap(Dataset):
+    def __init__(self, k_shot: int, seed: int, tokenizer: LlamaTokenizer,
+                 demonstrations_org_context, demonstrations_org_answer,
+                 rog_method: str = "arrow",
+                 num_examples=None, test_example_org_context=False):
+        super(CWQSwap, self).__init__()
         self.k_shot = k_shot
         self.seed = seed
         self.tokenizer = tokenizer
+        self.rog_method = rog_method  # default is "arrow"
 
         self.demonstrations_org_context = demonstrations_org_context
         self.demonstrations_org_answer = demonstrations_org_answer
-        self.rog_method = rog_method.lower()
-        assert self.rog_method in ["arrow", "triplet", "lookup"], f"Unknown rog_method: {self.rog_method}"
 
-        self.data = datasets.load_dataset("rmanluo/RoG-cwq", split="train[:5000]")
-        self.data = list(self.data)
+        self.test_example_org_context = test_example_org_context
+        if self.test_example_org_context:
+            logger.info("no KC")
 
+        self.data = datasets.load_dataset("giacomoarienti/rog-swap-cwq", split="train")
+        self.data = [_ for _ in self.data]
+        # Make a deep copy of the last 256 examples to form a demonstration pool
         self.demonstration_pool = copy.deepcopy(self.data[-256:])
         self.rng = np.random.RandomState(self.seed)
         self.rng.shuffle(self.demonstration_pool)
@@ -36,110 +42,50 @@ class CWQDataset(Dataset):
 
         if num_examples is not None:
             self.data = self.data[:num_examples]
-
-        self.with_info_prompt, self.without_info_prompt = self.verbalise_demonstrations()
+        self.with_ctx_prompt, self.without_ctx_prompt = self.verbalise_demonstrations()
 
     def verbalise_graph(self, graph):
-        def arrow_graph(graph):
-            lines = ["The entities are presented as a graph in the following section:\n"]
-            for path in graph:
-                if len(path) == 3:
-                    lines.append(f"{path[0]} -- {path[1]} --> {path[2]}")
-                elif len(path) == 2:
-                    lines.append(f"{path[0]} --> {path[1]}")
-            return "\n".join(lines)
-        
-        def tuple_graph(graph):
-            return "The entities are presented as knowledge graph triplets (head, relation, tail):\n" + \
-                "\n".join(
-                    f"({t[0]}, {t[1]}, {t[2]})" if len(t) == 3 else f"({t[0]}, {t[1]})"
-                    for t in graph
-                )
-            
-        def lookup_table_graph(graph):
-            def index_to_alpha(n):
-                import string
-                n += 26  # Start from 'aa' instead of 'a'
-                result = ''
-                while n >= 0:
-                    result = chr(ord('a') + (n % 26)) + result
-                    n = n // 26 - 1
-                    if n < 0:
-                        break
-                return result
-
-            entity_map = {}
-            rel_map = {}
-            entity_ids = {}
-            rel_ids = {}
-            entity_counter = 0
-            rel_counter = 0
-            triples = []
-
-            for t in graph:
-                if len(t) != 3:
-                    continue
-                head, rel, tail = t
-                for e in [head, tail]:
-                    if e not in entity_ids:
-                        key = chr(ord('A') + entity_counter)
-                        entity_ids[e] = key
-                        entity_map[key] = e
-                        entity_counter += 1
-                if rel not in rel_ids:
-                    key = index_to_alpha(rel_counter)
-                    rel_ids[rel] = key
-                    rel_map[key] = rel
-                    rel_counter += 1
-                triples.append(f"{entity_ids[head]}, {rel_ids[rel]}, {entity_ids[tail]}")
-
-            lines = []
-            for k, v in entity_map.items():
-                lines.append("The entities are assigned symbolic keys as follows:\n\n")
-                lines.append(f"{k}: {v}")
-            for k, v in rel_map.items():
-                lines.append("\nThe relations are assigned symbolic keys as follows:\n\n")
-                lines.append(f"{k}: {v}")
-            lines.append("\nThe graph is defined with the symbolic references:\n\n")
-            lines.extend(triples)
-            return "" + "\n".join(lines)
-        
         if self.rog_method == "arrow":
             return arrow_graph(graph)
-
         elif self.rog_method == "tuple":
             return tuple_graph(graph)
-
         elif self.rog_method == "lookup":
             return lookup_table_graph(graph)
-        
-        raise ValueError("Invaid RoG method =", self.rog_method)
+        else:
+            raise ValueError(f"Unknown rog_method: {self.rog_method}")
 
-    def verbalise_one_example(self, example, is_test: bool = False):
-        graph_context = self.verbalise_graph(example["graph"]) + "\n" if self.demonstrations_org_context else ""
-        prompt = graph_context
+    def verbalise_one_example(self, example, ctx_key, ans_key, is_test=False):
+        # Here we assume that example[ctx_key] contains a graph that needs to be verbalised.
+        context_str = self.verbalise_graph(example[ctx_key])
+        prompt = "context: " + context_str + "\n"
         prompt += "question: " + example["question"] + "\n"
         if is_test:
             prompt += "answer:"
         else:
-            prompt += "answer: " + example["answer"][0] + "\n\n"
+            # For training or demonstration examples, we assume the answer field is a list and take the first answer.
+            prompt += "answer: " + example[ans_key][0] + "\n\n"
         return prompt
 
-    def verbalise_close_book_example(self, example, is_test: bool = False):
+    def verbalise_close_book_example(self, example, is_test=False):
         prompt = "question: " + example["question"] + "\n"
         if is_test:
             prompt += "answer:"
         else:
-            prompt += "answer: " + example["answer"][0] + "\n\n"
+            prompt += "answer: " + example["org_answer"][0] + "\n\n"
         return prompt
 
-    def verbalise_demonstrations(self):
-        with_info_prompt = ""
-        without_info_prompt = ""
-        for demo in self.demonstrations:
-            with_info_prompt += self.verbalise_one_example(demo, is_test=False)
-            without_info_prompt += self.verbalise_close_book_example(demo, is_test=False)
-        return with_info_prompt, without_info_prompt
+    def verbalise_demonstrations(self, demonstrations=None):
+        if demonstrations is None:
+            demonstrations = self.demonstrations
+        with_ctx_prompt = ""
+        without_ctx_prompt = ""
+        # Depending on the configuration, choose the appropriate key for the context graph.
+        ctx_key = "org_context" if self.demonstrations_org_context else "sub_context"
+        ans_key = "org_answer" if self.demonstrations_org_answer else "sub_answer"
+        for demonstration in demonstrations:
+            with_ctx_prompt += self.verbalise_one_example(demonstration, ctx_key, ans_key)
+            without_ctx_prompt += self.verbalise_close_book_example(demonstration)
+        return with_ctx_prompt, without_ctx_prompt
 
     def __getitem__(self, item):
         return self.data[item]
@@ -148,37 +94,33 @@ class CWQDataset(Dataset):
         return len(self.data)
 
     def get_dataloader(self, batch_size, num_workers=4, shuffle=False):
-        """
-        Creates a DataLoader for the CWQ dataset, formatting prompts with and without context graphs.
-        
-        :param batch_size: Batch size for the DataLoader.
-        :param num_workers: Number of worker processes.
-        :param shuffle: Whether to shuffle the dataset.
-        """
+        # Choose the appropriate context key for the test examples.
+        test_ctx_key = "org_context" if self.test_example_org_context else "sub_context"
 
         def collate_fn(batch):
             with_ctx_inputs_str = []
             without_ctx_inputs_str = []
-            answers = []
+            sub_answers = []
+            org_answers = []
             questions = []
-
             for item in batch:
-                with_ctx_prompt = self.with_info_prompt
-                without_ctx_prompt = self.without_info_prompt
+                # Start with the demonstration prompts that have been pre-computed.
+                with_ctx_prompt = self.with_ctx_prompt
+                without_ctx_prompt = self.without_ctx_prompt
 
-                # Add prompt with graph context
-                with_ctx_prompt += self.verbalise_one_example(item, is_test=True)
+                # For each test example, add the verbalised example on top of the demonstration context.
+                with_ctx_prompt += self.verbalise_one_example(item, test_ctx_key, None, is_test=True)
                 with_ctx_inputs_str.append(with_ctx_prompt)
 
-                # Add prompt without graph context
-                without_ctx_prompt += self.verbalise_close_book_example(item, is_test=True)
+                without_ctx_prompt = self.verbalise_close_book_example(item, is_test=True)
                 without_ctx_inputs_str.append(without_ctx_prompt)
 
-                answers.append(item["answer"])
+                sub_answers.append(item["sub_answer"])
+                org_answers.append(item["org_answer"])
                 questions.append(item["question"])
 
-            w_inputs = self.tokenizer(with_ctx_inputs_str, return_tensors="pt", padding=True, truncation=True)
-            wo_inputs = self.tokenizer(without_ctx_inputs_str, return_tensors="pt", padding=True, truncation=True)
+            w_inputs = self.tokenizer(with_ctx_inputs_str, return_tensors="pt", padding=True)
+            wo_inputs = self.tokenizer(without_ctx_inputs_str, return_tensors="pt", padding=True)
 
             return {
                 "with_ctx_input_ids": w_inputs["input_ids"],
@@ -189,14 +131,13 @@ class CWQDataset(Dataset):
                 "without_ctx_attention_mask": wo_inputs["attention_mask"],
                 "without_ctx_inputs_str": without_ctx_inputs_str,
 
-                "answers": answers,
-                "questions": questions,
+                "sub_answers": sub_answers,
+                "org_answers": org_answers,
+                "questions": questions
             }
 
-        return DataLoader(
-            self,
-            batch_size=batch_size,
-            shuffle=shuffle,
-            num_workers=num_workers,
-            collate_fn=collate_fn
-        )
+        return DataLoader(self,
+                          batch_size=batch_size,
+                          shuffle=shuffle,
+                          num_workers=num_workers,
+                          collate_fn=collate_fn)
