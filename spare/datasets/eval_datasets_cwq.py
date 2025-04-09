@@ -57,13 +57,12 @@ class CWQSwap(Dataset):
     def verbalise_one_example(self, example, ctx_key, ans_key, is_test=False):
         # Here we assume that example[ctx_key] contains a graph that needs to be verbalised.
         context_str = self.verbalise_graph(example[ctx_key])
-        prompt = "context: " + context_str + "\n"
-        prompt += "question: " + example["question"] + "\n"
+        prompt = "context: " + context_str + "\n\n"
+        prompt = prompt + "question: " + example["question"] + "\n"
         if is_test:
-            prompt += "answer:"
+            prompt = prompt + "answer:"
         else:
-            # For training or demonstration examples, we assume the answer field is a list and take the first answer.
-            prompt += "answer: " + example[ans_key][0] + "\n\n"
+            prompt = prompt + "answer: " + example[ans_key][0] + "\n\n"
         return prompt
 
     def verbalise_close_book_example(self, example, is_test=False):
@@ -79,12 +78,11 @@ class CWQSwap(Dataset):
             demonstrations = self.demonstrations
         with_ctx_prompt = ""
         without_ctx_prompt = ""
-        # Depending on the configuration, choose the appropriate key for the context graph.
         ctx_key = "org_context" if self.demonstrations_org_context else "sub_context"
         ans_key = "org_answer" if self.demonstrations_org_answer else "sub_answer"
         for demonstration in demonstrations:
-            with_ctx_prompt += self.verbalise_one_example(demonstration, ctx_key, ans_key)
-            without_ctx_prompt += self.verbalise_close_book_example(demonstration)
+            with_ctx_prompt = with_ctx_prompt + self.verbalise_one_example(demonstration, ctx_key, ans_key)
+            without_ctx_prompt = without_ctx_prompt + self.verbalise_close_book_example(demonstration)
         return with_ctx_prompt, without_ctx_prompt
 
     def __getitem__(self, item):
@@ -94,7 +92,6 @@ class CWQSwap(Dataset):
         return len(self.data)
 
     def get_dataloader(self, batch_size, num_workers=4, shuffle=False):
-        # Choose the appropriate context key for the test examples.
         test_ctx_key = "org_context" if self.test_example_org_context else "sub_context"
 
         def collate_fn(batch):
@@ -104,15 +101,14 @@ class CWQSwap(Dataset):
             org_answers = []
             questions = []
             for item in batch:
-                # Start with the demonstration prompts that have been pre-computed.
                 with_ctx_prompt = self.with_ctx_prompt
                 without_ctx_prompt = self.without_ctx_prompt
 
-                # For each test example, add the verbalised example on top of the demonstration context.
                 with_ctx_prompt += self.verbalise_one_example(item, test_ctx_key, None, is_test=True)
                 with_ctx_inputs_str.append(with_ctx_prompt)
 
-                without_ctx_prompt = self.verbalise_close_book_example(item, is_test=True)
+                without_ctx_prompt = without_ctx_prompt + "question: " + item["question"] + "\n"
+                without_ctx_prompt = without_ctx_prompt + "answer:"
                 without_ctx_inputs_str.append(without_ctx_prompt)
 
                 sub_answers.append(item["sub_answer"])
@@ -122,19 +118,18 @@ class CWQSwap(Dataset):
             w_inputs = self.tokenizer(with_ctx_inputs_str, return_tensors="pt", padding=True)
             wo_inputs = self.tokenizer(without_ctx_inputs_str, return_tensors="pt", padding=True)
 
-            return {
-                "with_ctx_input_ids": w_inputs["input_ids"],
-                "with_ctx_attention_mask": w_inputs["attention_mask"],
-                "with_ctx_inputs_str": with_ctx_inputs_str,
+            return {"with_ctx_input_ids": w_inputs["input_ids"],
+                    "with_ctx_attention_mask": w_inputs["attention_mask"],
+                    "with_ctx_inputs_str": with_ctx_inputs_str,  # list[list]
 
-                "without_ctx_input_ids": wo_inputs["input_ids"],
-                "without_ctx_attention_mask": wo_inputs["attention_mask"],
-                "without_ctx_inputs_str": without_ctx_inputs_str,
+                    "without_ctx_input_ids": wo_inputs["input_ids"],
+                    "without_ctx_attention_mask": wo_inputs["attention_mask"],
+                    "without_ctx_inputs_str": without_ctx_inputs_str,  # list[list]
 
-                "sub_answers": sub_answers,
-                "org_answers": org_answers,
-                "questions": questions
-            }
+                    "sub_answers": sub_answers,  # list[list[srt]]
+                    "org_answers": org_answers,  # list[list[srt]]
+                    "questions": questions
+                    }
 
         return DataLoader(self,
                           batch_size=batch_size,

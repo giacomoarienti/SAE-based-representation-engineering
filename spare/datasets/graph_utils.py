@@ -1,5 +1,5 @@
 def arrow_graph(graph):
-    lines = ["The entities are presented as a graph in the following section:\n"]
+    lines = ["The entities are presented as a graph in the following section:"]
     for path in graph:
         if len(path) == 3:
             lines.append(f"{path[0]} -- {path[1]} --> {path[2]}")
@@ -8,7 +8,7 @@ def arrow_graph(graph):
     return "\n".join(lines)
 
 def tuple_graph(graph):
-    return "The entities are presented as knowledge graph triplets (head, relation, tail):\n" + \
+    return "The entities are presented as knowledge graph triplets (head, relation, tail):" + \
         "\n".join(
             f"({t[0]}, {t[1]}, {t[2]})" if len(t) == 3 else f"({t[0]}, {t[1]})"
             for t in graph
@@ -53,11 +53,11 @@ def lookup_table_graph(graph):
 
     lines = []
     for k, v in entity_map.items():
-        lines.append("The entities are assigned symbolic keys as follows:\n\n")
+        lines.append("The entities are assigned symbolic keys as follows:")
         lines.append(f"{k}: {v}")
     for k, v in rel_map.items():
-        lines.append("\nThe relations are assigned symbolic keys as follows:\n\n")
+        lines.append("\nThe relations are assigned symbolic keys as follows:")
         lines.append(f"{k}: {v}")
-    lines.append("\nThe graph is defined with the symbolic references:\n\n")
+    lines.append("\nThe graph is defined with the symbolic references:")
     lines.extend(triples)
     return "" + "\n".join(lines)

@@ -1,9 +1,9 @@
-from spare.datasets.eval_datasets_cwq import CWQSwap
 import torch
 from spare.utils import load_model, add_file_handler
 from spare.utils import PROJ_DIR
 from spare.datasets.eval_datasets_nqswap import NQSwap
 from spare.datasets.eval_datasets_macnoise import MACNoise
+from spare.datasets.eval_datasets_cwq import CWQSwap
 from spare.eval_utils import exact_match_score_with_multiple_candidates as em
 from spare.eval_utils import sub_ans_exact_match_score_with_macnoise as macnoise_sub_em
 from spare.eval_utils import prefix_match
