@@ -47,7 +47,7 @@ def mutual_information_correlation(
         mutual_information_num_train_examples, minmax_normalisation, equal_label_examples, seed
 ):
     logger.info(f"Start MI: {model_name} {data_name} {load_hiddens_name} layer={layer_idx}")
-    hiddens = load_grouped_hiddens(model_name, load_hiddens_name, layer_idx)
+    hiddens = load_grouped_hiddens(model_name, data_name, load_hiddens_name, layer_idx)
     if mutual_information_num_train_examples is not None:
         logger.info(f"sample {mutual_information_num_train_examples} examples to calculate MI")
         hiddens = sample_train_data(label0_hiddens=hiddens["label0_hiddens"], label1_hiddens=hiddens["label1_hiddens"],
@@ -105,7 +105,7 @@ def mutual_information_correlation(
 
     mi_scores = torch.cat([torch.from_numpy(tt) for tt in all_mi_scores])
 
-    save_dir = PROJ_DIR / "cache_data" / model_name / mutual_information_save_name
+    save_dir = PROJ_DIR / "cache_data" / f"{data_name}-{model_name}" / mutual_information_save_name
     os.makedirs(save_dir, exist_ok=True)
     save_path = save_dir / f"layer-{layer_idx} mi_expectation.pt"
     torch.save({"mi_scores": mi_scores, "expectation": expectation}, save_path)

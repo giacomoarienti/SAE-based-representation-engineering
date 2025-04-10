@@ -17,8 +17,8 @@ logger = logging.getLogger(__name__)
 logger.setLevel(level=logging.INFO)
 
 
-def load_grouped_hiddens(model_name, hiddens_name, layer_idx):
-    load_dir = PROJ_DIR / "cache_data" / model_name / hiddens_name
+def load_grouped_hiddens(model_name, data_name, hiddens_name, layer_idx):
+    load_dir = PROJ_DIR / "cache_data" / f"{data_name}-{model_name}" / hiddens_name
     label0_hiddens = torch.load(load_dir / f"layer{layer_idx}-use-parameter.pt").cuda()
     label1_hiddens = torch.load(load_dir / f"layer{layer_idx}-use-context.pt").cuda()
     load_files = json.load(open(load_dir / "load_files.json", "r"))
