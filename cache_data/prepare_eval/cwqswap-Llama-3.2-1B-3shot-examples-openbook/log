@@ -1,0 +1,236 @@
+2025-04-09 16:32:50,088 - INFO __main__ 96: {
+    "exp_name": "cwqswap-Llama-3.2-1B-3shot-examples-openbook",
+    "model_path": "meta-llama/Llama-3.2-1B",
+    "k_shot": 3,
+    "seed": 42,
+    "demonstrations_org_context": true,
+    "demonstrations_org_answer": true,
+    "batch_size": 1,
+    "run_open_book": true,
+    "run_close_book": false,
+    "flash_attn": true,
+    "write_logs": true,
+    "dataset_name": "cwqswap",
+    "rog_method": "arrow"
+}
+2025-04-09 16:33:06,830 - INFO __main__ 130: first example:
+<|begin_of_text|>context: The entities are presented as a graph in the following section:
+
+m.03pq499 -- people.place_lived.person --> Regina Hall
+The Half -- music.recording.featured_artists --> Vernon Reid
+m.0q5cv9t -- music.track_contribution.contributor --> Vernon Reid
+03 -- music.recording.artist --> Vernon Reid
+Regina Hall -- people.person.profession --> Actor
+CP Time -- music.recording.artist --> Vernon Reid
+Vernon Reid -- tv.tv_actor.starring_roles --> m.0bw202y
+Vernon Reid -- music.artist.track_contributions --> m.0sn6xnl
+Fr, Fr, Frisell -- music.recording.artist --> Vernon Reid
+Paid in Full -- film.film.directed_by --> Charles Stone III
+Regina Hall -- tv.tv_actor.guest_roles --> m.011rnclw
+m.0qb6yp5 -- music.track_contribution.contributor --> Vernon Reid
+Postman -- music.composition.composer --> Vernon Reid
+Vernon Reid -- music.producer.tracks_produced --> Too Lazy to Work, Too Nervous to Steal
+Vernon Reid -- people.person.nationality --> United States of America
+Vernon Reid -- music.artist.track --> The Sentinel
+Vernon Reid -- music.producer.tracks_produced --> Let's Talk About Jesus
+Vernon Reid -- music.artist.track --> Burden of Dreams
+Regina Hall -- freebase.valuenotation.is_reviewed --> Gender
+Type -- music.composition.composer --> Vernon Reid
+question: What movie with music by Vernon Reid was Regina Hall in?
+answer: Paid in Full
+
+context: The entities are presented as a graph in the following section:
+
+The Prince -- book.book_edition.language --> English Language
+The Prince -- book.book.editions --> The Prince
+Because just as good morals, if they are to be maintained, have need of the laws, so the laws, if they are to be observed, have need of good morals. -- media_common.quotation.author --> Niccolò Machiavelli
+Niccolò Machiavelli -- people.person.quotations --> Men are more apt to be mistaken in their generalizations than in their particular observations.
+Desiderius Erasmus -- influence.influence_node.influenced --> Niccolò Machiavelli
+The Prince -- book.written_work.subjects --> Ethics
+Niccolò Machiavelli -- influence.influence_node.influenced --> Giambattista Vico
+The Prince -- book.book.editions --> The prince : a revised translation, backgrounds, interpretations, marginalia
+Niccolò Machiavelli -- people.person.children --> Piero Machiavelli
+Raymond Aron -- influence.influence_node.influenced_by --> Niccolò Machiavelli
+Niccolò Machiavelli -- book.author.book_editions_published --> The Prince
+Niccolò Machiavelli -- people.person.profession --> Writer
+Niccolò Machiavelli -- base.kwebbase.kwtopic.has_sentences --> He was so impressed he wrote an account titled: \"On the Manner Adopted by the Duke. to Kill Vitellozzo\".
+The Prince -- common.topic.notable_for --> g.1255jhqg8
+The Prince -- book.book.editions --> The prince
+Niccolò Machiavelli -- book.author.works_written --> Belfagor arcidiavolo
+Niccolò Machiavelli -- base.kwebbase.kwtopic.has_sentences --> After Borgia's father, Pope Alexander VI, died in 1503, Macchiavelli was sent to Rome to meet the new Pope Julius II.
+Baccina Machiavelli -- people.person.parents --> Niccolò Machiavelli
+Alexandre Kojève -- influence.influence_node.influenced_by --> Niccolò Machiavelli
+No one should be astonished if in the following discussion of completely new princedoms and of the prince and of government, I bring up the noblest examples. Because, since men almost always walk in the paths beaten by others and carry on their affairs by imitatingeven though it is not possible to keep wholly in the paths of others or to attain the ability of those you imitatea prudent man will always choose to take paths beaten by great men and to imitate those who have been especially admirable, in order that if his ability does not reach theirs, at least it may offer some suggestion of it; and he will act like prudent archers, who, seeing that the mark they plan to hit is too far away and knowing what space can be covered by the power of their bows, take an aim much higher than their mark, not in order to reach with their arrows so great a height, but to be able, with the aid of so high an aim, to attain their purpose. -- media_common.quotation.author --> Niccolò Machiavelli
+question: What is the title of the book written by Niccolo Machiavelli that was published in 1977?
+answer: The Prince
+
+context: The entities are presented as a graph in the following section:
+
+John Connor -- fictional_universe.fictional_character.character_created_by --> James Cameron
+m.0y7vmp5 -- film.performance.actor --> Marc Maurin
+m.09w5r38 -- common.webpage.topic --> John Connor
+m.02k7z68 -- fictional_universe.marriage_of_fictional_characters.spouses --> John Connor
+m.03n9_pb -- film.performance.character --> John Connor
+John Connor -- fictional_universe.fictional_character.parents --> Kyle Reese
+John Connor -- common.topic.webpage --> m.09y7mz1
+m.09xym3p -- common.webpage.topic --> John Connor
+John Connor -- common.topic.webpage --> m.09wd0s2
+John Connor -- common.topic.webpage --> m.09xym3p
+John Connor -- film.film_character.portrayed_in_films --> m.02vbxnf
+m.04m5b3q -- film.performance.actor --> Christian Bale
+Marc Maurin -- people.person.gender --> Male
+Terminator -- fictional_universe.fictional_universe.characters --> John Connor
+Christian Bale -- people.person.profession --> Actor
+Christian Bale -- freebase.valuenotation.is_reviewed --> Country of nationality
+Marc Maurin -- people.person.profession --> Actor
+Christian Bale -- people.person.gender --> Male
+Christian Bale -- freebase.valuenotation.is_reviewed --> Place of birth
+m.0z43ywv -- film.performance.character --> John Connor
+question: In that movie that Marc Maurin was in, who played John Connor?
+answer: Christian Bale
+
+context: The entities are presented as a graph in the following section:
+
+George Washington University Law School -- location.location.containedby --> Rhode Island
+Madison Hall -- location.location.containedby --> Rhode Island
+Rhode Island -- periodicals.newspaper_circulation_area.newspapers --> The GW Hatchet
+George Washington Colonials men's basketball -- sports.sports_team.roster --> m.0w0032w
+George Washington Colonials men's basketball -- base.marchmadness.ncaa_basketball_team.tournament_games_won --> George Washington-Southern-BR 1993 NCAA Men's Division I Basketball Tournament Game
+George Washington Colonials men's basketball -- basketball.basketball_team.head_coach --> Mike Lonergan
+George Washington Colonials men's basketball -- base.marchmadness.ncaa_basketball_team.ncaa_tournament_seeds --> m.05cdvnx
+Rhode Island -- base.biblioness.bibs_topic.is_really --> Rhode Island
+m.0w009ws -- sports.sports_team_roster.team --> George Washington Colonials men's basketball
+m.0v_yqbl -- sports.sports_team_roster.team --> George Washington Colonials men's basketball
+George Washington University -- education.educational_institution.sports_teams --> George Washington Colonials men's basketball
+New Mexico-George Washington 1993 NCAA Men's Division I Basketball Tournament Game -- base.marchmadness.ncaa_basketball_tournament_game.winning_team --> George Washington Colonials men's basketball
+United States of America -- base.aareas.schema.administrative_area.administrative_children --> Rhode Island
+George Washington Colonials men's basketball -- base.marchmadness.ncaa_basketball_team.ncaa_tournament_seeds --> m.05k5wmx
+m.05c_tx6 -- base.marchmadness.ncaa_tournament_seed.team --> George Washington Colonials men's basketball
+m.05cdvnx -- base.marchmadness.ncaa_tournament_seed.team --> George Washington Colonials men's basketball
+NC State-George Washington 1954 NCAA Men's Division I Basketball Tournament Game -- base.marchmadness.ncaa_basketball_tournament_game.losing_team --> George Washington Colonials men's basketball
+George Washington Colonials men's basketball -- sports.sports_team.roster --> m.0v__ylv
+George Washington-UAB 1994 NCAA Men's Division I   Basketball Tournament Game -- base.marchmadness.ncaa_basketball_tournament_game.winning_team --> George Washington Colonials men's basketball
+Rhode Island -- location.administrative_division.first_level_division_of --> United States of America
+question: What state is home to the university that is represented in sports by George Washington Colonials men's basketball?
+answer:
+2025-04-09 16:33:06,830 - INFO __main__ 131: first example prediction:  Rhode Island
+2025-04-09 16:43:24,175 - INFO __main__ 96: {
+    "exp_name": "cwqswap-Llama-3.2-1B-3shot-examples-openbook",
+    "model_path": "meta-llama/Llama-3.2-1B",
+    "k_shot": 3,
+    "seed": 42,
+    "demonstrations_org_context": true,
+    "demonstrations_org_answer": true,
+    "batch_size": 1,
+    "run_open_book": true,
+    "run_close_book": false,
+    "flash_attn": true,
+    "write_logs": true,
+    "dataset_name": "cwqswap",
+    "rog_method": "arrow"
+}
+2025-04-09 16:43:38,805 - INFO __main__ 130: first example:
+<|begin_of_text|>context: The entities are presented as a graph in the following section:
+
+m.03pq499 -- people.place_lived.person --> Regina Hall
+The Half -- music.recording.featured_artists --> Vernon Reid
+m.0q5cv9t -- music.track_contribution.contributor --> Vernon Reid
+03 -- music.recording.artist --> Vernon Reid
+Regina Hall -- people.person.profession --> Actor
+CP Time -- music.recording.artist --> Vernon Reid
+Vernon Reid -- tv.tv_actor.starring_roles --> m.0bw202y
+Vernon Reid -- music.artist.track_contributions --> m.0sn6xnl
+Fr, Fr, Frisell -- music.recording.artist --> Vernon Reid
+Paid in Full -- film.film.directed_by --> Charles Stone III
+Regina Hall -- tv.tv_actor.guest_roles --> m.011rnclw
+m.0qb6yp5 -- music.track_contribution.contributor --> Vernon Reid
+Postman -- music.composition.composer --> Vernon Reid
+Vernon Reid -- music.producer.tracks_produced --> Too Lazy to Work, Too Nervous to Steal
+Vernon Reid -- people.person.nationality --> United States of America
+Vernon Reid -- music.artist.track --> The Sentinel
+Vernon Reid -- music.producer.tracks_produced --> Let's Talk About Jesus
+Vernon Reid -- music.artist.track --> Burden of Dreams
+Regina Hall -- freebase.valuenotation.is_reviewed --> Gender
+Type -- music.composition.composer --> Vernon Reid
+question: What movie with music by Vernon Reid was Regina Hall in?
+answer: Paid in Full
+
+context: The entities are presented as a graph in the following section:
+
+The Prince -- book.book_edition.language --> English Language
+The Prince -- book.book.editions --> The Prince
+Because just as good morals, if they are to be maintained, have need of the laws, so the laws, if they are to be observed, have need of good morals. -- media_common.quotation.author --> Niccolò Machiavelli
+Niccolò Machiavelli -- people.person.quotations --> Men are more apt to be mistaken in their generalizations than in their particular observations.
+Desiderius Erasmus -- influence.influence_node.influenced --> Niccolò Machiavelli
+The Prince -- book.written_work.subjects --> Ethics
+Niccolò Machiavelli -- influence.influence_node.influenced --> Giambattista Vico
+The Prince -- book.book.editions --> The prince : a revised translation, backgrounds, interpretations, marginalia
+Niccolò Machiavelli -- people.person.children --> Piero Machiavelli
+Raymond Aron -- influence.influence_node.influenced_by --> Niccolò Machiavelli
+Niccolò Machiavelli -- book.author.book_editions_published --> The Prince
+Niccolò Machiavelli -- people.person.profession --> Writer
+Niccolò Machiavelli -- base.kwebbase.kwtopic.has_sentences --> He was so impressed he wrote an account titled: \"On the Manner Adopted by the Duke. to Kill Vitellozzo\".
+The Prince -- common.topic.notable_for --> g.1255jhqg8
+The Prince -- book.book.editions --> The prince
+Niccolò Machiavelli -- book.author.works_written --> Belfagor arcidiavolo
+Niccolò Machiavelli -- base.kwebbase.kwtopic.has_sentences --> After Borgia's father, Pope Alexander VI, died in 1503, Macchiavelli was sent to Rome to meet the new Pope Julius II.
+Baccina Machiavelli -- people.person.parents --> Niccolò Machiavelli
+Alexandre Kojève -- influence.influence_node.influenced_by --> Niccolò Machiavelli
+No one should be astonished if in the following discussion of completely new princedoms and of the prince and of government, I bring up the noblest examples. Because, since men almost always walk in the paths beaten by others and carry on their affairs by imitatingeven though it is not possible to keep wholly in the paths of others or to attain the ability of those you imitatea prudent man will always choose to take paths beaten by great men and to imitate those who have been especially admirable, in order that if his ability does not reach theirs, at least it may offer some suggestion of it; and he will act like prudent archers, who, seeing that the mark they plan to hit is too far away and knowing what space can be covered by the power of their bows, take an aim much higher than their mark, not in order to reach with their arrows so great a height, but to be able, with the aid of so high an aim, to attain their purpose. -- media_common.quotation.author --> Niccolò Machiavelli
+question: What is the title of the book written by Niccolo Machiavelli that was published in 1977?
+answer: The Prince
+
+context: The entities are presented as a graph in the following section:
+
+John Connor -- fictional_universe.fictional_character.character_created_by --> James Cameron
+m.0y7vmp5 -- film.performance.actor --> Marc Maurin
+m.09w5r38 -- common.webpage.topic --> John Connor
+m.02k7z68 -- fictional_universe.marriage_of_fictional_characters.spouses --> John Connor
+m.03n9_pb -- film.performance.character --> John Connor
+John Connor -- fictional_universe.fictional_character.parents --> Kyle Reese
+John Connor -- common.topic.webpage --> m.09y7mz1
+m.09xym3p -- common.webpage.topic --> John Connor
+John Connor -- common.topic.webpage --> m.09wd0s2
+John Connor -- common.topic.webpage --> m.09xym3p
+John Connor -- film.film_character.portrayed_in_films --> m.02vbxnf
+m.04m5b3q -- film.performance.actor --> Christian Bale
+Marc Maurin -- people.person.gender --> Male
+Terminator -- fictional_universe.fictional_universe.characters --> John Connor
+Christian Bale -- people.person.profession --> Actor
+Christian Bale -- freebase.valuenotation.is_reviewed --> Country of nationality
+Marc Maurin -- people.person.profession --> Actor
+Christian Bale -- people.person.gender --> Male
+Christian Bale -- freebase.valuenotation.is_reviewed --> Place of birth
+m.0z43ywv -- film.performance.character --> John Connor
+question: In that movie that Marc Maurin was in, who played John Connor?
+answer: Christian Bale
+
+context: The entities are presented as a graph in the following section:
+
+George Washington University Law School -- location.location.containedby --> Rhode Island
+Madison Hall -- location.location.containedby --> Rhode Island
+Rhode Island -- periodicals.newspaper_circulation_area.newspapers --> The GW Hatchet
+George Washington Colonials men's basketball -- sports.sports_team.roster --> m.0w0032w
+George Washington Colonials men's basketball -- base.marchmadness.ncaa_basketball_team.tournament_games_won --> George Washington-Southern-BR 1993 NCAA Men's Division I Basketball Tournament Game
+George Washington Colonials men's basketball -- basketball.basketball_team.head_coach --> Mike Lonergan
+George Washington Colonials men's basketball -- base.marchmadness.ncaa_basketball_team.ncaa_tournament_seeds --> m.05cdvnx
+Rhode Island -- base.biblioness.bibs_topic.is_really --> Rhode Island
+m.0w009ws -- sports.sports_team_roster.team --> George Washington Colonials men's basketball
+m.0v_yqbl -- sports.sports_team_roster.team --> George Washington Colonials men's basketball
+George Washington University -- education.educational_institution.sports_teams --> George Washington Colonials men's basketball
+New Mexico-George Washington 1993 NCAA Men's Division I Basketball Tournament Game -- base.marchmadness.ncaa_basketball_tournament_game.winning_team --> George Washington Colonials men's basketball
+United States of America -- base.aareas.schema.administrative_area.administrative_children --> Rhode Island
+George Washington Colonials men's basketball -- base.marchmadness.ncaa_basketball_team.ncaa_tournament_seeds --> m.05k5wmx
+m.05c_tx6 -- base.marchmadness.ncaa_tournament_seed.team --> George Washington Colonials men's basketball
+m.05cdvnx -- base.marchmadness.ncaa_tournament_seed.team --> George Washington Colonials men's basketball
+NC State-George Washington 1954 NCAA Men's Division I Basketball Tournament Game -- base.marchmadness.ncaa_basketball_tournament_game.losing_team --> George Washington Colonials men's basketball
+George Washington Colonials men's basketball -- sports.sports_team.roster --> m.0v__ylv
+George Washington-UAB 1994 NCAA Men's Division I   Basketball Tournament Game -- base.marchmadness.ncaa_basketball_tournament_game.winning_team --> George Washington Colonials men's basketball
+Rhode Island -- location.administrative_division.first_level_division_of --> United States of America
+question: What state is home to the university that is represented in sports by George Washington Colonials men's basketball?
+answer:
+2025-04-09 16:43:38,805 - INFO __main__ 131: first example prediction:  Rhode Island
+2025-04-09 17:36:52,719 - INFO __main__ 150: 22089 examples
+2025-04-09 17:36:52,876 - INFO __main__ 169: sub_answer EM score: 0.5005206211236362
+2025-04-09 17:36:53,102 - INFO __main__ 173: org_answer EM score: 0.07646339807143827
+2025-04-09 17:36:53,103 - INFO __main__ 177: both correct num: 10376
