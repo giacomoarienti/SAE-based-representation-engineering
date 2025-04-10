@@ -218,3 +218,14 @@ def load_dataset_and_memorised_set(data_name, model_name):
         cache_path = PROJ_DIR / "cache_data" / f"{data_name}-{model_name}-memorised_set"
         memorised_set = torch.load(cache_path)
         return data, memorised_set
+    
+    elif data_name == "cwqswap":
+        data = datasets.load_dataset("giacomoarienti/rog-swap-cwq", split="train")
+        data = [_ for _ in data]
+        idx2data = dict()
+        for idx, item in enumerate(data):
+            item["idx"] = idx
+            idx2data[idx] = item
+        cache_path = PROJ_DIR / "cache_data" / f"{data_name}-{model_name}-memorised_set"
+        memorised_set = torch.load(cache_path)
+        return data, memorised_set

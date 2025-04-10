@@ -1,4 +1,5 @@
 from collections import defaultdict
+from spare.datasets.graph_utils import arrow_graph, lookup_table_graph, tuple_graph
 from torch.utils.data import DataLoader, Dataset
 from transformers import LlamaTokenizer
 import numpy as np
@@ -20,7 +21,7 @@ class REODQADataset(Dataset):
     """
 
     def __init__(self, tokenizer, data, memorised_set,
-                 demonstration_pool_size=128, task="initial_inference_without_intervention"):
+                 demonstration_pool_size=128, task="initial_inference_without_intervention", graph=False, rog_method="arrow"):
         super(REODQADataset, self).__init__()
         self.k_shot_candidates = None
         self.tokenizer = tokenizer
@@ -36,6 +37,12 @@ class REODQADataset(Dataset):
         self.demonstration_groups_ids = candidate_demonstration_groups[:demonstration_pool_size]
         self.num_distinct_questions = len(list(self.group2ids.keys()))
 
+        self.graph = graph
+        if self.graph:
+            if not rog_method:
+                raise ValueError("rog_method must be specified when graph is True")
+            self.rog_method = rog_method
+        
         self.task = task
 
         # self.seed = seed
@@ -269,8 +276,23 @@ class REODQADataset(Dataset):
             selected_ids.append(rng.choice(self.group2ids[group_idx], 1).item())
         return selected_ids
 
+    def verbalise_graph(self, graph):
+        if self.rog_method == "arrow":
+            return arrow_graph(graph)
+        elif self.rog_method == "tuple":
+            return tuple_graph(graph)
+        elif self.rog_method == "lookup":
+            return lookup_table_graph(graph)
+        else:
+            raise ValueError(f"Unknown rog_method: {self.rog_method}")
+
+
     def verbalise_one_example(self, example, ctx_key, ans_key, is_test=False):
-        prompt = "context: " + example[ctx_key] + "\n"
+        prompt = "context: "
+        if self.graph:
+            prompt = prompt + self.verbalise_graph(example[ctx_key]) + "\n"
+        else: 
+            prompt = prompt + example[ctx_key] + "\n"
         prompt = prompt + "question: " + example["question"] + "\n"
         if is_test:
             prompt = prompt + "answer:"

@@ -1,0 +1,8078 @@
+[
+    {
+        "sub_answer": [
+            "Basketball"
+        ],
+        "org_answer": [
+            "Ice Hockey"
+        ],
+        "pred_answer": "Basketball",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 15,
+        "demonstration_ids": [
+            1393,
+            567,
+            1374
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.0483715534210205,
+        "so_loss": 2.0518527030944824
+    },
+    {
+        "sub_answer": [
+            "Basketball"
+        ],
+        "org_answer": [
+            "Ice Hockey"
+        ],
+        "pred_answer": "Hockey",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 15,
+        "demonstration_ids": [
+            1393,
+            567,
+            1374
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.0537502765655518,
+        "so_loss": 2.053377151489258
+    },
+    {
+        "sub_answer": [
+            "Basketball"
+        ],
+        "org_answer": [
+            "Ice Hockey"
+        ],
+        "pred_answer": "Basketball",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 15,
+        "demonstration_ids": [
+            1393,
+            567,
+            1374
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0214548110961914,
+        "so_loss": 2.0244061946868896
+    },
+    {
+        "sub_answer": [
+            "Auburn Tigers football"
+        ],
+        "org_answer": [
+            "Oregon Ducks football"
+        ],
+        "pred_answer": "University of Oregon The Oregon Duck",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 29,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.4006659984588623,
+        "so_loss": 2.403634548187256
+    },
+    {
+        "sub_answer": [
+            "Auburn Tigers football"
+        ],
+        "org_answer": [
+            "Oregon Ducks football"
+        ],
+        "pred_answer": "University of Oregon The Oregon Duck",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 29,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.4063544273376465,
+        "so_loss": 2.407712936401367
+    },
+    {
+        "sub_answer": [
+            "Auburn Tigers football"
+        ],
+        "org_answer": [
+            "Oregon Ducks football"
+        ],
+        "pred_answer": "University of Oregon The Oregon Duck",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 29,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.388112783432007,
+        "so_loss": 2.390977144241333
+    },
+    {
+        "sub_answer": [
+            "Chicago"
+        ],
+        "org_answer": [
+            "Washington, D.C."
+        ],
+        "pred_answer": "Washington, D.C.",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 43,
+        "demonstration_ids": [
+            1054,
+            567,
+            1374
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.0551536083221436,
+        "so_loss": 2.0518763065338135
+    },
+    {
+        "sub_answer": [
+            "Chicago"
+        ],
+        "org_answer": [
+            "Washington, D.C."
+        ],
+        "pred_answer": "Washington, D.C.",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 43,
+        "demonstration_ids": [
+            1054,
+            567,
+            1374
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.0639188289642334,
+        "so_loss": 2.0587239265441895
+    },
+    {
+        "sub_answer": [
+            "Chicago"
+        ],
+        "org_answer": [
+            "Washington, D.C."
+        ],
+        "pred_answer": "Chicago",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 43,
+        "demonstration_ids": [
+            1054,
+            567,
+            1374
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.038081407546997,
+        "so_loss": 2.035338878631592
+    },
+    {
+        "sub_answer": [
+            "Alexander Skarsgård"
+        ],
+        "org_answer": [
+            "Taylor Lautner"
+        ],
+        "pred_answer": "Twilight",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 44,
+        "demonstration_ids": [
+            1393,
+            567,
+            937
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.302828311920166,
+        "so_loss": 2.30965256690979
+    },
+    {
+        "sub_answer": [
+            "Alexander Skarsgård"
+        ],
+        "org_answer": [
+            "Taylor Lautner"
+        ],
+        "pred_answer": "Twilight",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 44,
+        "demonstration_ids": [
+            1393,
+            567,
+            937
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.307110548019409,
+        "so_loss": 2.311217784881592
+    },
+    {
+        "sub_answer": [
+            "Alexander Skarsgård"
+        ],
+        "org_answer": [
+            "Taylor Lautner"
+        ],
+        "pred_answer": "Twilight",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 44,
+        "demonstration_ids": [
+            1393,
+            567,
+            937
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.2785398960113525,
+        "so_loss": 2.284834146499634
+    },
+    {
+        "sub_answer": [
+            "Venezuelan bolivar"
+        ],
+        "org_answer": [
+            "Dominican peso"
+        ],
+        "pred_answer": "Dominican Republic",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 49,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.226361036300659,
+        "so_loss": 2.2334649562835693
+    },
+    {
+        "sub_answer": [
+            "Venezuelan bolivar"
+        ],
+        "org_answer": [
+            "Dominican peso"
+        ],
+        "pred_answer": "Venezuelan bolivar",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 49,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.2308156490325928,
+        "so_loss": 2.2379324436187744
+    },
+    {
+        "sub_answer": [
+            "Venezuelan bolivar"
+        ],
+        "org_answer": [
+            "Dominican peso"
+        ],
+        "pred_answer": "Dominican Republic",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 49,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.2122793197631836,
+        "so_loss": 2.2198755741119385
+    },
+    {
+        "sub_answer": [
+            "Ecuador"
+        ],
+        "org_answer": [
+            "Colombia"
+        ],
+        "pred_answer": "Ecuador",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 51,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.3492767810821533,
+        "so_loss": 2.350804090499878
+    },
+    {
+        "sub_answer": [
+            "Ecuador"
+        ],
+        "org_answer": [
+            "Colombia"
+        ],
+        "pred_answer": "Ecuador",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 51,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.3575854301452637,
+        "so_loss": 2.3599748611450195
+    },
+    {
+        "sub_answer": [
+            "Ecuador"
+        ],
+        "org_answer": [
+            "Colombia"
+        ],
+        "pred_answer": "Ecuador",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 51,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.3353660106658936,
+        "so_loss": 2.3369662761688232
+    },
+    {
+        "sub_answer": [
+            "Switzerland"
+        ],
+        "org_answer": [
+            "France"
+        ],
+        "pred_answer": "Spain",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 65,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.4015960693359375,
+        "so_loss": 2.400130033493042
+    },
+    {
+        "sub_answer": [
+            "Switzerland"
+        ],
+        "org_answer": [
+            "France"
+        ],
+        "pred_answer": "France",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 65,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.406123399734497,
+        "so_loss": 2.40539288520813
+    },
+    {
+        "sub_answer": [
+            "Switzerland"
+        ],
+        "org_answer": [
+            "France"
+        ],
+        "pred_answer": "Spain",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 65,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.3876655101776123,
+        "so_loss": 2.3857574462890625
+    },
+    {
+        "sub_answer": [
+            "John Smith"
+        ],
+        "org_answer": [
+            "Jim Webb"
+        ],
+        "pred_answer": "United States Senate",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 67,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.3431878089904785,
+        "so_loss": 2.339984893798828
+    },
+    {
+        "sub_answer": [
+            "John Smith"
+        ],
+        "org_answer": [
+            "Jim Webb"
+        ],
+        "pred_answer": "United States Senate",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 67,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.3486528396606445,
+        "so_loss": 2.344409704208374
+    },
+    {
+        "sub_answer": [
+            "John Smith"
+        ],
+        "org_answer": [
+            "Jim Webb"
+        ],
+        "pred_answer": "United States Senate",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 67,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.3308053016662598,
+        "so_loss": 2.327540397644043
+    },
+    {
+        "sub_answer": [
+            "Harvard University"
+        ],
+        "org_answer": [
+            "Princeton University"
+        ],
+        "pred_answer": "Harvard University",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 70,
+        "demonstration_ids": [
+            1393,
+            567,
+            1374
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.337419033050537,
+        "so_loss": 2.3405909538269043
+    },
+    {
+        "sub_answer": [
+            "Harvard University"
+        ],
+        "org_answer": [
+            "Princeton University"
+        ],
+        "pred_answer": "Harvard University",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 70,
+        "demonstration_ids": [
+            1393,
+            567,
+            1374
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.342186450958252,
+        "so_loss": 2.34386944770813
+    },
+    {
+        "sub_answer": [
+            "Harvard University"
+        ],
+        "org_answer": [
+            "Princeton University"
+        ],
+        "pred_answer": "Harvard University",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 70,
+        "demonstration_ids": [
+            1393,
+            567,
+            1374
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.313076972961426,
+        "so_loss": 2.315767765045166
+    },
+    {
+        "sub_answer": [
+            "Golden State Warriors"
+        ],
+        "org_answer": [
+            "Los Angeles Lakers"
+        ],
+        "pred_answer": "Golden State Warriors",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 76,
+        "demonstration_ids": [
+            1393,
+            567,
+            937
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.3209824562072754,
+        "so_loss": 2.323702573776245
+    },
+    {
+        "sub_answer": [
+            "Golden State Warriors"
+        ],
+        "org_answer": [
+            "Los Angeles Lakers"
+        ],
+        "pred_answer": "Golden State Warriors",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 76,
+        "demonstration_ids": [
+            1393,
+            567,
+            937
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.3250367641448975,
+        "so_loss": 2.3257079124450684
+    },
+    {
+        "sub_answer": [
+            "Golden State Warriors"
+        ],
+        "org_answer": [
+            "Los Angeles Lakers"
+        ],
+        "pred_answer": "Golden State Warriors",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 76,
+        "demonstration_ids": [
+            1393,
+            567,
+            937
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.296457529067993,
+        "so_loss": 2.299088716506958
+    },
+    {
+        "sub_answer": [
+            "East Providence High School"
+        ],
+        "org_answer": [
+            "West Anchorage High School"
+        ],
+        "pred_answer": "East Providence High School",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 78,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.461812973022461,
+        "so_loss": 2.4653079509735107
+    },
+    {
+        "sub_answer": [
+            "East Providence High School"
+        ],
+        "org_answer": [
+            "West Anchorage High School"
+        ],
+        "pred_answer": "East Providence High School",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 78,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.467681884765625,
+        "so_loss": 2.470109224319458
+    },
+    {
+        "sub_answer": [
+            "East Providence High School"
+        ],
+        "org_answer": [
+            "West Anchorage High School"
+        ],
+        "pred_answer": "East Providence High School",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 78,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.448789596557617,
+        "so_loss": 2.4524548053741455
+    },
+    {
+        "sub_answer": [
+            "He's a Bully, Scooby-Doo"
+        ],
+        "org_answer": [
+            "He's a Bully, Charlie Brown"
+        ],
+        "pred_answer": "The Twilight Saga",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 101,
+        "demonstration_ids": [
+            1054,
+            567,
+            1374
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.9708431959152222,
+        "so_loss": 1.9719703197479248
+    },
+    {
+        "sub_answer": [
+            "He's a Bully, Scooby-Doo"
+        ],
+        "org_answer": [
+            "He's a Bully, Charlie Brown"
+        ],
+        "pred_answer": "The Twilight Saga",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 101,
+        "demonstration_ids": [
+            1054,
+            567,
+            1374
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.9773576259613037,
+        "so_loss": 1.978421688079834
+    },
+    {
+        "sub_answer": [
+            "He's a Bully, Scooby-Doo"
+        ],
+        "org_answer": [
+            "He's a Bully, Charlie Brown"
+        ],
+        "pred_answer": "The Twilight Saga",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 101,
+        "demonstration_ids": [
+            1054,
+            567,
+            1374
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9543007612228394,
+        "so_loss": 1.955342411994934
+    },
+    {
+        "sub_answer": [
+            "New Zealand"
+        ],
+        "org_answer": [
+            "Australia"
+        ],
+        "pred_answer": "New Zealand",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 115,
+        "demonstration_ids": [
+            1054,
+            567,
+            1374
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.14989972114563,
+        "so_loss": 2.1520349979400635
+    },
+    {
+        "sub_answer": [
+            "New Zealand"
+        ],
+        "org_answer": [
+            "Australia"
+        ],
+        "pred_answer": "Australia",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 115,
+        "demonstration_ids": [
+            1054,
+            567,
+            1374
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.1572229862213135,
+        "so_loss": 2.1578187942504883
+    },
+    {
+        "sub_answer": [
+            "New Zealand"
+        ],
+        "org_answer": [
+            "Australia"
+        ],
+        "pred_answer": "New Zealand",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 115,
+        "demonstration_ids": [
+            1054,
+            567,
+            1374
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.1319353580474854,
+        "so_loss": 2.134230136871338
+    },
+    {
+        "sub_answer": [
+            "Buddhist Renewal"
+        ],
+        "org_answer": [
+            "Jewish Renewal",
+            "Catholicism"
+        ],
+        "pred_answer": "Buddhist Renewal",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 123,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.2939631938934326,
+        "so_loss": 2.300450325012207
+    },
+    {
+        "sub_answer": [
+            "Buddhist Renewal"
+        ],
+        "org_answer": [
+            "Jewish Renewal",
+            "Catholicism"
+        ],
+        "pred_answer": "Buddhist Renewal",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 123,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.301774501800537,
+        "so_loss": 2.3082239627838135
+    },
+    {
+        "sub_answer": [
+            "Buddhist Renewal"
+        ],
+        "org_answer": [
+            "Jewish Renewal",
+            "Catholicism"
+        ],
+        "pred_answer": "Buddhist Renewal",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 123,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.2807672023773193,
+        "so_loss": 2.2875053882598877
+    },
+    {
+        "sub_answer": [
+            "Nevada"
+        ],
+        "org_answer": [
+            "Utah"
+        ],
+        "pred_answer": "Nevada",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 141,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.425929307937622,
+        "so_loss": 2.4270315170288086
+    },
+    {
+        "sub_answer": [
+            "Nevada"
+        ],
+        "org_answer": [
+            "Utah"
+        ],
+        "pred_answer": "Nevada",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 141,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.4323058128356934,
+        "so_loss": 2.4325945377349854
+    },
+    {
+        "sub_answer": [
+            "Nevada"
+        ],
+        "org_answer": [
+            "Utah"
+        ],
+        "pred_answer": "Nevada",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 141,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.411184549331665,
+        "so_loss": 2.4123616218566895
+    },
+    {
+        "sub_answer": [
+            "Italy"
+        ],
+        "org_answer": [
+            "France",
+            "France"
+        ],
+        "pred_answer": "Île-de-France",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 163,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.329754114151001,
+        "so_loss": 2.3299896717071533
+    },
+    {
+        "sub_answer": [
+            "Italy"
+        ],
+        "org_answer": [
+            "France",
+            "France"
+        ],
+        "pred_answer": "Île-de-France",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 163,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.3384783267974854,
+        "so_loss": 2.3383829593658447
+    },
+    {
+        "sub_answer": [
+            "Italy"
+        ],
+        "org_answer": [
+            "France",
+            "France"
+        ],
+        "pred_answer": "Île-de-France",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 163,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.318899631500244,
+        "so_loss": 2.318849563598633
+    },
+    {
+        "sub_answer": [
+            "Sweden"
+        ],
+        "org_answer": [
+            "Finland",
+            "Faroe Islands",
+            "Greenland",
+            "Iceland",
+            "Norway",
+            "Sweden",
+            "Denmark"
+        ],
+        "pred_answer": "Sweden",
+        "sub_answer_em": 1,
+        "org_answer_em": 1,
+        "item_idx": 184,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.3941895961761475,
+        "so_loss": 2.397472381591797
+    },
+    {
+        "sub_answer": [
+            "Sweden"
+        ],
+        "org_answer": [
+            "Finland",
+            "Faroe Islands",
+            "Greenland",
+            "Iceland",
+            "Norway",
+            "Sweden",
+            "Denmark"
+        ],
+        "pred_answer": "Sweden",
+        "sub_answer_em": 1,
+        "org_answer_em": 1,
+        "item_idx": 184,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.400428533554077,
+        "so_loss": 2.4021031856536865
+    },
+    {
+        "sub_answer": [
+            "Sweden"
+        ],
+        "org_answer": [
+            "Finland",
+            "Faroe Islands",
+            "Greenland",
+            "Iceland",
+            "Norway",
+            "Sweden",
+            "Denmark"
+        ],
+        "pred_answer": "Sweden",
+        "sub_answer_em": 1,
+        "org_answer_em": 1,
+        "item_idx": 184,
+        "demonstration_ids": [
+            1393,
+            844,
+            937
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.381153106689453,
+        "so_loss": 2.3844316005706787
+    },
+    {
+        "sub_answer": [
+            "Vermont"
+        ],
+        "org_answer": [
+            "Missouri"
+        ],
+        "pred_answer": "Vermont",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 192,
+        "demonstration_ids": [
+            1393,
+            567,
+            937
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.097289562225342,
+        "so_loss": 2.0986077785491943
+    },
+    {
+        "sub_answer": [
+            "Vermont"
+        ],
+        "org_answer": [
+            "Missouri"
+        ],
+        "pred_answer": "Vermont",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 192,
+        "demonstration_ids": [
+            1393,
+            567,
+            937
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.1007275581359863,
+        "so_loss": 2.1010093688964844
+    },
+    {
+        "sub_answer": [
+            "Vermont"
+        ],
+        "org_answer": [
+            "Missouri"
+        ],
+        "pred_answer": "Vermont",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 192,
+        "demonstration_ids": [
+            1393,
+            567,
+            937
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0755233764648438,
+        "so_loss": 2.0767617225646973
+    },
+    {
+        "sub_answer": [
+            "Higher Learning"
+        ],
+        "org_answer": [
+            "Brother"
+        ],
+        "pred_answer": "Higher Learning",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 198,
+        "demonstration_ids": [
+            1393,
+            567,
+            937
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.3438966274261475,
+        "so_loss": 2.353330373764038
+    },
+    {
+        "sub_answer": [
+            "Higher Learning"
+        ],
+        "org_answer": [
+            "Brother"
+        ],
+        "pred_answer": "Higher Learning",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 198,
+        "demonstration_ids": [
+            1393,
+            567,
+            937
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.3474512100219727,
+        "so_loss": 2.3565878868103027
+    },
+    {
+        "sub_answer": [
+            "Higher Learning"
+        ],
+        "org_answer": [
+            "Brother"
+        ],
+        "pred_answer": "Higher Learning",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 198,
+        "demonstration_ids": [
+            1393,
+            567,
+            937
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.3189213275909424,
+        "so_loss": 2.32854962348938
+    },
+    {
+        "sub_answer": [
+            "University of Colorado–Denver"
+        ],
+        "org_answer": [
+            "University of Missouri–Kansas City"
+        ],
+        "pred_answer": "University of Missouri–Kansas City",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 220,
+        "demonstration_ids": [
+            1054,
+            567,
+            1374
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.017634868621826,
+        "so_loss": 2.016554355621338
+    },
+    {
+        "sub_answer": [
+            "University of Colorado–Denver"
+        ],
+        "org_answer": [
+            "University of Missouri–Kansas City"
+        ],
+        "pred_answer": "University of Missouri–Kansas City",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 220,
+        "demonstration_ids": [
+            1054,
+            567,
+            1374
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.0243048667907715,
+        "so_loss": 2.0221447944641113
+    },
+    {
+        "sub_answer": [
+            "University of Colorado–Denver"
+        ],
+        "org_answer": [
+            "University of Missouri–Kansas City"
+        ],
+        "pred_answer": "University of Missouri–Kansas City",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 220,
+        "demonstration_ids": [
+            1054,
+            567,
+            1374
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.001436233520508,
+        "so_loss": 2.0001020431518555
+    },
+    {
+        "sub_answer": [
+            "Bhairava"
+        ],
+        "org_answer": [
+            "Hariti",
+            "Acala",
+            "Yaksha",
+            "Nāga",
+            "Yama",
+            "Asura"
+        ],
+        "pred_answer": "Bhairava",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 239,
+        "demonstration_ids": [
+            163,
+            490,
+            1054
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.6863456964492798,
+        "so_loss": 1.6976741552352905
+    },
+    {
+        "sub_answer": [
+            "Bhairava"
+        ],
+        "org_answer": [
+            "Hariti",
+            "Acala",
+            "Yaksha",
+            "Nāga",
+            "Yama",
+            "Asura"
+        ],
+        "pred_answer": "Bhairava",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 239,
+        "demonstration_ids": [
+            163,
+            490,
+            1054
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.6886255741119385,
+        "so_loss": 1.6976401805877686
+    },
+    {
+        "sub_answer": [
+            "Bhairava"
+        ],
+        "org_answer": [
+            "Hariti",
+            "Acala",
+            "Yaksha",
+            "Nāga",
+            "Yama",
+            "Asura"
+        ],
+        "pred_answer": "Bhairava",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 239,
+        "demonstration_ids": [
+            163,
+            490,
+            1054
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.6584089994430542,
+        "so_loss": 1.6695919036865234
+    },
+    {
+        "sub_answer": [
+            "Slovenia"
+        ],
+        "org_answer": [
+            "Republic of Macedonia",
+            "Albania"
+        ],
+        "pred_answer": "Slovenia",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 240,
+        "demonstration_ids": [
+            163,
+            490,
+            1054
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.9567698240280151,
+        "so_loss": 1.9572205543518066
+    },
+    {
+        "sub_answer": [
+            "Slovenia"
+        ],
+        "org_answer": [
+            "Republic of Macedonia",
+            "Albania"
+        ],
+        "pred_answer": "Albania, Bulgaria, Croatia, Hungary, Macedonia, Montenegro",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 240,
+        "demonstration_ids": [
+            163,
+            490,
+            1054
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.960530161857605,
+        "so_loss": 1.9597347974777222
+    },
+    {
+        "sub_answer": [
+            "Slovenia"
+        ],
+        "org_answer": [
+            "Republic of Macedonia",
+            "Albania"
+        ],
+        "pred_answer": "ToÄen srednjeevropski Ä",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 240,
+        "demonstration_ids": [
+            163,
+            490,
+            1054
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9283348321914673,
+        "so_loss": 1.9286760091781616
+    },
+    {
+        "sub_answer": [
+            "Asia"
+        ],
+        "org_answer": [
+            "Africa"
+        ],
+        "pred_answer": "Asia",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 244,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.0746798515319824,
+        "so_loss": 2.0767645835876465
+    },
+    {
+        "sub_answer": [
+            "Asia"
+        ],
+        "org_answer": [
+            "Africa"
+        ],
+        "pred_answer": "Mozambican metical",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 244,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.0735301971435547,
+        "so_loss": 2.074603319168091
+    },
+    {
+        "sub_answer": [
+            "Asia"
+        ],
+        "org_answer": [
+            "Africa"
+        ],
+        "pred_answer": "Mozambican metical",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 244,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0370516777038574,
+        "so_loss": 2.038424253463745
+    },
+    {
+        "sub_answer": [
+            "Yemen"
+        ],
+        "org_answer": [
+            "Iraq"
+        ],
+        "pred_answer": "Yemen",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 261,
+        "demonstration_ids": [
+            163,
+            490,
+            309
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.0572826862335205,
+        "so_loss": 2.058317184448242
+    },
+    {
+        "sub_answer": [
+            "Yemen"
+        ],
+        "org_answer": [
+            "Iraq"
+        ],
+        "pred_answer": "Iraq",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 261,
+        "demonstration_ids": [
+            163,
+            490,
+            309
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.065955400466919,
+        "so_loss": 2.063786745071411
+    },
+    {
+        "sub_answer": [
+            "Yemen"
+        ],
+        "org_answer": [
+            "Iraq"
+        ],
+        "pred_answer": "Yemen",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 261,
+        "demonstration_ids": [
+            163,
+            490,
+            309
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0333218574523926,
+        "so_loss": 2.0335299968719482
+    },
+    {
+        "sub_answer": [
+            "The Last Airbender"
+        ],
+        "org_answer": [
+            "The Twilight Saga: Breaking Dawn - Part 2"
+        ],
+        "pred_answer": "The Last Airbender",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 274,
+        "demonstration_ids": [
+            163,
+            490,
+            309
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.8930208683013916,
+        "so_loss": 1.8955203294754028
+    },
+    {
+        "sub_answer": [
+            "The Last Airbender"
+        ],
+        "org_answer": [
+            "The Twilight Saga: Breaking Dawn - Part 2"
+        ],
+        "pred_answer": "The Last Airbender",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 274,
+        "demonstration_ids": [
+            163,
+            490,
+            309
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.899678349494934,
+        "so_loss": 1.8982702493667603
+    },
+    {
+        "sub_answer": [
+            "The Last Airbender"
+        ],
+        "org_answer": [
+            "The Twilight Saga: Breaking Dawn - Part 2"
+        ],
+        "pred_answer": "The Last Airbender",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 274,
+        "demonstration_ids": [
+            163,
+            490,
+            309
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.8717702627182007,
+        "so_loss": 1.8737711906433105
+    },
+    {
+        "sub_answer": [
+            "Sigourney Weaver"
+        ],
+        "org_answer": [
+            "Stockard Channing"
+        ],
+        "pred_answer": "Sigourney Weaver",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 275,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.076411485671997,
+        "so_loss": 2.0822184085845947
+    },
+    {
+        "sub_answer": [
+            "Sigourney Weaver"
+        ],
+        "org_answer": [
+            "Stockard Channing"
+        ],
+        "pred_answer": "Grease",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 275,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.0778486728668213,
+        "so_loss": 2.0821990966796875
+    },
+    {
+        "sub_answer": [
+            "Sigourney Weaver"
+        ],
+        "org_answer": [
+            "Stockard Channing"
+        ],
+        "pred_answer": "Grease",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 275,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0424582958221436,
+        "so_loss": 2.047607183456421
+    },
+    {
+        "sub_answer": [
+            "Chicago Bulls"
+        ],
+        "org_answer": [
+            "New York Knicks"
+        ],
+        "pred_answer": "Chicago Bulls",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 289,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.132932662963867,
+        "so_loss": 2.1354565620422363
+    },
+    {
+        "sub_answer": [
+            "Chicago Bulls"
+        ],
+        "org_answer": [
+            "New York Knicks"
+        ],
+        "pred_answer": "Chicago Bulls",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 289,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.1320297718048096,
+        "so_loss": 2.133190870285034
+    },
+    {
+        "sub_answer": [
+            "Chicago Bulls"
+        ],
+        "org_answer": [
+            "New York Knicks"
+        ],
+        "pred_answer": "Chicago Bulls",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 289,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.095752716064453,
+        "so_loss": 2.098008394241333
+    },
+    {
+        "sub_answer": [
+            "Herbert Hoover"
+        ],
+        "org_answer": [
+            "Franklin D. Roosevelt"
+        ],
+        "pred_answer": "George H. W. Bush",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 306,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.202035903930664,
+        "so_loss": 2.1976735591888428
+    },
+    {
+        "sub_answer": [
+            "Herbert Hoover"
+        ],
+        "org_answer": [
+            "Franklin D. Roosevelt"
+        ],
+        "pred_answer": "George H. W. Bush",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 306,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.1992380619049072,
+        "so_loss": 2.1950361728668213
+    },
+    {
+        "sub_answer": [
+            "Herbert Hoover"
+        ],
+        "org_answer": [
+            "Franklin D. Roosevelt"
+        ],
+        "pred_answer": "George H. W. Bush",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 306,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.164794683456421,
+        "so_loss": 2.160531997680664
+    },
+    {
+        "sub_answer": [
+            "Pete Carroll"
+        ],
+        "org_answer": [
+            "Sean Payton"
+        ],
+        "pred_answer": "New Orleans Saints",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 309,
+        "demonstration_ids": [
+            163,
+            490,
+            1054
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.857568621635437,
+        "so_loss": 1.8638921976089478
+    },
+    {
+        "sub_answer": [
+            "Pete Carroll"
+        ],
+        "org_answer": [
+            "Sean Payton"
+        ],
+        "pred_answer": "New Orleans Saints",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 309,
+        "demonstration_ids": [
+            163,
+            490,
+            1054
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.8611096143722534,
+        "so_loss": 1.8652524948120117
+    },
+    {
+        "sub_answer": [
+            "Pete Carroll"
+        ],
+        "org_answer": [
+            "Sean Payton"
+        ],
+        "pred_answer": "New Orleans Saints",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 309,
+        "demonstration_ids": [
+            163,
+            490,
+            1054
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.8216124773025513,
+        "so_loss": 1.8273099660873413
+    },
+    {
+        "sub_answer": [
+            "Australian Dollar"
+        ],
+        "org_answer": [
+            "Euro"
+        ],
+        "pred_answer": "Australian Dollar",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 310,
+        "demonstration_ids": [
+            163,
+            490,
+            1054
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.8283770084381104,
+        "so_loss": 1.8342242240905762
+    },
+    {
+        "sub_answer": [
+            "Australian Dollar"
+        ],
+        "org_answer": [
+            "Euro"
+        ],
+        "pred_answer": "Australian Dollar",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 310,
+        "demonstration_ids": [
+            163,
+            490,
+            1054
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.8316570520401,
+        "so_loss": 1.833655834197998
+    },
+    {
+        "sub_answer": [
+            "Australian Dollar"
+        ],
+        "org_answer": [
+            "Euro"
+        ],
+        "pred_answer": "Australian Dollar",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 310,
+        "demonstration_ids": [
+            163,
+            490,
+            1054
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.8024245500564575,
+        "so_loss": 1.8074482679367065
+    },
+    {
+        "sub_answer": [
+            "Kenji Yoshida"
+        ],
+        "org_answer": [
+            "Shinzō Abe"
+        ],
+        "pred_answer": "Shinzo Abe",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 322,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.1170814037323,
+        "so_loss": 2.1077992916107178
+    },
+    {
+        "sub_answer": [
+            "Kenji Yoshida"
+        ],
+        "org_answer": [
+            "Shinzō Abe"
+        ],
+        "pred_answer": "Shinzo Abe",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 322,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.115122079849243,
+        "so_loss": 2.1062519550323486
+    },
+    {
+        "sub_answer": [
+            "Kenji Yoshida"
+        ],
+        "org_answer": [
+            "Shinzō Abe"
+        ],
+        "pred_answer": "Shinzo Abe",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 322,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0791213512420654,
+        "so_loss": 2.0699615478515625
+    },
+    {
+        "sub_answer": [
+            "George Washington"
+        ],
+        "org_answer": [
+            "John Adams"
+        ],
+        "pred_answer": "George Washington",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 350,
+        "demonstration_ids": [
+            163,
+            490,
+            309
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.993810772895813,
+        "so_loss": 1.9996544122695923
+    },
+    {
+        "sub_answer": [
+            "George Washington"
+        ],
+        "org_answer": [
+            "John Adams"
+        ],
+        "pred_answer": "George Washington",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 350,
+        "demonstration_ids": [
+            163,
+            490,
+            309
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.0014774799346924,
+        "so_loss": 2.0047450065612793
+    },
+    {
+        "sub_answer": [
+            "George Washington"
+        ],
+        "org_answer": [
+            "John Adams"
+        ],
+        "pred_answer": "George Washington",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 350,
+        "demonstration_ids": [
+            163,
+            490,
+            309
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9718695878982544,
+        "so_loss": 1.977312684059143
+    },
+    {
+        "sub_answer": [
+            "Italy"
+        ],
+        "org_answer": [
+            "Switzerland"
+        ],
+        "pred_answer": "Italy",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 351,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.0559868812561035,
+        "so_loss": 2.057363986968994
+    },
+    {
+        "sub_answer": [
+            "Italy"
+        ],
+        "org_answer": [
+            "Switzerland"
+        ],
+        "pred_answer": "Italy",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 351,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.0542125701904297,
+        "so_loss": 2.054938793182373
+    },
+    {
+        "sub_answer": [
+            "Italy"
+        ],
+        "org_answer": [
+            "Switzerland"
+        ],
+        "pred_answer": "Italy",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 351,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.023148536682129,
+        "so_loss": 2.024287700653076
+    },
+    {
+        "sub_answer": [
+            "Canada"
+        ],
+        "org_answer": [
+            "Mexico"
+        ],
+        "pred_answer": "Canada",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 365,
+        "demonstration_ids": [
+            163,
+            490,
+            309
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.023225784301758,
+        "so_loss": 2.023390054702759
+    },
+    {
+        "sub_answer": [
+            "Canada"
+        ],
+        "org_answer": [
+            "Mexico"
+        ],
+        "pred_answer": "Mexico",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 365,
+        "demonstration_ids": [
+            163,
+            490,
+            309
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.0295090675354004,
+        "so_loss": 2.0292060375213623
+    },
+    {
+        "sub_answer": [
+            "Canada"
+        ],
+        "org_answer": [
+            "Mexico"
+        ],
+        "pred_answer": "Canada",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 365,
+        "demonstration_ids": [
+            163,
+            490,
+            309
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0027105808258057,
+        "so_loss": 2.0027825832366943
+    },
+    {
+        "sub_answer": [
+            "Xavier University"
+        ],
+        "org_answer": [
+            "Butler University"
+        ],
+        "pred_answer": "Butler Bulldogs men's basketball",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 380,
+        "demonstration_ids": [
+            163,
+            490,
+            1054
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.9593600034713745,
+        "so_loss": 1.9618942737579346
+    },
+    {
+        "sub_answer": [
+            "Xavier University"
+        ],
+        "org_answer": [
+            "Butler University"
+        ],
+        "pred_answer": "Butler Bulldogs men's basketball",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 380,
+        "demonstration_ids": [
+            163,
+            490,
+            1054
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.9600130319595337,
+        "so_loss": 1.9617849588394165
+    },
+    {
+        "sub_answer": [
+            "Xavier University"
+        ],
+        "org_answer": [
+            "Butler University"
+        ],
+        "pred_answer": "Butler Bulldogs men's basketball",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 380,
+        "demonstration_ids": [
+            163,
+            490,
+            1054
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9302977323532104,
+        "so_loss": 1.9329514503479004
+    },
+    {
+        "sub_answer": [
+            "Lutheranism"
+        ],
+        "org_answer": [
+            "Protestantism"
+        ],
+        "pred_answer": "Lutheranism",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 381,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.2080137729644775,
+        "so_loss": 2.210489273071289
+    },
+    {
+        "sub_answer": [
+            "Lutheranism"
+        ],
+        "org_answer": [
+            "Protestantism"
+        ],
+        "pred_answer": "Lutheranism",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 381,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.207691192626953,
+        "so_loss": 2.209010124206543
+    },
+    {
+        "sub_answer": [
+            "Lutheranism"
+        ],
+        "org_answer": [
+            "Protestantism"
+        ],
+        "pred_answer": "Lutheranism",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 381,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.172304391860962,
+        "so_loss": 2.174441337585449
+    },
+    {
+        "sub_answer": [
+            "Lyon"
+        ],
+        "org_answer": [
+            "Brussels"
+        ],
+        "pred_answer": "Wallonia",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 398,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.099540948867798,
+        "so_loss": 2.101156234741211
+    },
+    {
+        "sub_answer": [
+            "Lyon"
+        ],
+        "org_answer": [
+            "Brussels"
+        ],
+        "pred_answer": "Wallonia",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 398,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.0985546112060547,
+        "so_loss": 2.098973512649536
+    },
+    {
+        "sub_answer": [
+            "Lyon"
+        ],
+        "org_answer": [
+            "Brussels"
+        ],
+        "pred_answer": "Wallonia",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 398,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0643458366394043,
+        "so_loss": 2.0655202865600586
+    },
+    {
+        "sub_answer": [
+            "University of Georgia Historic District"
+        ],
+        "org_answer": [
+            "Auburn University Historic District",
+            "United States of America",
+            "Alabama",
+            "Auburn"
+        ],
+        "pred_answer": "m.02npqm_",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 413,
+        "demonstration_ids": [
+            163,
+            490,
+            309
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.001117706298828,
+        "so_loss": 2.0088582038879395
+    },
+    {
+        "sub_answer": [
+            "University of Georgia Historic District"
+        ],
+        "org_answer": [
+            "Auburn University Historic District",
+            "United States of America",
+            "Alabama",
+            "Auburn"
+        ],
+        "pred_answer": "University of Georgia Historic District",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 413,
+        "demonstration_ids": [
+            163,
+            490,
+            309
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.008223295211792,
+        "so_loss": 2.0154924392700195
+    },
+    {
+        "sub_answer": [
+            "University of Georgia Historic District"
+        ],
+        "org_answer": [
+            "Auburn University Historic District",
+            "United States of America",
+            "Alabama",
+            "Auburn"
+        ],
+        "pred_answer": "m.02npqm_",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 413,
+        "demonstration_ids": [
+            163,
+            490,
+            309
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9802826642990112,
+        "so_loss": 1.98783278465271
+    },
+    {
+        "sub_answer": [
+            "1995 World Series"
+        ],
+        "org_answer": [
+            "2014 World Series",
+            "2010 World Series",
+            "2012 World Series"
+        ],
+        "pred_answer": "1995, 2010",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 420,
+        "demonstration_ids": [
+            163,
+            490,
+            1054
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.6544764041900635,
+        "so_loss": 1.6609349250793457
+    },
+    {
+        "sub_answer": [
+            "1995 World Series"
+        ],
+        "org_answer": [
+            "2014 World Series",
+            "2010 World Series",
+            "2012 World Series"
+        ],
+        "pred_answer": "1995, 2010",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 420,
+        "demonstration_ids": [
+            163,
+            490,
+            1054
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.6588730812072754,
+        "so_loss": 1.6639398336410522
+    },
+    {
+        "sub_answer": [
+            "1995 World Series"
+        ],
+        "org_answer": [
+            "2014 World Series",
+            "2010 World Series",
+            "2012 World Series"
+        ],
+        "pred_answer": "1995, 2010",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 420,
+        "demonstration_ids": [
+            163,
+            490,
+            1054
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.6262274980545044,
+        "so_loss": 1.6323519945144653
+    },
+    {
+        "sub_answer": [
+            "Macedonia"
+        ],
+        "org_answer": [
+            "Bulgaria"
+        ],
+        "pred_answer": "Macedonia",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 432,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.1694178581237793,
+        "so_loss": 2.1698927879333496
+    },
+    {
+        "sub_answer": [
+            "Macedonia"
+        ],
+        "org_answer": [
+            "Bulgaria"
+        ],
+        "pred_answer": "Bulgaria",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 432,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.1684603691101074,
+        "so_loss": 2.1676716804504395
+    },
+    {
+        "sub_answer": [
+            "Macedonia"
+        ],
+        "org_answer": [
+            "Bulgaria"
+        ],
+        "pred_answer": "Sofia",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 432,
+        "demonstration_ids": [
+            163,
+            1291,
+            1054
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.133385419845581,
+        "so_loss": 2.133389472961426
+    },
+    {
+        "sub_answer": [
+            "Ryan Kesler"
+        ],
+        "org_answer": [
+            "Phil Kessel"
+        ],
+        "pred_answer": "Ryan Kesler",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 453,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.929080605506897,
+        "so_loss": 1.9372730255126953
+    },
+    {
+        "sub_answer": [
+            "Ryan Kesler"
+        ],
+        "org_answer": [
+            "Phil Kessel"
+        ],
+        "pred_answer": "Ryan Kesler",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 453,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.9492435455322266,
+        "so_loss": 1.9545226097106934
+    },
+    {
+        "sub_answer": [
+            "Ryan Kesler"
+        ],
+        "org_answer": [
+            "Phil Kessel"
+        ],
+        "pred_answer": "Ryan Kesler",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 453,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9444904327392578,
+        "so_loss": 1.9526023864746094
+    },
+    {
+        "sub_answer": [
+            "Slovenian Language"
+        ],
+        "org_answer": [
+            "Serbo-Croatian Language",
+            "Serbian language"
+        ],
+        "pred_answer": "Slovenian Language",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 479,
+        "demonstration_ids": [
+            192,
+            670,
+            275
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.8137462139129639,
+        "so_loss": 1.8158257007598877
+    },
+    {
+        "sub_answer": [
+            "Slovenian Language"
+        ],
+        "org_answer": [
+            "Serbo-Croatian Language",
+            "Serbian language"
+        ],
+        "pred_answer": "Serbia and Montenegro",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 479,
+        "demonstration_ids": [
+            192,
+            670,
+            275
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.8244585990905762,
+        "so_loss": 1.8245912790298462
+    },
+    {
+        "sub_answer": [
+            "Slovenian Language"
+        ],
+        "org_answer": [
+            "Serbo-Croatian Language",
+            "Serbian language"
+        ],
+        "pred_answer": "Serbian",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 479,
+        "demonstration_ids": [
+            192,
+            670,
+            275
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.8035389184951782,
+        "so_loss": 1.8048665523529053
+    },
+    {
+        "sub_answer": [
+            "Parliamentary system"
+        ],
+        "org_answer": [
+            "Presidential system",
+            "Federal republic"
+        ],
+        "pred_answer": "Parliamentary system",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 490,
+        "demonstration_ids": [
+            858,
+            670,
+            76
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.0885727405548096,
+        "so_loss": 2.091763496398926
+    },
+    {
+        "sub_answer": [
+            "Parliamentary system"
+        ],
+        "org_answer": [
+            "Presidential system",
+            "Federal republic"
+        ],
+        "pred_answer": "Parliamentary system",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 490,
+        "demonstration_ids": [
+            858,
+            670,
+            76
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.1028964519500732,
+        "so_loss": 2.105377197265625
+    },
+    {
+        "sub_answer": [
+            "Parliamentary system"
+        ],
+        "org_answer": [
+            "Presidential system",
+            "Federal republic"
+        ],
+        "pred_answer": "Parliamentary system",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 490,
+        "demonstration_ids": [
+            858,
+            670,
+            76
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0952017307281494,
+        "so_loss": 2.0981786251068115
+    },
+    {
+        "sub_answer": [
+            "Reginald P. Kennedy, Sr. "
+        ],
+        "org_answer": [
+            "Joseph P. Kennedy, Sr."
+        ],
+        "pred_answer": "John F. Kennedy",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 532,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.1385679244995117,
+        "so_loss": 2.1400113105773926
+    },
+    {
+        "sub_answer": [
+            "Reginald P. Kennedy, Sr. "
+        ],
+        "org_answer": [
+            "Joseph P. Kennedy, Sr."
+        ],
+        "pred_answer": "President of the United States",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 532,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.158188581466675,
+        "so_loss": 2.15738582611084
+    },
+    {
+        "sub_answer": [
+            "Reginald P. Kennedy, Sr. "
+        ],
+        "org_answer": [
+            "Joseph P. Kennedy, Sr."
+        ],
+        "pred_answer": "John F. Kennedy",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 532,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.1520144939422607,
+        "so_loss": 2.1537227630615234
+    },
+    {
+        "sub_answer": [
+            "Knoxville"
+        ],
+        "org_answer": [
+            "Sevierville"
+        ],
+        "pred_answer": "Knoxville",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 554,
+        "demonstration_ids": [
+            192,
+            670,
+            275
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.9323338270187378,
+        "so_loss": 1.938901424407959
+    },
+    {
+        "sub_answer": [
+            "Knoxville"
+        ],
+        "org_answer": [
+            "Sevierville"
+        ],
+        "pred_answer": "Knoxville",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 554,
+        "demonstration_ids": [
+            192,
+            670,
+            275
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.9392071962356567,
+        "so_loss": 1.9411512613296509
+    },
+    {
+        "sub_answer": [
+            "Knoxville"
+        ],
+        "org_answer": [
+            "Sevierville"
+        ],
+        "pred_answer": "Knoxville",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 554,
+        "demonstration_ids": [
+            192,
+            670,
+            275
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9213237762451172,
+        "so_loss": 1.9264835119247437
+    },
+    {
+        "sub_answer": [
+            "Cambodia"
+        ],
+        "org_answer": [
+            "Laos"
+        ],
+        "pred_answer": "Cambodia",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 567,
+        "demonstration_ids": [
+            192,
+            670,
+            275
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.0512001514434814,
+        "so_loss": 2.052133083343506
+    },
+    {
+        "sub_answer": [
+            "Cambodia"
+        ],
+        "org_answer": [
+            "Laos"
+        ],
+        "pred_answer": "Laos",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 567,
+        "demonstration_ids": [
+            192,
+            670,
+            275
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.058048725128174,
+        "so_loss": 2.0576364994049072
+    },
+    {
+        "sub_answer": [
+            "Cambodia"
+        ],
+        "org_answer": [
+            "Laos"
+        ],
+        "pred_answer": "Cambodia",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 567,
+        "demonstration_ids": [
+            192,
+            670,
+            275
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.042339324951172,
+        "so_loss": 2.0425655841827393
+    },
+    {
+        "sub_answer": [
+            "Croatian language"
+        ],
+        "org_answer": [
+            "Serbian language"
+        ],
+        "pred_answer": "Croatian language",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 570,
+        "demonstration_ids": [
+            858,
+            670,
+            76
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.0650200843811035,
+        "so_loss": 2.0660338401794434
+    },
+    {
+        "sub_answer": [
+            "Croatian language"
+        ],
+        "org_answer": [
+            "Serbian language"
+        ],
+        "pred_answer": "Serbian",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 570,
+        "demonstration_ids": [
+            858,
+            670,
+            76
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.080714225769043,
+        "so_loss": 2.0813040733337402
+    },
+    {
+        "sub_answer": [
+            "Croatian language"
+        ],
+        "org_answer": [
+            "Serbian language"
+        ],
+        "pred_answer": "Serbian language",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 570,
+        "demonstration_ids": [
+            858,
+            670,
+            76
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0739121437072754,
+        "so_loss": 2.074615716934204
+    },
+    {
+        "sub_answer": [
+            "2019 World Series"
+        ],
+        "org_answer": [
+            "2003 World Series"
+        ],
+        "pred_answer": "2019 World Series",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 583,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.7742278575897217,
+        "so_loss": 1.7790544033050537
+    },
+    {
+        "sub_answer": [
+            "2019 World Series"
+        ],
+        "org_answer": [
+            "2003 World Series"
+        ],
+        "pred_answer": "2019 World Series",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 583,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.7980037927627563,
+        "so_loss": 1.7995185852050781
+    },
+    {
+        "sub_answer": [
+            "2019 World Series"
+        ],
+        "org_answer": [
+            "2003 World Series"
+        ],
+        "pred_answer": "2019 World Series",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 583,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.791154384613037,
+        "so_loss": 1.7954528331756592
+    },
+    {
+        "sub_answer": [
+            "2011 World Series"
+        ],
+        "org_answer": [
+            "1983 World Series",
+            "1970 World Series",
+            "1966 World Series"
+        ],
+        "pred_answer": "2011",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 588,
+        "demonstration_ids": [
+            858,
+            670,
+            76
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.1037590503692627,
+        "so_loss": 2.1087794303894043
+    },
+    {
+        "sub_answer": [
+            "2011 World Series"
+        ],
+        "org_answer": [
+            "1983 World Series",
+            "1970 World Series",
+            "1966 World Series"
+        ],
+        "pred_answer": "2011",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 588,
+        "demonstration_ids": [
+            858,
+            670,
+            76
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.120968818664551,
+        "so_loss": 2.124642848968506
+    },
+    {
+        "sub_answer": [
+            "2011 World Series"
+        ],
+        "org_answer": [
+            "1983 World Series",
+            "1970 World Series",
+            "1966 World Series"
+        ],
+        "pred_answer": "2011",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 588,
+        "demonstration_ids": [
+            858,
+            670,
+            76
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.1106667518615723,
+        "so_loss": 2.1153974533081055
+    },
+    {
+        "sub_answer": [
+            "Amharic Language"
+        ],
+        "org_answer": [
+            "Siwi Language",
+            "Modern Standard Arabic",
+            "Egyptian Arabic",
+            "Sa'idi Arabic",
+            "Arabic, Sudanese Spoken Language",
+            "Bedawi Arabic",
+            "Nobiin Language",
+            "Domari Language",
+            "Arabic Language"
+        ],
+        "pred_answer": "Amharic Language",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 591,
+        "demonstration_ids": [
+            192,
+            670,
+            275
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.8876018524169922,
+        "so_loss": 1.8997403383255005
+    },
+    {
+        "sub_answer": [
+            "Amharic Language"
+        ],
+        "org_answer": [
+            "Siwi Language",
+            "Modern Standard Arabic",
+            "Egyptian Arabic",
+            "Sa'idi Arabic",
+            "Arabic, Sudanese Spoken Language",
+            "Bedawi Arabic",
+            "Nobiin Language",
+            "Domari Language",
+            "Arabic Language"
+        ],
+        "pred_answer": "Amharic",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 591,
+        "demonstration_ids": [
+            192,
+            670,
+            275
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.894761562347412,
+        "so_loss": 1.9053900241851807
+    },
+    {
+        "sub_answer": [
+            "Amharic Language"
+        ],
+        "org_answer": [
+            "Siwi Language",
+            "Modern Standard Arabic",
+            "Egyptian Arabic",
+            "Sa'idi Arabic",
+            "Arabic, Sudanese Spoken Language",
+            "Bedawi Arabic",
+            "Nobiin Language",
+            "Domari Language",
+            "Arabic Language"
+        ],
+        "pred_answer": "Amharic Language",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 591,
+        "demonstration_ids": [
+            192,
+            670,
+            275
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.876959204673767,
+        "so_loss": 1.8887702226638794
+    },
+    {
+        "sub_answer": [
+            "Sweden"
+        ],
+        "org_answer": [
+            "Canada"
+        ],
+        "pred_answer": "Mississippi",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 597,
+        "demonstration_ids": [
+            192,
+            670,
+            275
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.976121425628662,
+        "so_loss": 1.9757211208343506
+    },
+    {
+        "sub_answer": [
+            "Sweden"
+        ],
+        "org_answer": [
+            "Canada"
+        ],
+        "pred_answer": "Canada",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 597,
+        "demonstration_ids": [
+            192,
+            670,
+            275
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.9831780195236206,
+        "so_loss": 1.9810748100280762
+    },
+    {
+        "sub_answer": [
+            "Sweden"
+        ],
+        "org_answer": [
+            "Canada"
+        ],
+        "pred_answer": "Canada",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 597,
+        "demonstration_ids": [
+            192,
+            670,
+            275
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9662214517593384,
+        "so_loss": 1.9648563861846924
+    },
+    {
+        "sub_answer": [
+            "Slovenian kuna"
+        ],
+        "org_answer": [
+            "Hungarian forint"
+        ],
+        "pred_answer": "Hungarian county",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 619,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.8617136478424072,
+        "so_loss": 1.8544845581054688
+    },
+    {
+        "sub_answer": [
+            "Slovenian kuna"
+        ],
+        "org_answer": [
+            "Hungarian forint"
+        ],
+        "pred_answer": "Hungarian forint",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 619,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.8827861547470093,
+        "so_loss": 1.8746671676635742
+    },
+    {
+        "sub_answer": [
+            "Slovenian kuna"
+        ],
+        "org_answer": [
+            "Hungarian forint"
+        ],
+        "pred_answer": "Hungarian county",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 619,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.875582218170166,
+        "so_loss": 1.8689417839050293
+    },
+    {
+        "sub_answer": [
+            "Estonia"
+        ],
+        "org_answer": [
+            "Belarus",
+            "Estonia",
+            "Finland",
+            "Kazakhstan",
+            "Latvia",
+            "Lithuania",
+            "Mongolia",
+            "Norway",
+            "North Korea",
+            "Poland",
+            "Ukraine",
+            "China",
+            "Georgia",
+            "Azerbaijan"
+        ],
+        "pred_answer": "Estonia",
+        "sub_answer_em": 1,
+        "org_answer_em": 1,
+        "item_idx": 620,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.129722833633423,
+        "so_loss": 2.131840229034424
+    },
+    {
+        "sub_answer": [
+            "Estonia"
+        ],
+        "org_answer": [
+            "Belarus",
+            "Estonia",
+            "Finland",
+            "Kazakhstan",
+            "Latvia",
+            "Lithuania",
+            "Mongolia",
+            "Norway",
+            "North Korea",
+            "Poland",
+            "Ukraine",
+            "China",
+            "Georgia",
+            "Azerbaijan"
+        ],
+        "pred_answer": "Russia",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 620,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.1526126861572266,
+        "so_loss": 2.15376877784729
+    },
+    {
+        "sub_answer": [
+            "Estonia"
+        ],
+        "org_answer": [
+            "Belarus",
+            "Estonia",
+            "Finland",
+            "Kazakhstan",
+            "Latvia",
+            "Lithuania",
+            "Mongolia",
+            "Norway",
+            "North Korea",
+            "Poland",
+            "Ukraine",
+            "China",
+            "Georgia",
+            "Azerbaijan"
+        ],
+        "pred_answer": "Estonia",
+        "sub_answer_em": 1,
+        "org_answer_em": 1,
+        "item_idx": 620,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.146578311920166,
+        "so_loss": 2.148885726928711
+    },
+    {
+        "sub_answer": [
+            "The Bavarian Alps"
+        ],
+        "org_answer": [
+            "Tropical Islands Resort"
+        ],
+        "pred_answer": "Germany",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 626,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.0837109088897705,
+        "so_loss": 2.092620372772217
+    },
+    {
+        "sub_answer": [
+            "The Bavarian Alps"
+        ],
+        "org_answer": [
+            "Tropical Islands Resort"
+        ],
+        "pred_answer": "Hamburg, Berlin, Munich, Frankfurt, Cologne, Stuttgart,",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 626,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.1022868156433105,
+        "so_loss": 2.110572099685669
+    },
+    {
+        "sub_answer": [
+            "The Bavarian Alps"
+        ],
+        "org_answer": [
+            "Tropical Islands Resort"
+        ],
+        "pred_answer": "Germany",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 626,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.097909688949585,
+        "so_loss": 2.106778860092163
+    },
+    {
+        "sub_answer": [
+            "Mohammed Pir"
+        ],
+        "org_answer": [
+            "Ramdev Pir",
+            "God",
+            "Allah"
+        ],
+        "pred_answer": "Mohammed Pir",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 634,
+        "demonstration_ids": [
+            192,
+            670,
+            275
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.8374912738800049,
+        "so_loss": 1.8491466045379639
+    },
+    {
+        "sub_answer": [
+            "Mohammed Pir"
+        ],
+        "org_answer": [
+            "Ramdev Pir",
+            "God",
+            "Allah"
+        ],
+        "pred_answer": "Mohammed Pir",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 634,
+        "demonstration_ids": [
+            192,
+            670,
+            275
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.8432667255401611,
+        "so_loss": 1.8531508445739746
+    },
+    {
+        "sub_answer": [
+            "Mohammed Pir"
+        ],
+        "org_answer": [
+            "Ramdev Pir",
+            "God",
+            "Allah"
+        ],
+        "pred_answer": "Mohammed Pir",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 634,
+        "demonstration_ids": [
+            192,
+            670,
+            275
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.8265630006790161,
+        "so_loss": 1.8381534814834595
+    },
+    {
+        "sub_answer": [
+            "Ethan Walker"
+        ],
+        "org_answer": [
+            "Mark Shurtleff"
+        ],
+        "pred_answer": "m.0zxk98b",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 636,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.173276424407959,
+        "so_loss": 2.1636948585510254
+    },
+    {
+        "sub_answer": [
+            "Ethan Walker"
+        ],
+        "org_answer": [
+            "Mark Shurtleff"
+        ],
+        "pred_answer": "John Swallow",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 636,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.19364857673645,
+        "so_loss": 2.183358669281006
+    },
+    {
+        "sub_answer": [
+            "Ethan Walker"
+        ],
+        "org_answer": [
+            "Mark Shurtleff"
+        ],
+        "pred_answer": "m.0zxk98b",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 636,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.1887691020965576,
+        "so_loss": 2.178995132446289
+    },
+    {
+        "sub_answer": [
+            "New Zealand"
+        ],
+        "org_answer": [
+            "Australia"
+        ],
+        "pred_answer": "New Zealand",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 649,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.0570640563964844,
+        "so_loss": 2.0612220764160156
+    },
+    {
+        "sub_answer": [
+            "New Zealand"
+        ],
+        "org_answer": [
+            "Australia"
+        ],
+        "pred_answer": "New Zealand",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 649,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.078401803970337,
+        "so_loss": 2.081646203994751
+    },
+    {
+        "sub_answer": [
+            "New Zealand"
+        ],
+        "org_answer": [
+            "Australia"
+        ],
+        "pred_answer": "New Zealand",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 649,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0724680423736572,
+        "so_loss": 2.0766899585723877
+    },
+    {
+        "sub_answer": [
+            "Brian May"
+        ],
+        "org_answer": [
+            "Roger Waters"
+        ],
+        "pred_answer": "Brian May",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 654,
+        "demonstration_ids": [
+            858,
+            670,
+            76
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.28648042678833,
+        "so_loss": 2.288085460662842
+    },
+    {
+        "sub_answer": [
+            "Brian May"
+        ],
+        "org_answer": [
+            "Roger Waters"
+        ],
+        "pred_answer": "Roger Waters",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 654,
+        "demonstration_ids": [
+            858,
+            670,
+            76
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.303741216659546,
+        "so_loss": 2.3031387329101562
+    },
+    {
+        "sub_answer": [
+            "Brian May"
+        ],
+        "org_answer": [
+            "Roger Waters"
+        ],
+        "pred_answer": "Brian May",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 654,
+        "demonstration_ids": [
+            858,
+            670,
+            76
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.293456792831421,
+        "so_loss": 2.294173240661621
+    },
+    {
+        "sub_answer": [
+            "Leonardo da Vinci"
+        ],
+        "org_answer": [
+            "Thomas Jefferson"
+        ],
+        "pred_answer": "Montesquieu",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 670,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.103851318359375,
+        "so_loss": 2.1058521270751953
+    },
+    {
+        "sub_answer": [
+            "Leonardo da Vinci"
+        ],
+        "org_answer": [
+            "Thomas Jefferson"
+        ],
+        "pred_answer": "Thomas Jefferson",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 670,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.123769998550415,
+        "so_loss": 2.1244449615478516
+    },
+    {
+        "sub_answer": [
+            "Leonardo da Vinci"
+        ],
+        "org_answer": [
+            "Thomas Jefferson"
+        ],
+        "pred_answer": "Montesquieu",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 670,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.1165876388549805,
+        "so_loss": 2.118612289428711
+    },
+    {
+        "sub_answer": [
+            "Governor of California"
+        ],
+        "org_answer": [
+            "President of the United States"
+        ],
+        "pred_answer": "Secretary of State",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 677,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.004307508468628,
+        "so_loss": 1.9924982786178589
+    },
+    {
+        "sub_answer": [
+            "Governor of California"
+        ],
+        "org_answer": [
+            "President of the United States"
+        ],
+        "pred_answer": "Secretary of State",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 677,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.023527145385742,
+        "so_loss": 2.0116286277770996
+    },
+    {
+        "sub_answer": [
+            "Governor of California"
+        ],
+        "org_answer": [
+            "President of the United States"
+        ],
+        "pred_answer": "Secretary of State",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 677,
+        "demonstration_ids": [
+            858,
+            588,
+            76
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.018566131591797,
+        "so_loss": 2.0067012310028076
+    },
+    {
+        "sub_answer": [
+            "Belarus"
+        ],
+        "org_answer": [
+            "Ukraine"
+        ],
+        "pred_answer": "Russia",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 682,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.1540534496307373,
+        "so_loss": 2.1542863845825195
+    },
+    {
+        "sub_answer": [
+            "Belarus"
+        ],
+        "org_answer": [
+            "Ukraine"
+        ],
+        "pred_answer": "Russia",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 682,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.159374237060547,
+        "so_loss": 2.159841775894165
+    },
+    {
+        "sub_answer": [
+            "Belarus"
+        ],
+        "org_answer": [
+            "Ukraine"
+        ],
+        "pred_answer": "Russia",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 682,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.1268224716186523,
+        "so_loss": 2.1271352767944336
+    },
+    {
+        "sub_answer": [
+            "Princeton University"
+        ],
+        "org_answer": [
+            "Bryn Mawr College"
+        ],
+        "pred_answer": "Princeton University",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 701,
+        "demonstration_ids": [
+            43,
+            824,
+            634
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.132413148880005,
+        "so_loss": 2.1330809593200684
+    },
+    {
+        "sub_answer": [
+            "Princeton University"
+        ],
+        "org_answer": [
+            "Bryn Mawr College"
+        ],
+        "pred_answer": "Princeton University",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 701,
+        "demonstration_ids": [
+            43,
+            824,
+            634
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.141580104827881,
+        "so_loss": 2.1411261558532715
+    },
+    {
+        "sub_answer": [
+            "Princeton University"
+        ],
+        "org_answer": [
+            "Bryn Mawr College"
+        ],
+        "pred_answer": "Princeton University",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 701,
+        "demonstration_ids": [
+            43,
+            824,
+            634
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.1213672161102295,
+        "so_loss": 2.122379779815674
+    },
+    {
+        "sub_answer": [
+            "New York Yankees"
+        ],
+        "org_answer": [
+            "Philadelphia Phillies"
+        ],
+        "pred_answer": "New York Yankees",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 704,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.0428361892700195,
+        "so_loss": 2.046363353729248
+    },
+    {
+        "sub_answer": [
+            "New York Yankees"
+        ],
+        "org_answer": [
+            "Philadelphia Phillies"
+        ],
+        "pred_answer": "New York Yankees",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 704,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.049739360809326,
+        "so_loss": 2.0532376766204834
+    },
+    {
+        "sub_answer": [
+            "New York Yankees"
+        ],
+        "org_answer": [
+            "Philadelphia Phillies"
+        ],
+        "pred_answer": "New York Yankees",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 704,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0181682109832764,
+        "so_loss": 2.0216591358184814
+    },
+    {
+        "sub_answer": [
+            "2009 UEFA Champions League Final"
+        ],
+        "org_answer": [
+            "2014 UEFA Champions League Final"
+        ],
+        "pred_answer": "2009",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 718,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.8075141906738281,
+        "so_loss": 1.8088874816894531
+    },
+    {
+        "sub_answer": [
+            "2009 UEFA Champions League Final"
+        ],
+        "org_answer": [
+            "2014 UEFA Champions League Final"
+        ],
+        "pred_answer": "2009",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 718,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.8138495683670044,
+        "so_loss": 1.8153990507125854
+    },
+    {
+        "sub_answer": [
+            "2009 UEFA Champions League Final"
+        ],
+        "org_answer": [
+            "2014 UEFA Champions League Final"
+        ],
+        "pred_answer": "2009",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 718,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.7864598035812378,
+        "so_loss": 1.7884577512741089
+    },
+    {
+        "sub_answer": [
+            "Berber Language"
+        ],
+        "org_answer": [
+            "Siwi Language",
+            "Modern Standard Arabic",
+            "Egyptian Arabic",
+            "Sa'idi Arabic",
+            "Arabic, Sudanese Spoken Language",
+            "Bedawi Arabic",
+            "Nobiin Language",
+            "Domari Language",
+            "Arabic Language"
+        ],
+        "pred_answer": "Berber Language",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 733,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.8718631267547607,
+        "so_loss": 1.8842438459396362
+    },
+    {
+        "sub_answer": [
+            "Berber Language"
+        ],
+        "org_answer": [
+            "Siwi Language",
+            "Modern Standard Arabic",
+            "Egyptian Arabic",
+            "Sa'idi Arabic",
+            "Arabic, Sudanese Spoken Language",
+            "Bedawi Arabic",
+            "Nobiin Language",
+            "Domari Language",
+            "Arabic Language"
+        ],
+        "pred_answer": "Berber Language",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 733,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.8777092695236206,
+        "so_loss": 1.889056921005249
+    },
+    {
+        "sub_answer": [
+            "Berber Language"
+        ],
+        "org_answer": [
+            "Siwi Language",
+            "Modern Standard Arabic",
+            "Egyptian Arabic",
+            "Sa'idi Arabic",
+            "Arabic, Sudanese Spoken Language",
+            "Bedawi Arabic",
+            "Nobiin Language",
+            "Domari Language",
+            "Arabic Language"
+        ],
+        "pred_answer": "Berber Language",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 733,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.8455352783203125,
+        "so_loss": 1.8573129177093506
+    },
+    {
+        "sub_answer": [
+            "Speaker of the House of Representatives"
+        ],
+        "org_answer": [
+            "United States Representative"
+        ],
+        "pred_answer": "President",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 737,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.1765012741088867,
+        "so_loss": 2.182600975036621
+    },
+    {
+        "sub_answer": [
+            "Speaker of the House of Representatives"
+        ],
+        "org_answer": [
+            "United States Representative"
+        ],
+        "pred_answer": "President of the United States",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 737,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.1818959712982178,
+        "so_loss": 2.1878349781036377
+    },
+    {
+        "sub_answer": [
+            "Speaker of the House of Representatives"
+        ],
+        "org_answer": [
+            "United States Representative"
+        ],
+        "pred_answer": "President of the United States",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 737,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.149290084838867,
+        "so_loss": 2.155108690261841
+    },
+    {
+        "sub_answer": [
+            "Louisiana"
+        ],
+        "org_answer": [
+            "Alabama"
+        ],
+        "pred_answer": "Louisiana",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 744,
+        "demonstration_ids": [
+            43,
+            824,
+            634
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.9758120775222778,
+        "so_loss": 1.9761828184127808
+    },
+    {
+        "sub_answer": [
+            "Louisiana"
+        ],
+        "org_answer": [
+            "Alabama"
+        ],
+        "pred_answer": "Alabama",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 744,
+        "demonstration_ids": [
+            43,
+            824,
+            634
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.9845308065414429,
+        "so_loss": 1.9844821691513062
+    },
+    {
+        "sub_answer": [
+            "Louisiana"
+        ],
+        "org_answer": [
+            "Alabama"
+        ],
+        "pred_answer": "Louisiana",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 744,
+        "demonstration_ids": [
+            43,
+            824,
+            634
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9676127433776855,
+        "so_loss": 1.967996597290039
+    },
+    {
+        "sub_answer": [
+            "University of California"
+        ],
+        "org_answer": [
+            "University of Florida"
+        ],
+        "pred_answer": "University of Florida College of the Arts",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 754,
+        "demonstration_ids": [
+            43,
+            824,
+            634
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.077806234359741,
+        "so_loss": 2.07802677154541
+    },
+    {
+        "sub_answer": [
+            "University of California"
+        ],
+        "org_answer": [
+            "University of Florida"
+        ],
+        "pred_answer": "University of Florida College of the Arts",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 754,
+        "demonstration_ids": [
+            43,
+            824,
+            634
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.087908983230591,
+        "so_loss": 2.087928295135498
+    },
+    {
+        "sub_answer": [
+            "University of California"
+        ],
+        "org_answer": [
+            "University of Florida"
+        ],
+        "pred_answer": "University of Florida College of the Arts",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 754,
+        "demonstration_ids": [
+            43,
+            824,
+            634
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0690855979919434,
+        "so_loss": 2.069450616836548
+    },
+    {
+        "sub_answer": [
+            "Ahmed Ben Bella"
+        ],
+        "org_answer": [
+            "Yasser Arafat",
+            "Hussein of Jordan",
+            "Chaim Weizmann",
+            "Anwar Sadat",
+            "Menachem Begin",
+            "David Ben-Gurion",
+            "Yitzhak Rabin",
+            "Shimon Peres"
+        ],
+        "pred_answer": "Ahmed Ben Bella",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 757,
+        "demonstration_ids": [
+            43,
+            824,
+            634
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.040196657180786,
+        "so_loss": 2.039480686187744
+    },
+    {
+        "sub_answer": [
+            "Ahmed Ben Bella"
+        ],
+        "org_answer": [
+            "Yasser Arafat",
+            "Hussein of Jordan",
+            "Chaim Weizmann",
+            "Anwar Sadat",
+            "Menachem Begin",
+            "David Ben-Gurion",
+            "Yitzhak Rabin",
+            "Shimon Peres"
+        ],
+        "pred_answer": "Ahmed Ben Bella",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 757,
+        "demonstration_ids": [
+            43,
+            824,
+            634
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.0489563941955566,
+        "so_loss": 2.047765016555786
+    },
+    {
+        "sub_answer": [
+            "Ahmed Ben Bella"
+        ],
+        "org_answer": [
+            "Yasser Arafat",
+            "Hussein of Jordan",
+            "Chaim Weizmann",
+            "Anwar Sadat",
+            "Menachem Begin",
+            "David Ben-Gurion",
+            "Yitzhak Rabin",
+            "Shimon Peres"
+        ],
+        "pred_answer": "Ahmed Ben Bella",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 757,
+        "demonstration_ids": [
+            43,
+            824,
+            634
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.033527135848999,
+        "so_loss": 2.0329339504241943
+    },
+    {
+        "sub_answer": [
+            "Albanian language"
+        ],
+        "org_answer": [
+            "Azerbaijani language",
+            "Turkmen Language",
+            "Persian Language",
+            "Qashqa'i Language",
+            "Luri language",
+            "Kumzari Language",
+            "Assyrian Neo-Aramaic Language",
+            "Khalaj, Turkic Language",
+            "Mazanderani Language",
+            "Gilaki Language",
+            "Kurdish languages",
+            "Talysh language",
+            "Afshar language",
+            "Khorasani Turkish Language",
+            "Balochi language",
+            "Arabic Language",
+            "Pashto language",
+            "Armenian Language"
+        ],
+        "pred_answer": "Albanian language",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 765,
+        "demonstration_ids": [
+            1146,
+            824,
+            936
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.0876829624176025,
+        "so_loss": 2.0894384384155273
+    },
+    {
+        "sub_answer": [
+            "Albanian language"
+        ],
+        "org_answer": [
+            "Azerbaijani language",
+            "Turkmen Language",
+            "Persian Language",
+            "Qashqa'i Language",
+            "Luri language",
+            "Kumzari Language",
+            "Assyrian Neo-Aramaic Language",
+            "Khalaj, Turkic Language",
+            "Mazanderani Language",
+            "Gilaki Language",
+            "Kurdish languages",
+            "Talysh language",
+            "Afshar language",
+            "Khorasani Turkish Language",
+            "Balochi language",
+            "Arabic Language",
+            "Pashto language",
+            "Armenian Language"
+        ],
+        "pred_answer": "Albanian language",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 765,
+        "demonstration_ids": [
+            1146,
+            824,
+            936
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.0967013835906982,
+        "so_loss": 2.0970582962036133
+    },
+    {
+        "sub_answer": [
+            "Albanian language"
+        ],
+        "org_answer": [
+            "Azerbaijani language",
+            "Turkmen Language",
+            "Persian Language",
+            "Qashqa'i Language",
+            "Luri language",
+            "Kumzari Language",
+            "Assyrian Neo-Aramaic Language",
+            "Khalaj, Turkic Language",
+            "Mazanderani Language",
+            "Gilaki Language",
+            "Kurdish languages",
+            "Talysh language",
+            "Afshar language",
+            "Khorasani Turkish Language",
+            "Balochi language",
+            "Arabic Language",
+            "Pashto language",
+            "Armenian Language"
+        ],
+        "pred_answer": "Persian language",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 765,
+        "demonstration_ids": [
+            1146,
+            824,
+            936
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0953285694122314,
+        "so_loss": 2.0957953929901123
+    },
+    {
+        "sub_answer": [
+            "Camp Rock 2: The Final Jam"
+        ],
+        "org_answer": [
+            "High School Musical 3: Senior Year",
+            "High School Musical",
+            "High School Musical 2",
+            "High School Musical 2"
+        ],
+        "pred_answer": "Camp Rock 2: The Final Jam",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 782,
+        "demonstration_ids": [
+            43,
+            824,
+            634
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.983107566833496,
+        "so_loss": 1.9843047857284546
+    },
+    {
+        "sub_answer": [
+            "Camp Rock 2: The Final Jam"
+        ],
+        "org_answer": [
+            "High School Musical 3: Senior Year",
+            "High School Musical",
+            "High School Musical 2",
+            "High School Musical 2"
+        ],
+        "pred_answer": "Camp Rock 2: The Final Jam",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 782,
+        "demonstration_ids": [
+            43,
+            824,
+            634
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.9937520027160645,
+        "so_loss": 1.9947803020477295
+    },
+    {
+        "sub_answer": [
+            "Camp Rock 2: The Final Jam"
+        ],
+        "org_answer": [
+            "High School Musical 3: Senior Year",
+            "High School Musical",
+            "High School Musical 2",
+            "High School Musical 2"
+        ],
+        "pred_answer": "Camp Rock 2: The Final Jam",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 782,
+        "demonstration_ids": [
+            43,
+            824,
+            634
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9739694595336914,
+        "so_loss": 1.9757696390151978
+    },
+    {
+        "sub_answer": [
+            "Franklin Square"
+        ],
+        "org_answer": [
+            "Liberty Bell",
+            "Camelbeach Waterpark"
+        ],
+        "pred_answer": "Franklin Square Zoo",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 808,
+        "demonstration_ids": [
+            1146,
+            1222,
+            936
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.3069722652435303,
+        "so_loss": 2.3113863468170166
+    },
+    {
+        "sub_answer": [
+            "Franklin Square"
+        ],
+        "org_answer": [
+            "Liberty Bell",
+            "Camelbeach Waterpark"
+        ],
+        "pred_answer": "Franklin Square Zoo",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 808,
+        "demonstration_ids": [
+            1146,
+            1222,
+            936
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.3156135082244873,
+        "so_loss": 2.3193631172180176
+    },
+    {
+        "sub_answer": [
+            "Franklin Square"
+        ],
+        "org_answer": [
+            "Liberty Bell",
+            "Camelbeach Waterpark"
+        ],
+        "pred_answer": "Franklin Square Zoo",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 808,
+        "demonstration_ids": [
+            1146,
+            1222,
+            936
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.313422203063965,
+        "so_loss": 2.3172926902770996
+    },
+    {
+        "sub_answer": [
+            "Trinidadian Creole"
+        ],
+        "org_answer": [
+            "Jamaican English",
+            "Jamaican Creole English Language"
+        ],
+        "pred_answer": "Trinidadian Creole",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 810,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.9612703323364258,
+        "so_loss": 1.9653003215789795
+    },
+    {
+        "sub_answer": [
+            "Trinidadian Creole"
+        ],
+        "org_answer": [
+            "Jamaican English",
+            "Jamaican Creole English Language"
+        ],
+        "pred_answer": "English",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 810,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.9661895036697388,
+        "so_loss": 1.9694335460662842
+    },
+    {
+        "sub_answer": [
+            "Trinidadian Creole"
+        ],
+        "org_answer": [
+            "Jamaican English",
+            "Jamaican Creole English Language"
+        ],
+        "pred_answer": "Trinidadian Creole",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 810,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.937051773071289,
+        "so_loss": 1.9408632516860962
+    },
+    {
+        "sub_answer": [
+            "Super Bowl LIII"
+        ],
+        "org_answer": [
+            "Super Bowl XLVII",
+            "Super Bowl XXXV"
+        ],
+        "pred_answer": "2017",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 816,
+        "demonstration_ids": [
+            43,
+            824,
+            634
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.802432656288147,
+        "so_loss": 1.803884744644165
+    },
+    {
+        "sub_answer": [
+            "Super Bowl LIII"
+        ],
+        "org_answer": [
+            "Super Bowl XLVII",
+            "Super Bowl XXXV"
+        ],
+        "pred_answer": "2017",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 816,
+        "demonstration_ids": [
+            43,
+            824,
+            634
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.8133151531219482,
+        "so_loss": 1.8147594928741455
+    },
+    {
+        "sub_answer": [
+            "Super Bowl LIII"
+        ],
+        "org_answer": [
+            "Super Bowl XLVII",
+            "Super Bowl XXXV"
+        ],
+        "pred_answer": "2017",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 816,
+        "demonstration_ids": [
+            43,
+            824,
+            634
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.7941876649856567,
+        "so_loss": 1.7959256172180176
+    },
+    {
+        "sub_answer": [
+            "DeAndre Jordan"
+        ],
+        "org_answer": [
+            "Gerald Wallace"
+        ],
+        "pred_answer": "Kevin Garnett",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 824,
+        "demonstration_ids": [
+            1146,
+            1222,
+            936
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.107496500015259,
+        "so_loss": 2.1077795028686523
+    },
+    {
+        "sub_answer": [
+            "DeAndre Jordan"
+        ],
+        "org_answer": [
+            "Gerald Wallace"
+        ],
+        "pred_answer": "Kevin Garnett",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 824,
+        "demonstration_ids": [
+            1146,
+            1222,
+            936
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.115154266357422,
+        "so_loss": 2.1155002117156982
+    },
+    {
+        "sub_answer": [
+            "DeAndre Jordan"
+        ],
+        "org_answer": [
+            "Gerald Wallace"
+        ],
+        "pred_answer": "Kevin Garnett",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 824,
+        "demonstration_ids": [
+            1146,
+            1222,
+            936
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.11540150642395,
+        "so_loss": 2.11558198928833
+    },
+    {
+        "sub_answer": [
+            "Somali Language"
+        ],
+        "org_answer": [
+            "Gujarati Language",
+            "Dutch Language",
+            "English Language",
+            "Nama Language",
+            "Urdu Language",
+            "Greek Language",
+            "Hebrew Language",
+            "Hindi Language",
+            "German Language",
+            "Portuguese Language",
+            "Sanskrit Language",
+            "Phuthi language",
+            "South African Sign Language",
+            "South African English",
+            "Tamil Language",
+            "Telugu language",
+            "Arabic Language",
+            "Xhosa Language"
+        ],
+        "pred_answer": "Somali Language",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 826,
+        "demonstration_ids": [
+            1146,
+            824,
+            936
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.9417214393615723,
+        "so_loss": 1.950344204902649
+    },
+    {
+        "sub_answer": [
+            "Somali Language"
+        ],
+        "org_answer": [
+            "Gujarati Language",
+            "Dutch Language",
+            "English Language",
+            "Nama Language",
+            "Urdu Language",
+            "Greek Language",
+            "Hebrew Language",
+            "Hindi Language",
+            "German Language",
+            "Portuguese Language",
+            "Sanskrit Language",
+            "Phuthi language",
+            "South African Sign Language",
+            "South African English",
+            "Tamil Language",
+            "Telugu language",
+            "Arabic Language",
+            "Xhosa Language"
+        ],
+        "pred_answer": "Somali Language",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 826,
+        "demonstration_ids": [
+            1146,
+            824,
+            936
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.9560056924819946,
+        "so_loss": 1.9617629051208496
+    },
+    {
+        "sub_answer": [
+            "Somali Language"
+        ],
+        "org_answer": [
+            "Gujarati Language",
+            "Dutch Language",
+            "English Language",
+            "Nama Language",
+            "Urdu Language",
+            "Greek Language",
+            "Hebrew Language",
+            "Hindi Language",
+            "German Language",
+            "Portuguese Language",
+            "Sanskrit Language",
+            "Phuthi language",
+            "South African Sign Language",
+            "South African English",
+            "Tamil Language",
+            "Telugu language",
+            "Arabic Language",
+            "Xhosa Language"
+        ],
+        "pred_answer": "Somali Language",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 826,
+        "demonstration_ids": [
+            1146,
+            824,
+            936
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9483942985534668,
+        "so_loss": 1.9546713829040527
+    },
+    {
+        "sub_answer": [
+            "Guernsey"
+        ],
+        "org_answer": [
+            "Jersey"
+        ],
+        "pred_answer": "Guernsey",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 844,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.079436779022217,
+        "so_loss": 2.0845041275024414
+    },
+    {
+        "sub_answer": [
+            "Guernsey"
+        ],
+        "org_answer": [
+            "Jersey"
+        ],
+        "pred_answer": "Guernsey",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 844,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.086514472961426,
+        "so_loss": 2.091160535812378
+    },
+    {
+        "sub_answer": [
+            "Guernsey"
+        ],
+        "org_answer": [
+            "Jersey"
+        ],
+        "pred_answer": "Guernsey",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 844,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0552048683166504,
+        "so_loss": 2.059985399246216
+    },
+    {
+        "sub_answer": [
+            "Maine"
+        ],
+        "org_answer": [
+            "Washington, D.C."
+        ],
+        "pred_answer": "Maine",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 845,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.9154775142669678,
+        "so_loss": 1.912965178489685
+    },
+    {
+        "sub_answer": [
+            "Maine"
+        ],
+        "org_answer": [
+            "Washington, D.C."
+        ],
+        "pred_answer": "Maine",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 845,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.9168577194213867,
+        "so_loss": 1.9172528982162476
+    },
+    {
+        "sub_answer": [
+            "Maine"
+        ],
+        "org_answer": [
+            "Washington, D.C."
+        ],
+        "pred_answer": "Maine",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 845,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.8903553485870361,
+        "so_loss": 1.8907785415649414
+    },
+    {
+        "sub_answer": [
+            "The Other Side of Heaven"
+        ],
+        "org_answer": [
+            "Other People's Children"
+        ],
+        "pred_answer": "The Other Side of Heaven",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 858,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.0877461433410645,
+        "so_loss": 2.1010982990264893
+    },
+    {
+        "sub_answer": [
+            "The Other Side of Heaven"
+        ],
+        "org_answer": [
+            "Other People's Children"
+        ],
+        "pred_answer": "The Other Side of Heaven",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 858,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.093108654022217,
+        "so_loss": 2.1067819595336914
+    },
+    {
+        "sub_answer": [
+            "The Other Side of Heaven"
+        ],
+        "org_answer": [
+            "Other People's Children"
+        ],
+        "pred_answer": "The Other Side of Heaven",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 858,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0630247592926025,
+        "so_loss": 2.0761148929595947
+    },
+    {
+        "sub_answer": [
+            "United Arab Emirates"
+        ],
+        "org_answer": [
+            "Saudi Arabia"
+        ],
+        "pred_answer": "United Arab Emirates",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 874,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.0544841289520264,
+        "so_loss": 2.057832717895508
+    },
+    {
+        "sub_answer": [
+            "United Arab Emirates"
+        ],
+        "org_answer": [
+            "Saudi Arabia"
+        ],
+        "pred_answer": "United Arab Emirates",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 874,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.0603201389312744,
+        "so_loss": 2.063157558441162
+    },
+    {
+        "sub_answer": [
+            "United Arab Emirates"
+        ],
+        "org_answer": [
+            "Saudi Arabia"
+        ],
+        "pred_answer": "United Arab Emirates",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 874,
+        "demonstration_ids": [
+            43,
+            824,
+            936
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0260815620422363,
+        "so_loss": 2.029101848602295
+    },
+    {
+        "sub_answer": [
+            "Member of the House of Representatives"
+        ],
+        "org_answer": [
+            "Delegate to the Continental Congress"
+        ],
+        "pred_answer": "Member of the House of Representatives",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 888,
+        "demonstration_ids": [
+            141,
+            982,
+            65
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.2307636737823486,
+        "so_loss": 2.2374022006988525
+    },
+    {
+        "sub_answer": [
+            "Member of the House of Representatives"
+        ],
+        "org_answer": [
+            "Delegate to the Continental Congress"
+        ],
+        "pred_answer": "Member of the House of Representatives",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 888,
+        "demonstration_ids": [
+            141,
+            982,
+            65
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.23040771484375,
+        "so_loss": 2.234816789627075
+    },
+    {
+        "sub_answer": [
+            "Member of the House of Representatives"
+        ],
+        "org_answer": [
+            "Delegate to the Continental Congress"
+        ],
+        "pred_answer": "Member of the House of Representatives",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 888,
+        "demonstration_ids": [
+            141,
+            982,
+            65
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.2116079330444336,
+        "so_loss": 2.218080520629883
+    },
+    {
+        "sub_answer": [
+            "Ottoman Empire"
+        ],
+        "org_answer": [
+            "Seljuk Empire"
+        ],
+        "pred_answer": "Ray",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 905,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.9761135578155518,
+        "so_loss": 1.9787462949752808
+    },
+    {
+        "sub_answer": [
+            "Ottoman Empire"
+        ],
+        "org_answer": [
+            "Seljuk Empire"
+        ],
+        "pred_answer": "Tehran",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 905,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.9848649501800537,
+        "so_loss": 1.9870314598083496
+    },
+    {
+        "sub_answer": [
+            "Ottoman Empire"
+        ],
+        "org_answer": [
+            "Seljuk Empire"
+        ],
+        "pred_answer": "Ray",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 905,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9897596836090088,
+        "so_loss": 1.992114543914795
+    },
+    {
+        "sub_answer": [
+            "The Riddle"
+        ],
+        "org_answer": [
+            "The Anomaly"
+        ],
+        "pred_answer": "The Riddle",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 912,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.009239912033081,
+        "so_loss": 2.0180470943450928
+    },
+    {
+        "sub_answer": [
+            "The Riddle"
+        ],
+        "org_answer": [
+            "The Anomaly"
+        ],
+        "pred_answer": "The Riddle",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 912,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.0174758434295654,
+        "so_loss": 2.022710084915161
+    },
+    {
+        "sub_answer": [
+            "The Riddle"
+        ],
+        "org_answer": [
+            "The Anomaly"
+        ],
+        "pred_answer": "The Riddle",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 912,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.020378589630127,
+        "so_loss": 2.0287678241729736
+    },
+    {
+        "sub_answer": [
+            "Billy Wilson"
+        ],
+        "org_answer": [
+            "Ronnie Turner",
+            "Raymond Craig Turner"
+        ],
+        "pred_answer": "Tina's Prayer",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 916,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.09830904006958,
+        "so_loss": 2.0961530208587646
+    },
+    {
+        "sub_answer": [
+            "Billy Wilson"
+        ],
+        "org_answer": [
+            "Ronnie Turner",
+            "Raymond Craig Turner"
+        ],
+        "pred_answer": "Ike Turner",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 916,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.1064178943634033,
+        "so_loss": 2.1035125255584717
+    },
+    {
+        "sub_answer": [
+            "Billy Wilson"
+        ],
+        "org_answer": [
+            "Ronnie Turner",
+            "Raymond Craig Turner"
+        ],
+        "pred_answer": "Tina's Prayer",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 916,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.111414670944214,
+        "so_loss": 2.1089420318603516
+    },
+    {
+        "sub_answer": [
+            "Croatia"
+        ],
+        "org_answer": [
+            "Hungary"
+        ],
+        "pred_answer": "Croatia",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 918,
+        "demonstration_ids": [
+            141,
+            982,
+            65
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.3030848503112793,
+        "so_loss": 2.304307699203491
+    },
+    {
+        "sub_answer": [
+            "Croatia"
+        ],
+        "org_answer": [
+            "Hungary"
+        ],
+        "pred_answer": "Hungary",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 918,
+        "demonstration_ids": [
+            141,
+            982,
+            65
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.303764581680298,
+        "so_loss": 2.3027749061584473
+    },
+    {
+        "sub_answer": [
+            "Croatia"
+        ],
+        "org_answer": [
+            "Hungary"
+        ],
+        "pred_answer": "Hungary",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 918,
+        "demonstration_ids": [
+            141,
+            982,
+            65
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.284456491470337,
+        "so_loss": 2.2843759059906006
+    },
+    {
+        "sub_answer": [
+            "Uruguay national football team"
+        ],
+        "org_answer": [
+            "Argentina national football team"
+        ],
+        "pred_answer": "Uruguay national football team",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 923,
+        "demonstration_ids": [
+            141,
+            982,
+            65
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.143327474594116,
+        "so_loss": 2.1459248065948486
+    },
+    {
+        "sub_answer": [
+            "Uruguay national football team"
+        ],
+        "org_answer": [
+            "Argentina national football team"
+        ],
+        "pred_answer": "Uruguay national football team",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 923,
+        "demonstration_ids": [
+            141,
+            982,
+            65
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.145137310028076,
+        "so_loss": 2.145871639251709
+    },
+    {
+        "sub_answer": [
+            "Uruguay national football team"
+        ],
+        "org_answer": [
+            "Argentina national football team"
+        ],
+        "pred_answer": "Uruguay national football team",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 923,
+        "demonstration_ids": [
+            141,
+            982,
+            65
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.126800537109375,
+        "so_loss": 2.129503011703491
+    },
+    {
+        "sub_answer": [
+            "Authoritarianism"
+        ],
+        "org_answer": [
+            "Juche",
+            "Socialist state",
+            "Single-party state"
+        ],
+        "pred_answer": "Authoritarianism",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 936,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.9973196983337402,
+        "so_loss": 2.0048413276672363
+    },
+    {
+        "sub_answer": [
+            "Authoritarianism"
+        ],
+        "org_answer": [
+            "Juche",
+            "Socialist state",
+            "Single-party state"
+        ],
+        "pred_answer": "Authoritarianism",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 936,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.005295515060425,
+        "so_loss": 2.01100492477417
+    },
+    {
+        "sub_answer": [
+            "Authoritarianism"
+        ],
+        "org_answer": [
+            "Juche",
+            "Socialist state",
+            "Single-party state"
+        ],
+        "pred_answer": "Authoritarianism",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 936,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0087201595306396,
+        "so_loss": 2.0165443420410156
+    },
+    {
+        "sub_answer": [
+            "University of Cambridge"
+        ],
+        "org_answer": [
+            "University of Oxford"
+        ],
+        "pred_answer": "University of Cambridge",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 937,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.1669750213623047,
+        "so_loss": 2.169227123260498
+    },
+    {
+        "sub_answer": [
+            "University of Cambridge"
+        ],
+        "org_answer": [
+            "University of Oxford"
+        ],
+        "pred_answer": "University of Cambridge",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 937,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.177478075027466,
+        "so_loss": 2.178450107574463
+    },
+    {
+        "sub_answer": [
+            "University of Cambridge"
+        ],
+        "org_answer": [
+            "University of Oxford"
+        ],
+        "pred_answer": "University of Cambridge",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 937,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.1778626441955566,
+        "so_loss": 2.1799001693725586
+    },
+    {
+        "sub_answer": [
+            "Detroit"
+        ],
+        "org_answer": [
+            "Atlanta"
+        ],
+        "pred_answer": "Detroit",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 945,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.994928002357483,
+        "so_loss": 1.9959977865219116
+    },
+    {
+        "sub_answer": [
+            "Detroit"
+        ],
+        "org_answer": [
+            "Atlanta"
+        ],
+        "pred_answer": "Atlanta",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 945,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.0034666061401367,
+        "so_loss": 2.0035297870635986
+    },
+    {
+        "sub_answer": [
+            "Detroit"
+        ],
+        "org_answer": [
+            "Atlanta"
+        ],
+        "pred_answer": "Detroit",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 945,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.004865884780884,
+        "so_loss": 2.0058133602142334
+    },
+    {
+        "sub_answer": [
+            "Barcelona Basket"
+        ],
+        "org_answer": [
+            "Real Madrid Baloncesto"
+        ],
+        "pred_answer": "Barcelona Basket",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 982,
+        "demonstration_ids": [
+            1213,
+            826,
+            1141
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.8887523412704468,
+        "so_loss": 1.8915611505508423
+    },
+    {
+        "sub_answer": [
+            "Barcelona Basket"
+        ],
+        "org_answer": [
+            "Real Madrid Baloncesto"
+        ],
+        "pred_answer": "Barcelona Basket",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 982,
+        "demonstration_ids": [
+            1213,
+            826,
+            1141
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.9049525260925293,
+        "so_loss": 1.9042659997940063
+    },
+    {
+        "sub_answer": [
+            "Barcelona Basket"
+        ],
+        "org_answer": [
+            "Real Madrid Baloncesto"
+        ],
+        "pred_answer": "Barcelona Basket",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 982,
+        "demonstration_ids": [
+            1213,
+            826,
+            1141
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9204051494598389,
+        "so_loss": 1.9223144054412842
+    },
+    {
+        "sub_answer": [
+            "Transitional government"
+        ],
+        "org_answer": [
+            "Provisional government",
+            "Parliamentary republic"
+        ],
+        "pred_answer": "Libya",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1006,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.003713846206665,
+        "so_loss": 2.0107791423797607
+    },
+    {
+        "sub_answer": [
+            "Transitional government"
+        ],
+        "org_answer": [
+            "Provisional government",
+            "Parliamentary republic"
+        ],
+        "pred_answer": "Libya",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1006,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.0115411281585693,
+        "so_loss": 2.0165481567382812
+    },
+    {
+        "sub_answer": [
+            "Transitional government"
+        ],
+        "org_answer": [
+            "Provisional government",
+            "Parliamentary republic"
+        ],
+        "pred_answer": "Libya",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1006,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.013692855834961,
+        "so_loss": 2.0204567909240723
+    },
+    {
+        "sub_answer": [
+            "Field Museum of Natural History"
+        ],
+        "org_answer": [
+            "Art Institute of Chicago"
+        ],
+        "pred_answer": "The Art Institute of Chicago",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1009,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.110013961791992,
+        "so_loss": 2.110154628753662
+    },
+    {
+        "sub_answer": [
+            "Field Museum of Natural History"
+        ],
+        "org_answer": [
+            "Art Institute of Chicago"
+        ],
+        "pred_answer": "The Art Institute of Chicago",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1009,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.1149485111236572,
+        "so_loss": 2.116391897201538
+    },
+    {
+        "sub_answer": [
+            "Field Museum of Natural History"
+        ],
+        "org_answer": [
+            "Art Institute of Chicago"
+        ],
+        "pred_answer": "The Art Institute of Chicago",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1009,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.118549108505249,
+        "so_loss": 2.119462490081787
+    },
+    {
+        "sub_answer": [
+            "Saskatchewan"
+        ],
+        "org_answer": [
+            "Ontario"
+        ],
+        "pred_answer": "American Falls",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1013,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.0475120544433594,
+        "so_loss": 2.0470542907714844
+    },
+    {
+        "sub_answer": [
+            "Saskatchewan"
+        ],
+        "org_answer": [
+            "Ontario"
+        ],
+        "pred_answer": "Seneca Indian Reservation",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1013,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.055509090423584,
+        "so_loss": 2.0532259941101074
+    },
+    {
+        "sub_answer": [
+            "Saskatchewan"
+        ],
+        "org_answer": [
+            "Ontario"
+        ],
+        "pred_answer": "American Falls",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1013,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.060617208480835,
+        "so_loss": 2.0609805583953857
+    },
+    {
+        "sub_answer": [
+            "Sweden"
+        ],
+        "org_answer": [
+            "Portugal"
+        ],
+        "pred_answer": "Spain",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1048,
+        "demonstration_ids": [
+            141,
+            982,
+            65
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.224788188934326,
+        "so_loss": 2.2230305671691895
+    },
+    {
+        "sub_answer": [
+            "Sweden"
+        ],
+        "org_answer": [
+            "Portugal"
+        ],
+        "pred_answer": "Portugal",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1048,
+        "demonstration_ids": [
+            141,
+            982,
+            65
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.2245676517486572,
+        "so_loss": 2.2222118377685547
+    },
+    {
+        "sub_answer": [
+            "Sweden"
+        ],
+        "org_answer": [
+            "Portugal"
+        ],
+        "pred_answer": "Portugal",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1048,
+        "demonstration_ids": [
+            141,
+            982,
+            65
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.2075982093811035,
+        "so_loss": 2.2050065994262695
+    },
+    {
+        "sub_answer": [
+            "Austria"
+        ],
+        "org_answer": [
+            "Denmark"
+        ],
+        "pred_answer": "Austria",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1049,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.113098621368408,
+        "so_loss": 2.113762855529785
+    },
+    {
+        "sub_answer": [
+            "Austria"
+        ],
+        "org_answer": [
+            "Denmark"
+        ],
+        "pred_answer": "Denmark",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1049,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.1210737228393555,
+        "so_loss": 2.1194705963134766
+    },
+    {
+        "sub_answer": [
+            "Austria"
+        ],
+        "org_answer": [
+            "Denmark"
+        ],
+        "pred_answer": "Austria",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1049,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.1240665912628174,
+        "so_loss": 2.1245691776275635
+    },
+    {
+        "sub_answer": [
+            "Al Gore"
+        ],
+        "org_answer": [
+            "John Kerry"
+        ],
+        "pred_answer": "Al Gore",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1054,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.9372917413711548,
+        "so_loss": 1.9389315843582153
+    },
+    {
+        "sub_answer": [
+            "Al Gore"
+        ],
+        "org_answer": [
+            "John Kerry"
+        ],
+        "pred_answer": "Al Gore",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1054,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.9463907480239868,
+        "so_loss": 1.9469382762908936
+    },
+    {
+        "sub_answer": [
+            "Al Gore"
+        ],
+        "org_answer": [
+            "John Kerry"
+        ],
+        "pred_answer": "Al Gore",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1054,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9480278491973877,
+        "so_loss": 1.949337124824524
+    },
+    {
+        "sub_answer": [
+            "Sri Lanka"
+        ],
+        "org_answer": [
+            "Madagascar"
+        ],
+        "pred_answer": "Iran",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1074,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.191574811935425,
+        "so_loss": 2.189419746398926
+    },
+    {
+        "sub_answer": [
+            "Sri Lanka"
+        ],
+        "org_answer": [
+            "Madagascar"
+        ],
+        "pred_answer": "Madagascar",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1074,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.199714422225952,
+        "so_loss": 2.1971771717071533
+    },
+    {
+        "sub_answer": [
+            "Sri Lanka"
+        ],
+        "org_answer": [
+            "Madagascar"
+        ],
+        "pred_answer": "Iran",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1074,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.2048909664154053,
+        "so_loss": 2.202828884124756
+    },
+    {
+        "sub_answer": [
+            "Australia"
+        ],
+        "org_answer": [
+            "Canada"
+        ],
+        "pred_answer": "Canada",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1102,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.0933127403259277,
+        "so_loss": 2.0931923389434814
+    },
+    {
+        "sub_answer": [
+            "Australia"
+        ],
+        "org_answer": [
+            "Canada"
+        ],
+        "pred_answer": "Canada",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1102,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.1043989658355713,
+        "so_loss": 2.103086471557617
+    },
+    {
+        "sub_answer": [
+            "Australia"
+        ],
+        "org_answer": [
+            "Canada"
+        ],
+        "pred_answer": "Canada",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1102,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.1064059734344482,
+        "so_loss": 2.1061224937438965
+    },
+    {
+        "sub_answer": [
+            "Chicago Bulls"
+        ],
+        "org_answer": [
+            "Dallas Mavericks"
+        ],
+        "pred_answer": "Chicago Bulls",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1105,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.9566928148269653,
+        "so_loss": 1.9597183465957642
+    },
+    {
+        "sub_answer": [
+            "Chicago Bulls"
+        ],
+        "org_answer": [
+            "Dallas Mavericks"
+        ],
+        "pred_answer": "Los Angeles Lakers",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1105,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.9655554294586182,
+        "so_loss": 1.9660271406173706
+    },
+    {
+        "sub_answer": [
+            "Chicago Bulls"
+        ],
+        "org_answer": [
+            "Dallas Mavericks"
+        ],
+        "pred_answer": "Chicago Bulls",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1105,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9683202505111694,
+        "so_loss": 1.9710956811904907
+    },
+    {
+        "sub_answer": [
+            "Eastern Kentucky College"
+        ],
+        "org_answer": [
+            "Huntingdon College"
+        ],
+        "pred_answer": "Eastern Kentucky College",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1115,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.096346378326416,
+        "so_loss": 2.102583646774292
+    },
+    {
+        "sub_answer": [
+            "Eastern Kentucky College"
+        ],
+        "org_answer": [
+            "Huntingdon College"
+        ],
+        "pred_answer": "University of Alabama",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1115,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.1069910526275635,
+        "so_loss": 2.1082682609558105
+    },
+    {
+        "sub_answer": [
+            "Eastern Kentucky College"
+        ],
+        "org_answer": [
+            "Huntingdon College"
+        ],
+        "pred_answer": "Eastern Kentucky College",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1115,
+        "demonstration_ids": [
+            1213,
+            982,
+            1141
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.108086347579956,
+        "so_loss": 2.1145317554473877
+    },
+    {
+        "sub_answer": [
+            "Jason Demers"
+        ],
+        "org_answer": [
+            "Doug Lidster"
+        ],
+        "pred_answer": "m.0crt43r",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1116,
+        "demonstration_ids": [
+            810,
+            591,
+            244
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.7877715826034546,
+        "so_loss": 1.7979636192321777
+    },
+    {
+        "sub_answer": [
+            "Jason Demers"
+        ],
+        "org_answer": [
+            "Doug Lidster"
+        ],
+        "pred_answer": "Willie Desjardins",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1116,
+        "demonstration_ids": [
+            810,
+            591,
+            244
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.80682373046875,
+        "so_loss": 1.8139346837997437
+    },
+    {
+        "sub_answer": [
+            "Jason Demers"
+        ],
+        "org_answer": [
+            "Doug Lidster"
+        ],
+        "pred_answer": "Willie Desjardins",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1116,
+        "demonstration_ids": [
+            810,
+            591,
+            244
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.8550102710723877,
+        "so_loss": 1.8647593259811401
+    },
+    {
+        "sub_answer": [
+            "Temple"
+        ],
+        "org_answer": [
+            "Mosque",
+            "Masjid Hamza, Valley Stream"
+        ],
+        "pred_answer": "g.1256t79kx",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1118,
+        "demonstration_ids": [
+            810,
+            591,
+            244
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.7157381772994995,
+        "so_loss": 1.7171255350112915
+    },
+    {
+        "sub_answer": [
+            "Temple"
+        ],
+        "org_answer": [
+            "Mosque",
+            "Masjid Hamza, Valley Stream"
+        ],
+        "pred_answer": "Islam",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1118,
+        "demonstration_ids": [
+            810,
+            591,
+            244
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.7353370189666748,
+        "so_loss": 1.735416293144226
+    },
+    {
+        "sub_answer": [
+            "Temple"
+        ],
+        "org_answer": [
+            "Mosque",
+            "Masjid Hamza, Valley Stream"
+        ],
+        "pred_answer": "Makkah Masjid, Chennai",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1118,
+        "demonstration_ids": [
+            810,
+            591,
+            244
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.7803077697753906,
+        "so_loss": 1.781291127204895
+    },
+    {
+        "sub_answer": [
+            "Buddha in Buddhism"
+        ],
+        "org_answer": [
+            "Muhammad in Islam"
+        ],
+        "pred_answer": "Buddha in Buddhism",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1138,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.082991600036621,
+        "so_loss": 2.0886025428771973
+    },
+    {
+        "sub_answer": [
+            "Buddha in Buddhism"
+        ],
+        "org_answer": [
+            "Muhammad in Islam"
+        ],
+        "pred_answer": "Muhammad",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1138,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.093879461288452,
+        "so_loss": 2.0969934463500977
+    },
+    {
+        "sub_answer": [
+            "Buddha in Buddhism"
+        ],
+        "org_answer": [
+            "Muhammad in Islam"
+        ],
+        "pred_answer": "Buddha in Buddhism",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1138,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0633203983306885,
+        "so_loss": 2.068387508392334
+    },
+    {
+        "sub_answer": [
+            "Eugene"
+        ],
+        "org_answer": [
+            "Corvallis"
+        ],
+        "pred_answer": "Oregon State University",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1141,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.025172233581543,
+        "so_loss": 2.028522491455078
+    },
+    {
+        "sub_answer": [
+            "Eugene"
+        ],
+        "org_answer": [
+            "Corvallis"
+        ],
+        "pred_answer": "Oregon State University",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1141,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.0337421894073486,
+        "so_loss": 2.0331976413726807
+    },
+    {
+        "sub_answer": [
+            "Eugene"
+        ],
+        "org_answer": [
+            "Corvallis"
+        ],
+        "pred_answer": "Oregon State University",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1141,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.00595760345459,
+        "so_loss": 2.0080795288085938
+    },
+    {
+        "sub_answer": [
+            "Romanian language"
+        ],
+        "org_answer": [
+            "Albanian language",
+            "Greek Language"
+        ],
+        "pred_answer": "Romanian language",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1146,
+        "demonstration_ids": [
+            261,
+            591,
+            244
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.0279250144958496,
+        "so_loss": 2.0349953174591064
+    },
+    {
+        "sub_answer": [
+            "Romanian language"
+        ],
+        "org_answer": [
+            "Albanian language",
+            "Greek Language"
+        ],
+        "pred_answer": "Greek",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1146,
+        "demonstration_ids": [
+            261,
+            591,
+            244
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.045870304107666,
+        "so_loss": 2.047187566757202
+    },
+    {
+        "sub_answer": [
+            "Romanian language"
+        ],
+        "org_answer": [
+            "Albanian language",
+            "Greek Language"
+        ],
+        "pred_answer": "Romanian language",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1146,
+        "demonstration_ids": [
+            261,
+            591,
+            244
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0861990451812744,
+        "so_loss": 2.090981960296631
+    },
+    {
+        "sub_answer": [
+            "Greece national football team"
+        ],
+        "org_answer": [
+            "Argentina national football team"
+        ],
+        "pred_answer": "Greece national football team",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1157,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.0563628673553467,
+        "so_loss": 2.0608713626861572
+    },
+    {
+        "sub_answer": [
+            "Greece national football team"
+        ],
+        "org_answer": [
+            "Argentina national football team"
+        ],
+        "pred_answer": "Greece national football team",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1157,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.062098264694214,
+        "so_loss": 2.0649542808532715
+    },
+    {
+        "sub_answer": [
+            "Greece national football team"
+        ],
+        "org_answer": [
+            "Argentina national football team"
+        ],
+        "pred_answer": "Greece national football team",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1157,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.039750337600708,
+        "so_loss": 2.043898820877075
+    },
+    {
+        "sub_answer": [
+            "Madison Square Garden"
+        ],
+        "org_answer": [
+            "United Center"
+        ],
+        "pred_answer": "Madison Square Garden",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1182,
+        "demonstration_ids": [
+            810,
+            591,
+            244
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.6989120244979858,
+        "so_loss": 1.710829496383667
+    },
+    {
+        "sub_answer": [
+            "Madison Square Garden"
+        ],
+        "org_answer": [
+            "United Center"
+        ],
+        "pred_answer": "Madison Square Garden",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1182,
+        "demonstration_ids": [
+            810,
+            591,
+            244
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.718432068824768,
+        "so_loss": 1.725340723991394
+    },
+    {
+        "sub_answer": [
+            "Madison Square Garden"
+        ],
+        "org_answer": [
+            "United Center"
+        ],
+        "pred_answer": "Madison Square Garden",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1182,
+        "demonstration_ids": [
+            810,
+            591,
+            244
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.7683618068695068,
+        "so_loss": 1.7781918048858643
+    },
+    {
+        "sub_answer": [
+            "Tamil Language"
+        ],
+        "org_answer": [
+            "English Language",
+            "Standard Chinese",
+            "Tamil Language",
+            "Malay Language"
+        ],
+        "pred_answer": "Malay",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1186,
+        "demonstration_ids": [
+            261,
+            591,
+            244
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.9381531476974487,
+        "so_loss": 1.9436562061309814
+    },
+    {
+        "sub_answer": [
+            "Tamil Language"
+        ],
+        "org_answer": [
+            "English Language",
+            "Standard Chinese",
+            "Tamil Language",
+            "Malay Language"
+        ],
+        "pred_answer": "Malay",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1186,
+        "demonstration_ids": [
+            261,
+            591,
+            244
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.9531795978546143,
+        "so_loss": 1.9563783407211304
+    },
+    {
+        "sub_answer": [
+            "Tamil Language"
+        ],
+        "org_answer": [
+            "English Language",
+            "Standard Chinese",
+            "Tamil Language",
+            "Malay Language"
+        ],
+        "pred_answer": "Tamil Language",
+        "sub_answer_em": 1,
+        "org_answer_em": 1,
+        "item_idx": 1186,
+        "demonstration_ids": [
+            261,
+            591,
+            244
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9919053316116333,
+        "so_loss": 1.9975804090499878
+    },
+    {
+        "sub_answer": [
+            "2015 MLB World Series"
+        ],
+        "org_answer": [
+            "2008 NBA Finals",
+            "1969 NBA Finals",
+            "1986 NBA Finals",
+            "1984 NBA Finals",
+            "1981 NBA Finals",
+            "1976 NBA Finals",
+            "1974 NBA Finals",
+            "1968 NBA Finals",
+            "1966 NBA Finals",
+            "1965 NBA Finals",
+            "1964 NBA Finals",
+            "1963 NBA Finals",
+            "1962 NBA Finals",
+            "1961 NBA Finals",
+            "1960 NBA Finals",
+            "1959 NBA Finals",
+            "1957 NBA Finals"
+        ],
+        "pred_answer": "2015 MLB World Series",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1195,
+        "demonstration_ids": [
+            810,
+            591,
+            244
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.5825275182724,
+        "so_loss": 1.5926579236984253
+    },
+    {
+        "sub_answer": [
+            "2015 MLB World Series"
+        ],
+        "org_answer": [
+            "2008 NBA Finals",
+            "1969 NBA Finals",
+            "1986 NBA Finals",
+            "1984 NBA Finals",
+            "1981 NBA Finals",
+            "1976 NBA Finals",
+            "1974 NBA Finals",
+            "1968 NBA Finals",
+            "1966 NBA Finals",
+            "1965 NBA Finals",
+            "1964 NBA Finals",
+            "1963 NBA Finals",
+            "1962 NBA Finals",
+            "1961 NBA Finals",
+            "1960 NBA Finals",
+            "1959 NBA Finals",
+            "1957 NBA Finals"
+        ],
+        "pred_answer": "2015",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1195,
+        "demonstration_ids": [
+            810,
+            591,
+            244
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.6021952629089355,
+        "so_loss": 1.6088526248931885
+    },
+    {
+        "sub_answer": [
+            "2015 MLB World Series"
+        ],
+        "org_answer": [
+            "2008 NBA Finals",
+            "1969 NBA Finals",
+            "1986 NBA Finals",
+            "1984 NBA Finals",
+            "1981 NBA Finals",
+            "1976 NBA Finals",
+            "1974 NBA Finals",
+            "1968 NBA Finals",
+            "1966 NBA Finals",
+            "1965 NBA Finals",
+            "1964 NBA Finals",
+            "1963 NBA Finals",
+            "1962 NBA Finals",
+            "1961 NBA Finals",
+            "1960 NBA Finals",
+            "1959 NBA Finals",
+            "1957 NBA Finals"
+        ],
+        "pred_answer": "2015 MLB World Series",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1195,
+        "demonstration_ids": [
+            810,
+            591,
+            244
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.648232102394104,
+        "so_loss": 1.657381534576416
+    },
+    {
+        "sub_answer": [
+            "UTC−06:00"
+        ],
+        "org_answer": [
+            "UTC−05:00",
+            "Central Time Zone",
+            "Eastern Time Zone"
+        ],
+        "pred_answer": "UTC−06:00",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1209,
+        "demonstration_ids": [
+            810,
+            591,
+            244
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.8728505373001099,
+        "so_loss": 1.8773807287216187
+    },
+    {
+        "sub_answer": [
+            "UTC−06:00"
+        ],
+        "org_answer": [
+            "UTC−05:00",
+            "Central Time Zone",
+            "Eastern Time Zone"
+        ],
+        "pred_answer": "Eastern Time Zone",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1209,
+        "demonstration_ids": [
+            810,
+            591,
+            244
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.8928529024124146,
+        "so_loss": 1.8954823017120361
+    },
+    {
+        "sub_answer": [
+            "UTC−06:00"
+        ],
+        "org_answer": [
+            "UTC−05:00",
+            "Central Time Zone",
+            "Eastern Time Zone"
+        ],
+        "pred_answer": "UTC−06:00",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1209,
+        "demonstration_ids": [
+            810,
+            591,
+            244
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9409841299057007,
+        "so_loss": 1.9451442956924438
+    },
+    {
+        "sub_answer": [
+            "Baba Ramdev"
+        ],
+        "org_answer": [
+            "Ramdev Pir",
+            "God",
+            "Allah"
+        ],
+        "pred_answer": "Baba Ramdev",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1213,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.0198018550872803,
+        "so_loss": 2.031123638153076
+    },
+    {
+        "sub_answer": [
+            "Baba Ramdev"
+        ],
+        "org_answer": [
+            "Ramdev Pir",
+            "God",
+            "Allah"
+        ],
+        "pred_answer": "Allah",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1213,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.0281717777252197,
+        "so_loss": 2.0377817153930664
+    },
+    {
+        "sub_answer": [
+            "Baba Ramdev"
+        ],
+        "org_answer": [
+            "Ramdev Pir",
+            "God",
+            "Allah"
+        ],
+        "pred_answer": "Baba Ramdev",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1213,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0025978088378906,
+        "so_loss": 2.01420259475708
+    },
+    {
+        "sub_answer": [
+            "Madison Square Garden"
+        ],
+        "org_answer": [
+            "United Center"
+        ],
+        "pred_answer": "Madison Square Garden",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1221,
+        "demonstration_ids": [
+            810,
+            591,
+            654
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.9194726943969727,
+        "so_loss": 1.9293667078018188
+    },
+    {
+        "sub_answer": [
+            "Madison Square Garden"
+        ],
+        "org_answer": [
+            "United Center"
+        ],
+        "pred_answer": "Madison Square Garden",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1221,
+        "demonstration_ids": [
+            810,
+            591,
+            654
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.937036156654358,
+        "so_loss": 1.9417024850845337
+    },
+    {
+        "sub_answer": [
+            "Madison Square Garden"
+        ],
+        "org_answer": [
+            "United Center"
+        ],
+        "pred_answer": "Madison Square Garden",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1221,
+        "demonstration_ids": [
+            810,
+            591,
+            654
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9728890657424927,
+        "so_loss": 1.9813100099563599
+    },
+    {
+        "sub_answer": [
+            "Wizards on Deck with Miley Cyrus"
+        ],
+        "org_answer": [
+            "Wizards on Deck with Hannah Montana"
+        ],
+        "pred_answer": "Magic",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1222,
+        "demonstration_ids": [
+            261,
+            591,
+            244
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.0568108558654785,
+        "so_loss": 2.057331085205078
+    },
+    {
+        "sub_answer": [
+            "Wizards on Deck with Miley Cyrus"
+        ],
+        "org_answer": [
+            "Wizards on Deck with Hannah Montana"
+        ],
+        "pred_answer": "Selena Gomez: The Series",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1222,
+        "demonstration_ids": [
+            261,
+            591,
+            244
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.0667483806610107,
+        "so_loss": 2.0672991275787354
+    },
+    {
+        "sub_answer": [
+            "Wizards on Deck with Miley Cyrus"
+        ],
+        "org_answer": [
+            "Wizards on Deck with Hannah Montana"
+        ],
+        "pred_answer": "Shake It Up",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1222,
+        "demonstration_ids": [
+            261,
+            591,
+            244
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.1112546920776367,
+        "so_loss": 2.111996650695801
+    },
+    {
+        "sub_answer": [
+            "Albania"
+        ],
+        "org_answer": [
+            "Turkey"
+        ],
+        "pred_answer": "Turkey",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1229,
+        "demonstration_ids": [
+            261,
+            591,
+            244
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.063811779022217,
+        "so_loss": 2.061476945877075
+    },
+    {
+        "sub_answer": [
+            "Albania"
+        ],
+        "org_answer": [
+            "Turkey"
+        ],
+        "pred_answer": "Turkey",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1229,
+        "demonstration_ids": [
+            261,
+            591,
+            244
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.077404260635376,
+        "so_loss": 2.0759541988372803
+    },
+    {
+        "sub_answer": [
+            "Albania"
+        ],
+        "org_answer": [
+            "Turkey"
+        ],
+        "pred_answer": "Turkey",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1229,
+        "demonstration_ids": [
+            261,
+            591,
+            244
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.115921974182129,
+        "so_loss": 2.1146368980407715
+    },
+    {
+        "sub_answer": [
+            "Judaism"
+        ],
+        "org_answer": [
+            "Islam"
+        ],
+        "pred_answer": "Islam",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1246,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.208127021789551,
+        "so_loss": 2.2044150829315186
+    },
+    {
+        "sub_answer": [
+            "Judaism"
+        ],
+        "org_answer": [
+            "Islam"
+        ],
+        "pred_answer": "Islam",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1246,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.2152092456817627,
+        "so_loss": 2.2121763229370117
+    },
+    {
+        "sub_answer": [
+            "Judaism"
+        ],
+        "org_answer": [
+            "Islam"
+        ],
+        "pred_answer": "Islam",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1246,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.190828323364258,
+        "so_loss": 2.1877193450927734
+    },
+    {
+        "sub_answer": [
+            "Mark Sanford"
+        ],
+        "org_answer": [
+            "Joe Lieberman"
+        ],
+        "pred_answer": "Christopher J. Dodd",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1259,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.220139741897583,
+        "so_loss": 2.213592529296875
+    },
+    {
+        "sub_answer": [
+            "Mark Sanford"
+        ],
+        "org_answer": [
+            "Joe Lieberman"
+        ],
+        "pred_answer": "Christopher Dodd",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1259,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.2300853729248047,
+        "so_loss": 2.221325397491455
+    },
+    {
+        "sub_answer": [
+            "Mark Sanford"
+        ],
+        "org_answer": [
+            "Joe Lieberman"
+        ],
+        "pred_answer": "Christopher Dodd",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1259,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.200761079788208,
+        "so_loss": 2.1939871311187744
+    },
+    {
+        "sub_answer": [
+            "University of Cambridge"
+        ],
+        "org_answer": [
+            "University of Oxford"
+        ],
+        "pred_answer": "University of Cambridge",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1291,
+        "demonstration_ids": [
+            810,
+            591,
+            244
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.9775246381759644,
+        "so_loss": 1.9783986806869507
+    },
+    {
+        "sub_answer": [
+            "University of Cambridge"
+        ],
+        "org_answer": [
+            "University of Oxford"
+        ],
+        "pred_answer": "Oxford University",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1291,
+        "demonstration_ids": [
+            810,
+            591,
+            244
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.9979418516159058,
+        "so_loss": 1.99788236618042
+    },
+    {
+        "sub_answer": [
+            "University of Cambridge"
+        ],
+        "org_answer": [
+            "University of Oxford"
+        ],
+        "pred_answer": "University of Cambridge",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1291,
+        "demonstration_ids": [
+            810,
+            591,
+            244
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0424487590789795,
+        "so_loss": 2.0432186126708984
+    },
+    {
+        "sub_answer": [
+            "Sweden national football team"
+        ],
+        "org_answer": [
+            "Brazil national football team"
+        ],
+        "pred_answer": "Sweden national football team",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1302,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.0881924629211426,
+        "so_loss": 2.0915377140045166
+    },
+    {
+        "sub_answer": [
+            "Sweden national football team"
+        ],
+        "org_answer": [
+            "Brazil national football team"
+        ],
+        "pred_answer": "Brazil",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1302,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.095101833343506,
+        "so_loss": 2.0961806774139404
+    },
+    {
+        "sub_answer": [
+            "Sweden national football team"
+        ],
+        "org_answer": [
+            "Brazil national football team"
+        ],
+        "pred_answer": "Sweden national football team",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1302,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0730929374694824,
+        "so_loss": 2.0765492916107178
+    },
+    {
+        "sub_answer": [
+            "Sweden"
+        ],
+        "org_answer": [
+            "Russia"
+        ],
+        "pred_answer": "Russia",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1313,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.136831760406494,
+        "so_loss": 2.1323764324188232
+    },
+    {
+        "sub_answer": [
+            "Sweden"
+        ],
+        "org_answer": [
+            "Russia"
+        ],
+        "pred_answer": "Russia",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1313,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.142664670944214,
+        "so_loss": 2.138244152069092
+    },
+    {
+        "sub_answer": [
+            "Sweden"
+        ],
+        "org_answer": [
+            "Russia"
+        ],
+        "pred_answer": "Russia",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1313,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.1206207275390625,
+        "so_loss": 2.1158344745635986
+    },
+    {
+        "sub_answer": [
+            "Australian Empire"
+        ],
+        "org_answer": [
+            "British Raj"
+        ],
+        "pred_answer": "British India",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1319,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.337803602218628,
+        "so_loss": 2.338383913040161
+    },
+    {
+        "sub_answer": [
+            "Australian Empire"
+        ],
+        "org_answer": [
+            "British Raj"
+        ],
+        "pred_answer": "India",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1319,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.348095178604126,
+        "so_loss": 2.3450117111206055
+    },
+    {
+        "sub_answer": [
+            "Australian Empire"
+        ],
+        "org_answer": [
+            "British Raj"
+        ],
+        "pred_answer": "British India",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1319,
+        "demonstration_ids": [
+            810,
+            351,
+            654
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.324125289916992,
+        "so_loss": 2.324204921722412
+    },
+    {
+        "sub_answer": [
+            "New Hampshire Community College"
+        ],
+        "org_answer": [
+            "Bridgewater State University"
+        ],
+        "pred_answer": "New Hampshire Community College",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1320,
+        "demonstration_ids": [
+            1102,
+            381,
+            192
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.0033841133117676,
+        "so_loss": 2.0058836936950684
+    },
+    {
+        "sub_answer": [
+            "New Hampshire Community College"
+        ],
+        "org_answer": [
+            "Bridgewater State University"
+        ],
+        "pred_answer": "New Hampshire Community College",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1320,
+        "demonstration_ids": [
+            1102,
+            381,
+            192
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.003587245941162,
+        "so_loss": 2.005267381668091
+    },
+    {
+        "sub_answer": [
+            "New Hampshire Community College"
+        ],
+        "org_answer": [
+            "Bridgewater State University"
+        ],
+        "pred_answer": "New Hampshire Community College",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1320,
+        "demonstration_ids": [
+            1102,
+            381,
+            192
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9822044372558594,
+        "so_loss": 1.9845073223114014
+    },
+    {
+        "sub_answer": [
+            "Kuwait"
+        ],
+        "org_answer": [
+            "Iraq"
+        ],
+        "pred_answer": "Saddam Hussein",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1322,
+        "demonstration_ids": [
+            1102,
+            322,
+            244
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.986261248588562,
+        "so_loss": 1.985826015472412
+    },
+    {
+        "sub_answer": [
+            "Kuwait"
+        ],
+        "org_answer": [
+            "Iraq"
+        ],
+        "pred_answer": "Saddam Hussein",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1322,
+        "demonstration_ids": [
+            1102,
+            322,
+            244
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.9776554107666016,
+        "so_loss": 1.9767353534698486
+    },
+    {
+        "sub_answer": [
+            "Kuwait"
+        ],
+        "org_answer": [
+            "Iraq"
+        ],
+        "pred_answer": "Saddam Hussein",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1322,
+        "demonstration_ids": [
+            1102,
+            322,
+            244
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9638254642486572,
+        "so_loss": 1.9633047580718994
+    },
+    {
+        "sub_answer": [
+            "University of Michigan"
+        ],
+        "org_answer": [
+            "Columbia University"
+        ],
+        "pred_answer": "Columbia University",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1327,
+        "demonstration_ids": [
+            1102,
+            322,
+            244
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.119426727294922,
+        "so_loss": 2.11759614944458
+    },
+    {
+        "sub_answer": [
+            "University of Michigan"
+        ],
+        "org_answer": [
+            "Columbia University"
+        ],
+        "pred_answer": "Columbia University",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1327,
+        "demonstration_ids": [
+            1102,
+            322,
+            244
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.1122565269470215,
+        "so_loss": 2.1099939346313477
+    },
+    {
+        "sub_answer": [
+            "University of Michigan"
+        ],
+        "org_answer": [
+            "Columbia University"
+        ],
+        "pred_answer": "Columbia University",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1327,
+        "demonstration_ids": [
+            1102,
+            322,
+            244
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.097496747970581,
+        "so_loss": 2.095127582550049
+    },
+    {
+        "sub_answer": [
+            "Brad Pitt"
+        ],
+        "org_answer": [
+            "Derek Fisher"
+        ],
+        "pred_answer": "Basketball",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1371,
+        "demonstration_ids": [
+            1102,
+            322,
+            244
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.9917385578155518,
+        "so_loss": 1.9986971616744995
+    },
+    {
+        "sub_answer": [
+            "Brad Pitt"
+        ],
+        "org_answer": [
+            "Derek Fisher"
+        ],
+        "pred_answer": "New York Knicks",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1371,
+        "demonstration_ids": [
+            1102,
+            322,
+            244
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.983290195465088,
+        "so_loss": 1.9889754056930542
+    },
+    {
+        "sub_answer": [
+            "Brad Pitt"
+        ],
+        "org_answer": [
+            "Derek Fisher"
+        ],
+        "pred_answer": "Basketball",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1371,
+        "demonstration_ids": [
+            1102,
+            322,
+            244
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9702950716018677,
+        "so_loss": 1.9769134521484375
+    },
+    {
+        "sub_answer": [
+            "Arabic Language"
+        ],
+        "org_answer": [
+            "Hebrew Language",
+            "Arabic Language"
+        ],
+        "pred_answer": "Arabic Language",
+        "sub_answer_em": 1,
+        "org_answer_em": 1,
+        "item_idx": 1374,
+        "demonstration_ids": [
+            1102,
+            381,
+            192
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.975082278251648,
+        "so_loss": 1.9794577360153198
+    },
+    {
+        "sub_answer": [
+            "Arabic Language"
+        ],
+        "org_answer": [
+            "Hebrew Language",
+            "Arabic Language"
+        ],
+        "pred_answer": "Arabic",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1374,
+        "demonstration_ids": [
+            1102,
+            381,
+            192
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 1.976192593574524,
+        "so_loss": 1.9791775941848755
+    },
+    {
+        "sub_answer": [
+            "Arabic Language"
+        ],
+        "org_answer": [
+            "Hebrew Language",
+            "Arabic Language"
+        ],
+        "pred_answer": "Arabic Language",
+        "sub_answer_em": 1,
+        "org_answer_em": 1,
+        "item_idx": 1374,
+        "demonstration_ids": [
+            1102,
+            381,
+            192
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9518373012542725,
+        "so_loss": 1.9557445049285889
+    },
+    {
+        "sub_answer": [
+            "Luxembourg"
+        ],
+        "org_answer": [
+            "Liechtenstein",
+            "Switzerland"
+        ],
+        "pred_answer": "Luxembourg and Switzerland",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1393,
+        "demonstration_ids": [
+            1320,
+            381,
+            192
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 1.9999942779541016,
+        "so_loss": 1.99992036819458
+    },
+    {
+        "sub_answer": [
+            "Luxembourg"
+        ],
+        "org_answer": [
+            "Liechtenstein",
+            "Switzerland"
+        ],
+        "pred_answer": "Switzerland and Liechtenstein",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1393,
+        "demonstration_ids": [
+            1320,
+            381,
+            192
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.0039780139923096,
+        "so_loss": 2.001447916030884
+    },
+    {
+        "sub_answer": [
+            "Luxembourg"
+        ],
+        "org_answer": [
+            "Liechtenstein",
+            "Switzerland"
+        ],
+        "pred_answer": "Switzerland and Luxembourg",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1393,
+        "demonstration_ids": [
+            1320,
+            381,
+            192
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 1.9776216745376587,
+        "so_loss": 1.9770889282226562
+    },
+    {
+        "sub_answer": [
+            "Harvard University"
+        ],
+        "org_answer": [
+            "University of Southern California"
+        ],
+        "pred_answer": "Harvard University",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1394,
+        "demonstration_ids": [
+            1102,
+            381,
+            192
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.029576063156128,
+        "so_loss": 2.029296636581421
+    },
+    {
+        "sub_answer": [
+            "Harvard University"
+        ],
+        "org_answer": [
+            "University of Southern California"
+        ],
+        "pred_answer": "University of Southern California",
+        "sub_answer_em": 0,
+        "org_answer_em": 1,
+        "item_idx": 1394,
+        "demonstration_ids": [
+            1102,
+            381,
+            192
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.03070068359375,
+        "so_loss": 2.028035879135132
+    },
+    {
+        "sub_answer": [
+            "Harvard University"
+        ],
+        "org_answer": [
+            "University of Southern California"
+        ],
+        "pred_answer": "Harvard University",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1394,
+        "demonstration_ids": [
+            1102,
+            381,
+            192
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.010493516921997,
+        "so_loss": 2.0089406967163086
+    },
+    {
+        "sub_answer": [
+            "El Paso"
+        ],
+        "org_answer": [
+            "Midland"
+        ],
+        "pred_answer": "El Paso",
+        "sub_answer_em": 1,
+        "org_answer_em": 0,
+        "item_idx": 1417,
+        "demonstration_ids": [
+            1320,
+            381,
+            192
+        ],
+        "prompt_type": "dss_s",
+        "ss_loss": 2.031003475189209,
+        "so_loss": 2.036945343017578
+    },
+    {
+        "sub_answer": [
+            "El Paso"
+        ],
+        "org_answer": [
+            "Midland"
+        ],
+        "pred_answer": "Texas",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1417,
+        "demonstration_ids": [
+            1320,
+            381,
+            192
+        ],
+        "prompt_type": "dso_s",
+        "ss_loss": 2.0333826541900635,
+        "so_loss": 2.0380098819732666
+    },
+    {
+        "sub_answer": [
+            "El Paso"
+        ],
+        "org_answer": [
+            "Midland"
+        ],
+        "pred_answer": "El Paso, Texas",
+        "sub_answer_em": 0,
+        "org_answer_em": 0,
+        "item_idx": 1417,
+        "demonstration_ids": [
+            1320,
+            381,
+            192
+        ],
+        "prompt_type": "doo_s",
+        "ss_loss": 2.0068912506103516,
+        "so_loss": 2.0127811431884766
+    }
+]

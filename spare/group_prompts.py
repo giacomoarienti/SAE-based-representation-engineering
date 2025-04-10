@@ -23,13 +23,15 @@ def get_args():
     parser.add_argument("--save_dir_name", type=str, required=True)
     parser.add_argument("--seeds_to_encode", type=int, nargs='+', required=True)
     parser.add_argument("--k_shot", type=int, required=True)
+    parser.add_argument("--dataset_name", type=str, default="cwqswap")
+    parser.add_argument("--rog_method", type=str, default="arrow")
     return parser.parse_args()
 
 
 @torch.inference_mode()
-def group_prompts_based_on_behaviours(seeds_to_encode, model_path, k_shot, save_dir_name):
+def group_prompts_based_on_behaviours(seeds_to_encode, model_path, k_shot, save_dir_name, dataset_name, rog_method):
     model_name = os.path.basename(model_path)
-    data, memorised_set = load_dataset_and_memorised_set("nqswap", model_name)
+    data, memorised_set = load_dataset_and_memorised_set(dataset_name, model_name)
     model, tokenizer = init_frozen_language_model(model_path)
     line_break_id = tokenizer.encode("\n\n", add_special_tokens=False)[-1]
     generation_kwargs = {"max_new_tokens": 12, "do_sample": False, "eos_token_id": line_break_id,
@@ -40,11 +42,13 @@ def group_prompts_based_on_behaviours(seeds_to_encode, model_path, k_shot, save_
         data=data,
         memorised_set=memorised_set,
         demonstration_pool_size=128,
-        task="collect_hiddens"
+        task="collect_hiddens",
+        graph=(dataset_name == "cwqswap"),
+        rog_method=rog_method,
     )
 
     record_keys = set()
-    save_dir = PROJ_DIR / "cache_data" / model_name / save_dir_name
+    save_dir = PROJ_DIR / "cache_data" / f"{dataset_name}-{model_name}" / save_dir_name
     os.makedirs(save_dir, exist_ok=True)
 
     existed_files = os.listdir(save_dir)
@@ -76,7 +80,7 @@ def group_prompts_based_on_behaviours(seeds_to_encode, model_path, k_shot, save_
 
             for prompt_type in ["dss_s", "dso_s", "doo_s"]:
                 gen_results = generate_and_evaluate_for_one_item(
-                    model, tokenizer, batch[prompt_type], "nqswap",
+                    model, tokenizer, batch[prompt_type], dataset_name,
                     batch["sub_answers"], batch["org_answers"],
                     batch["sub_contexts"], generation_kwargs
                 )
@@ -128,6 +132,8 @@ def main():
         model_path=args.model_path,
         k_shot=args.k_shot,
         save_dir_name=args.save_dir_name,
+        dataset_name=args.dataset_name,
+        rog_method=args.rog_method
     )
 
 
