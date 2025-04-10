@@ -54,7 +54,7 @@ def create_memorised_set(args):
 def main():
     args = parse_args()
     model_name = Path(args.model_path).name
-    output_file = f"{args.cache_dir}/{args.dataset}-{model_name}-memorised.pt"
+    output_file = f"{args.cache_dir}/{args.dataset}-{model_name}-memorised_set"
     
     print(f"Creating memorised set for model {args.model_path}...")
     memorised_samples = create_memorised_set(args)
