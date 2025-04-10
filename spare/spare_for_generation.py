@@ -26,17 +26,17 @@ logger = logging.getLogger(__name__)
 logger.setLevel(level=logging.INFO)
 
 
-def load_hiddens_and_get_function_weights(model_name, layer_idx, sae, hiddens_name):
-    cache_weight_dir = PROJ_DIR / "cache_data" / model_name / "func_weights" / hiddens_name / f"layer{layer_idx}"
+def load_hiddens_and_get_function_weights(model_name, data_name, layer_idx, sae, hiddens_name):
+    cache_weight_dir = PROJ_DIR / "cache_data" / f"{data_name}-{model_name}" / "func_weights" / hiddens_name / f"layer{layer_idx}"
     if os.path.exists(cache_weight_dir):
         use_context_weight = torch.load(cache_weight_dir / "use_context_weight.pt").cuda()
         use_parameter_weight = torch.load(cache_weight_dir / "use_parameter_weight.pt").cuda()
         return use_context_weight.cuda(), use_parameter_weight.cuda()
 
     logger.info("load hidden states")
-    hiddens = load_grouped_hiddens(model_name, hiddens_name, layer_idx)
+    hiddens = load_grouped_hiddens(model_name, data_name, hiddens_name, layer_idx)
 
-    pred_sub_answer_data, pred_org_answer_data, _ = load_grouped_prompts(model_name, files=hiddens["load_files"])
+    pred_sub_answer_data, pred_org_answer_data, _ = load_grouped_prompts(model_name, data_name, files=hiddens["load_files"])
 
     logger.info("encode sae activations")
     label0_sae_activations = get_sae_activations(hiddens["label0_hiddens"], sae, disable_tqdm=False)
@@ -104,13 +104,13 @@ def select_functional_activations(mutual_information, expectation, select_topk_p
     return use_context_activations_indices, use_parameter_activations_indices
 
 
-def load_function_activations(layer_idx, model_name, edit_degree, hiddens_name,
+def load_function_activations(layer_idx, model_name, data_name, edit_degree, hiddens_name,
                               mutual_information_save_name, select_topk_proportion):
     sae = load_frozen_sae(layer_idx, model_name)
     use_context_weight, use_parameter_weight = load_hiddens_and_get_function_weights(
-        model_name, layer_idx, sae, hiddens_name,
+        model_name, data_name, layer_idx, sae, hiddens_name,
     )
-    mutual_information_dir = PROJ_DIR / "cache_data" / model_name / mutual_information_save_name
+    mutual_information_dir = PROJ_DIR / "cache_data" / f"{data_name}-{model_name}" / mutual_information_save_name
     mutual_information_path = mutual_information_dir / f"layer-{layer_idx} mi_expectation.pt"
     logger.info(f"load from mutual information and expectation from {mutual_information_path}")
 
@@ -307,6 +307,7 @@ def run_sae_patching_evaluate(
         run_use_parameter=True,
         run_use_context=True,
         debug_num_examples=None,
+        rog_method="arrow",
 ):
     model_name = os.path.basename(model_path)
     model, tokenizer = init_frozen_language_model(model_path)
@@ -318,7 +319,7 @@ def run_sae_patching_evaluate(
         logger.info(f"load function weights layer{layer_idx}")
         sae = load_frozen_sae(layer_idx, model_name)
         use_context_weight, use_parameter_weight = load_hiddens_and_get_function_weights(
-            model_name, layer_idx, sae, hiddens_name,
+            model_name, data_name, layer_idx, sae, hiddens_name,
         )
         all_use_context_weight.append(use_context_weight)
         all_use_parameter_weight.append(use_parameter_weight)
@@ -327,7 +328,7 @@ def run_sae_patching_evaluate(
     # step-2: load mutual information and corresponding expectation
     all_layers_mutual_information, all_layers_expectation = [], []
     for layer_idx in layer_ids:
-        mutual_information_dir = PROJ_DIR / "cache_data" / model_name / mutual_information_save_name
+        mutual_information_dir = PROJ_DIR / "cache_data" / f"{data_name}-{model_name}" / mutual_information_save_name
         mutual_information_path = mutual_information_dir / f"layer-{layer_idx} mi_expectation.pt"
         logger.info(f"load from mutual information and expectation from {mutual_information_path}")
         mi_expectation = torch.load(mutual_information_path)
@@ -340,7 +341,7 @@ def run_sae_patching_evaluate(
     for lid in layer_ids:
         use_context_func, use_parameter_func, use_context_indices, use_parameter_indices = \
             load_function_activations(
-                lid, model_name, edit_degree, hiddens_name, mutual_information_save_name, select_topk_proportion,
+                lid, model_name, data_name, edit_degree, hiddens_name, mutual_information_save_name, select_topk_proportion,
             )
         all_use_context_func.append(use_context_func)
         all_use_parameter_func.append(use_parameter_func)
@@ -367,7 +368,9 @@ def run_sae_patching_evaluate(
         data=data,
         memorised_set=memorised_set,
         demonstration_pool_size=128,
-        task="initial_ICL_with_intervention"
+        task="initial_ICL_with_intervention",
+        graph=(data_name == "cwqswap"),
+        rog_method=rog_method,
     )
     if debug_num_examples is not None:
         re_odqa_dataset.data_for_iter = re_odqa_dataset.data_for_iter[:debug_num_examples]
@@ -389,6 +392,7 @@ def get_dev_dataloader(model_path, data_name, load_data_name, shots_to_load, see
     model_name = os.path.basename(model_path)
     pred_sub_answer_data, pred_org_answer_data = load_grouped_prompts(
         model_name,
+        data_name,
         load_data_name,
         shots_to_load,
         seeds_to_load
@@ -403,7 +407,9 @@ def get_dev_dataloader(model_path, data_name, load_data_name, shots_to_load, see
         data=data,
         memorised_set=memorised_set,
         data_to_encode=pred_sub_answer_data + pred_org_answer_data,
-        demonstration_pool_size=128
+        demonstration_pool_size=128,
+        graph=(data_name == "cwqswap"),
+        rog_method="arrow",
     )
     dataloader = encode_re_odqa_dataset.get_hyperparameter_tune_dataloader()
     return dataloader

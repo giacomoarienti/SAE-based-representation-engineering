@@ -27,6 +27,7 @@ def get_args():
     parser.add_argument("--mutual_information_save_name", type=str, required=True)
     parser.add_argument("--run_use_parameter", action="store_true")
     parser.add_argument("--run_use_context", action="store_true")
+    parser.add_argument("--rog_method", type=str, default="arrow")
     return parser.parse_args()
 
 
@@ -65,6 +66,7 @@ def main():
         select_topk_proportion=args.select_topk_proportion,
         run_use_parameter=args.run_use_parameter,
         run_use_context=args.run_use_context,
+        rog_method=args.rog_method,
     )
     json.dump(results, open(output_path, "w"), indent=4, ensure_ascii=False)
     wandb.finish()

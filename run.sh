@@ -14,10 +14,10 @@ pip install -e .
 # sh ./scripts/run_group_prompts.sh "${MODEL_PATH}" "${DATASET}" "${ROG}"
 
 # 4.
-sh ./scripts/run_save_grouped_activations.sh "${MODEL_PATH}" "${DATASET}" "${ROG}"
+# sh ./scripts/run_save_grouped_activations.sh "${MODEL_PATH}" "${DATASET}" "${ROG}"
 
 # 5.
-# sh ./scripts/run_mutual_information_and_expectation.sh "${MODEL_PATH}" "6 7 8 9"
+# sh ./scripts/run_mutual_information_and_expectation.sh "${MODEL_PATH}" "${DATASET}" "6 7 8 9 10 11 12"
 
 # 6.
-# sh ./scripts/run_all_experiments.sh
+sh ./scripts/run_all_experiments.sh "${MODEL_PATH}" "${DATASET}"
