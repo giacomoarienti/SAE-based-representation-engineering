@@ -3,7 +3,7 @@
 set -e
 set -u
 
-if [ $# -lt 2 ]; then
+if [ $# -lt 3 ]; then
   echo "Error: Insufficient arguments provided."
   echo "Usage: $0 <model_path> <dataset> <rog_method>"
   exit 1

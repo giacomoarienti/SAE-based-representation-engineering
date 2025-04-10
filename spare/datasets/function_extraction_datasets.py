@@ -329,10 +329,11 @@ class REODQADataset(Dataset):
 
 class EncodeREODQADataset(REODQADataset):
 
-    def __init__(self, tokenizer, data, memorised_set, data_to_encode, demonstration_pool_size=128):
+    def __init__(self, tokenizer, data, memorised_set, data_to_encode, demonstration_pool_size=128, graph=False, rog_method="arrow"):
         super(EncodeREODQADataset, self).__init__(
             tokenizer, data, memorised_set, demonstration_pool_size=demonstration_pool_size,
-            task="encode_and_save_hiddens"
+            task="encode_and_save_hiddens",
+            graph=graph, rog_method=rog_method
         )
         self.data_to_encode = data_to_encode
 

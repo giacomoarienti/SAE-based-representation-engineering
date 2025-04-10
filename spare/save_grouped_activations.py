@@ -23,6 +23,7 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--data_name", type=str, required=True)
     parser.add_argument("--model_path", type=str, required=True)
+    parser.add_argument("--rog_method", type=str, default="arrow")
 
     # load data from load_data_name
     parser.add_argument("--load_data_name", type=str, required=True)
@@ -37,12 +38,13 @@ def get_args():
 
 @torch.inference_mode()
 def save_grouped_hiddens(tokenizer, model, model_name, data_name, save_hiddens_name,
-                         load_data_name, shots_to_encode, seeds_to_encode):
+                         load_data_name, shots_to_encode, seeds_to_encode, rog_method):
     num_layers = len(model.model.layers)
     inspect_modules = [f'model.layers.{layer_idx}' for layer_idx in range(num_layers)]
 
     pred_sub_answer_data, pred_org_answer_data, load_files = load_grouped_prompts(
         model_name,
+        data_name,
         load_data_name,
         shots_to_encode,
         seeds_to_encode
@@ -54,11 +56,13 @@ def save_grouped_hiddens(tokenizer, model, model_name, data_name, save_hiddens_n
         data=data,
         memorised_set=memorised_set,
         data_to_encode=pred_sub_answer_data + pred_org_answer_data,
-        demonstration_pool_size=128
+        demonstration_pool_size=128,
+        graph=(data_name == "cwqswap"),
+        rog_method=rog_method,
     )
     dataloader = encode_re_odqa_dataset.get_dataloader(num_workers=1, batch_size=1)
 
-    save_dir = PROJ_DIR / "cache_data" / model_name / save_hiddens_name
+    save_dir = PROJ_DIR / "cache_data" / f"{data_name}-{model_name}" / save_hiddens_name
     os.makedirs(save_dir, exist_ok=True)
     for module in inspect_modules:
         dir_context = save_dir / f"{module}-use-context"
@@ -105,6 +109,7 @@ def main():
         load_data_name=args.load_data_name,
         shots_to_encode=args.shots_to_encode,
         seeds_to_encode=args.seeds_to_encode,
+        rog_method=args.rog_method
     )
 
 

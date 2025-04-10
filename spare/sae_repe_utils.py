@@ -150,9 +150,9 @@ def calculate_detailed_em(
     return results
 
 
-def load_grouped_prompts(model_name, results_save_dir_name="grouped_prompts",
+def load_grouped_prompts(model_name, data_name, results_save_dir_name="grouped_prompts",
                          shots=None, seeds=None, files=None):
-    load_dir = PROJ_DIR / "cache_data" / model_name / results_save_dir_name
+    load_dir = PROJ_DIR / "cache_data" / f"{data_name}-{model_name}" / results_save_dir_name
     all_results = []
     load_files = []
     if shots is not None:
@@ -175,13 +175,14 @@ def load_grouped_prompts(model_name, results_save_dir_name="grouped_prompts",
         logger.info(f"do not check the duplication")
 
     pred_sub_answer_data, pred_org_answer_data = [], []
-    for item in all_results:
+    for i, item in enumerate(all_results):
+        if item["sub_answer_em"] == 1 and item["org_answer_em"] == 1:
+            logger.info(f"Error in item {i}: both sub_answer_em and org_answer_em are 1")
+            continue
         if item["sub_answer_em"] == 1:
             pred_sub_answer_data.append(item)
         if item["org_answer_em"] == 1:
             pred_org_answer_data.append(item)
-        if item["sub_answer_em"] == 1 and item["org_answer_em"] == 1:
-            raise ValueError("sub_answer == org_answer")
     logger.info(f"loaded {len(pred_sub_answer_data)} use-context-data, "
                 f"{len(pred_org_answer_data)} use-parameter-data")
     for idx in range(len(pred_sub_answer_data)):
