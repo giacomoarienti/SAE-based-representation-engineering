@@ -1,0 +1,272 @@
+2025-04-14 13:46:26,549 - INFO __main__ 96: {
+    "exp_name": "cwqswap-lookup-Llama-3.2-1B-3shot-examples-openbook",
+    "model_path": "meta-llama/Llama-3.2-1B",
+    "k_shot": 3,
+    "seed": 42,
+    "demonstrations_org_context": true,
+    "demonstrations_org_answer": true,
+    "batch_size": 1,
+    "run_open_book": true,
+    "run_close_book": false,
+    "flash_attn": true,
+    "write_logs": true,
+    "dataset_name": "cwqswap",
+    "rog_method": "lookup"
+}
+2025-04-14 13:46:42,071 - INFO __main__ 130: first example:
+<|begin_of_text|>context: The entities are assigned symbolic keys as follows:
+A: m.03pq499
+B: Regina Hall
+C: The Half
+D: Vernon Reid
+E: m.0q5cv9t
+F: 03
+G: Actor
+H: CP Time
+I: m.0bw202y
+J: m.0sn6xnl
+K: Fr, Fr, Frisell
+L: Paid in Full
+M: Charles Stone III
+N: m.011rnclw
+O: m.0qb6yp5
+P: Postman
+Q: Too Lazy to Work, Too Nervous to Steal
+R: United States of America
+S: The Sentinel
+T: Let's Talk About Jesus
+U: Burden of Dreams
+V: Gender
+W: Type
+
+The relations are assigned symbolic keys as follows:
+aa: people.place_lived.person
+ab: music.recording.featured_artists
+ac: music.track_contribution.contributor
+ad: music.recording.artist
+ae: people.person.profession
+af: tv.tv_actor.starring_roles
+ag: music.artist.track_contributions
+ah: film.film.directed_by
+ai: tv.tv_actor.guest_roles
+aj: music.composition.composer
+ak: music.producer.tracks_produced
+al: people.person.nationality
+am: music.artist.track
+an: freebase.valuenotation.is_reviewed
+
+The graph is defined with the symbolic references:
+A, aa, B
+C, ab, D
+E, ac, D
+F, ad, D
+B, ae, G
+H, ad, D
+D, af, I
+D, ag, J
+K, ad, D
+L, ah, M
+B, ai, N
+O, ac, D
+P, aj, D
+D, ak, Q
+D, al, R
+D, am, S
+D, ak, T
+D, am, U
+B, an, V
+W, aj, D
+
+question: What movie with music by Vernon Reid was Regina Hall in?
+answer: Paid in Full
+
+context: The entities are assigned symbolic keys as follows:
+A: The Prince
+B: English Language
+C: Because just as good morals, if they are to be maintained, have need of the laws, so the laws, if they are to be observed, have need of good morals.
+D: Niccolò Machiavelli
+E: Men are more apt to be mistaken in their generalizations than in their particular observations.
+F: Desiderius Erasmus
+G: Ethics
+H: Giambattista Vico
+I: The prince : a revised translation, backgrounds, interpretations, marginalia
+J: Piero Machiavelli
+K: Raymond Aron
+L: Writer
+M: He was so impressed he wrote an account titled: \"On the Manner Adopted by the Duke. to Kill Vitellozzo\".
+N: g.1255jhqg8
+O: The prince
+P: Belfagor arcidiavolo
+Q: After Borgia's father, Pope Alexander VI, died in 1503, Macchiavelli was sent to Rome to meet the new Pope Julius II.
+R: Baccina Machiavelli
+S: Alexandre Kojève
+T: No one should be astonished if in the following discussion of completely new princedoms and of the prince and of government, I bring up the noblest examples. Because, since men almost always walk in the paths beaten by others and carry on their affairs by imitatingeven though it is not possible to keep wholly in the paths of others or to attain the ability of those you imitatea prudent man will always choose to take paths beaten by great men and to imitate those who have been especially admirable, in order that if his ability does not reach theirs, at least it may offer some suggestion of it; and he will act like prudent archers, who, seeing that the mark they plan to hit is too far away and knowing what space can be covered by the power of their bows, take an aim much higher than their mark, not in order to reach with their arrows so great a height, but to be able, with the aid of so high an aim, to attain their purpose.
+
+The relations are assigned symbolic keys as follows:
+aa: book.book_edition.language
+ab: book.book.editions
+ac: media_common.quotation.author
+ad: people.person.quotations
+ae: influence.influence_node.influenced
+af: book.written_work.subjects
+ag: people.person.children
+ah: influence.influence_node.influenced_by
+ai: book.author.book_editions_published
+aj: people.person.profession
+ak: base.kwebbase.kwtopic.has_sentences
+al: common.topic.notable_for
+am: book.author.works_written
+an: people.person.parents
+
+The graph is defined with the symbolic references:
+A, aa, B
+A, ab, A
+C, ac, D
+D, ad, E
+F, ae, D
+A, af, G
+D, ae, H
+A, ab, I
+D, ag, J
+K, ah, D
+D, ai, A
+D, aj, L
+D, ak, M
+A, al, N
+A, ab, O
+D, am, P
+D, ak, Q
+R, an, D
+S, ah, D
+T, ac, D
+
+question: What is the title of the book written by Niccolo Machiavelli that was published in 1977?
+answer: The Prince
+
+context: The entities are assigned symbolic keys as follows:
+A: John Connor
+B: James Cameron
+C: m.0y7vmp5
+D: Marc Maurin
+E: m.09w5r38
+F: m.02k7z68
+G: m.03n9_pb
+H: Kyle Reese
+I: m.09y7mz1
+J: m.09xym3p
+K: m.09wd0s2
+L: m.02vbxnf
+M: m.04m5b3q
+N: Christian Bale
+O: Male
+P: Terminator
+Q: Actor
+R: Country of nationality
+S: Place of birth
+T: m.0z43ywv
+
+The relations are assigned symbolic keys as follows:
+aa: fictional_universe.fictional_character.character_created_by
+ab: film.performance.actor
+ac: common.webpage.topic
+ad: fictional_universe.marriage_of_fictional_characters.spouses
+ae: film.performance.character
+af: fictional_universe.fictional_character.parents
+ag: common.topic.webpage
+ah: film.film_character.portrayed_in_films
+ai: people.person.gender
+aj: fictional_universe.fictional_universe.characters
+ak: people.person.profession
+al: freebase.valuenotation.is_reviewed
+
+The graph is defined with the symbolic references:
+A, aa, B
+C, ab, D
+E, ac, A
+F, ad, A
+G, ae, A
+A, af, H
+A, ag, I
+J, ac, A
+A, ag, K
+A, ag, J
+A, ah, L
+M, ab, N
+D, ai, O
+P, aj, A
+N, ak, Q
+N, al, R
+D, ak, Q
+N, ai, O
+N, al, S
+T, ae, A
+
+question: In that movie that Marc Maurin was in, who played John Connor?
+answer: Christian Bale
+
+context: The entities are assigned symbolic keys as follows:
+A: George Washington University Law School
+B: Rhode Island
+C: Madison Hall
+D: The GW Hatchet
+E: George Washington Colonials men's basketball
+F: m.0w0032w
+G: George Washington-Southern-BR 1993 NCAA Men's Division I Basketball Tournament Game
+H: Mike Lonergan
+I: m.05cdvnx
+J: m.0w009ws
+K: m.0v_yqbl
+L: George Washington University
+M: New Mexico-George Washington 1993 NCAA Men's Division I Basketball Tournament Game
+N: United States of America
+O: m.05k5wmx
+P: m.05c_tx6
+Q: NC State-George Washington 1954 NCAA Men's Division I Basketball Tournament Game
+R: m.0v__ylv
+S: George Washington-UAB 1994 NCAA Men's Division I   Basketball Tournament Game
+
+The relations are assigned symbolic keys as follows:
+aa: location.location.containedby
+ab: periodicals.newspaper_circulation_area.newspapers
+ac: sports.sports_team.roster
+ad: base.marchmadness.ncaa_basketball_team.tournament_games_won
+ae: basketball.basketball_team.head_coach
+af: base.marchmadness.ncaa_basketball_team.ncaa_tournament_seeds
+ag: base.biblioness.bibs_topic.is_really
+ah: sports.sports_team_roster.team
+ai: education.educational_institution.sports_teams
+aj: base.marchmadness.ncaa_basketball_tournament_game.winning_team
+ak: base.aareas.schema.administrative_area.administrative_children
+al: base.marchmadness.ncaa_tournament_seed.team
+am: base.marchmadness.ncaa_basketball_tournament_game.losing_team
+an: location.administrative_division.first_level_division_of
+
+The graph is defined with the symbolic references:
+A, aa, B
+C, aa, B
+B, ab, D
+E, ac, F
+E, ad, G
+E, ae, H
+E, af, I
+B, ag, B
+J, ah, E
+K, ah, E
+L, ai, E
+M, aj, E
+N, ak, B
+E, af, O
+P, al, E
+I, al, E
+Q, am, E
+E, ac, R
+S, aj, E
+B, an, N
+
+question: What state is home to the university that is represented in sports by George Washington Colonials men's basketball?
+answer:
+2025-04-14 13:46:42,072 - INFO __main__ 131: first example prediction:  Rhode Island
+2025-04-14 14:44:32,405 - INFO __main__ 150: 22089 examples
+2025-04-14 14:44:32,556 - INFO __main__ 169: sub_answer EM score: 0.2952600842048078
+2025-04-14 14:44:32,777 - INFO __main__ 173: org_answer EM score: 0.14274073068042917
+2025-04-14 14:44:32,778 - INFO __main__ 177: both correct num: 13072

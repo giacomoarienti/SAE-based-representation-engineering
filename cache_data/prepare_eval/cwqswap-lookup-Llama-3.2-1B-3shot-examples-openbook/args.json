@@ -1,0 +1,15 @@
+{
+    "exp_name": "cwqswap-lookup-Llama-3.2-1B-3shot-examples-openbook",
+    "model_path": "meta-llama/Llama-3.2-1B",
+    "k_shot": 3,
+    "seed": 42,
+    "demonstrations_org_context": true,
+    "demonstrations_org_answer": true,
+    "batch_size": 1,
+    "run_open_book": true,
+    "run_close_book": false,
+    "flash_attn": true,
+    "write_logs": true,
+    "dataset_name": "cwqswap",
+    "rog_method": "lookup"
+}
