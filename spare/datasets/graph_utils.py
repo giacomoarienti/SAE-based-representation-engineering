@@ -52,11 +52,11 @@ def lookup_table_graph(graph):
         triples.append(f"{entity_ids[head]}, {rel_ids[rel]}, {entity_ids[tail]}")
 
     lines = []
+    lines.append("The entities are assigned symbolic keys as follows:")
     for k, v in entity_map.items():
-        lines.append("The entities are assigned symbolic keys as follows:")
         lines.append(f"{k}: {v}")
+    lines.append("\nThe relations are assigned symbolic keys as follows:")
     for k, v in rel_map.items():
-        lines.append("\nThe relations are assigned symbolic keys as follows:")
         lines.append(f"{k}: {v}")
     lines.append("\nThe graph is defined with the symbolic references:")
     lines.extend(triples)
